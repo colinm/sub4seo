@@ -1,0 +1,156 @@
+export interface CityData {
+  slug: string
+  name: string
+  state: string
+  stateAbbr: string
+  county: string
+  headline: string
+  intro: string
+  localLandmarks: string[]
+  nearbyAreas: string[]
+  serviceEmphasis: string
+  mapQuery: string
+}
+
+export const cities: CityData[] = [
+  {
+    slug: 'davenport-ia',
+    name: 'Davenport',
+    state: 'Iowa',
+    stateAbbr: 'IA',
+    county: 'Scott County',
+    headline: 'Replacement Windows, Siding & Doors in Davenport, Iowa',
+    intro: `Suburban Construction has been the trusted home improvement contractor for Davenport, Iowa homeowners since 1985. Our showroom is located right here in Davenport at 3602 North Harrison, making us your true local choice for replacement windows, siding, doors, and gutters. Whether you live near Vander Veer Park, along the River Drive corridor, or in one of Davenport's many established neighborhoods, our experienced installation crews bring the same commitment to quality to every job. Davenport homeowners choose Suburban Construction because we're not a national franchise — we're your neighbors. We've completed thousands of projects right here in Davenport and throughout Scott County, and we back every installation with a lifetime workmanship guarantee. Call us today for a free, no-pressure estimate at your Davenport home.`,
+    localLandmarks: ['Vander Veer Park', 'River Drive', 'North Harrison', 'Brady Street', 'Kimberly Road'],
+    nearbyAreas: ['bettendorf-ia', 'east-moline-il', 'rock-island-il'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'Davenport+Iowa',
+  },
+  {
+    slug: 'bettendorf-ia',
+    name: 'Bettendorf',
+    state: 'Iowa',
+    stateAbbr: 'IA',
+    county: 'Scott County',
+    headline: 'Replacement Windows, Siding & Doors in Bettendorf, Iowa',
+    intro: `Bettendorf, Iowa homeowners have trusted Suburban Construction for their home improvement needs for decades. As a locally owned and operated company based in Davenport — just minutes from Bettendorf — we're always nearby when you need us. From the established neighborhoods near Middle Road to the newer developments along Grant Street, Suburban Construction has installed replacement windows, vinyl and steel siding, entry doors, and Gutter Cap systems throughout Bettendorf. Our triple pane krypton glass windows are especially popular with Bettendorf homeowners looking to cut energy costs year-round. Bettendorf's winters can be tough, and proper windows and siding make a real difference. We provide free, no-obligation estimates and stand behind our work with a lifetime workmanship guarantee. Contact us today to schedule your free Bettendorf estimate.`,
+    localLandmarks: ['Middle Road', 'Grant Street', 'Tanglefoot Lane', 'Kimberly Road', 'the Mississippi'],
+    nearbyAreas: ['davenport-ia', 'dewitt-ia', 'muscatine-ia'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'Bettendorf+Iowa',
+  },
+  {
+    slug: 'moline-il',
+    name: 'Moline',
+    state: 'Illinois',
+    stateAbbr: 'IL',
+    county: 'Rock Island County',
+    headline: 'Replacement Windows, Siding & Doors in Moline, Illinois',
+    intro: `Moline, Illinois homeowners have counted on Suburban Construction for quality home improvement work since 1985. We cross the river regularly to serve Moline, bringing the same high standards and lifetime workmanship guarantee that Quad Cities homeowners know and trust. From the neighborhoods near John Deere Road to the historic areas closer to downtown, Suburban Construction has installed replacement windows, siding, doors, and gutter systems throughout Moline. Our seamless gutters and Gutter Cap systems are especially popular with Moline homeowners tired of climbing ladders every fall. We offer free estimates for all projects throughout Moline and Rock Island County, and we always present pricing honestly — no hidden fees, no pressure tactics. Call Suburban Construction today and see why Moline homeowners keep choosing us.`,
+    localLandmarks: ['John Deere Road', 'River Drive', '7th Street', 'Avenue of the Cities', 'Riverside Park'],
+    nearbyAreas: ['rock-island-il', 'east-moline-il', 'davenport-ia'],
+    serviceEmphasis: 'gutters',
+    mapQuery: 'Moline+Illinois',
+  },
+  {
+    slug: 'rock-island-il',
+    name: 'Rock Island',
+    state: 'Illinois',
+    stateAbbr: 'IL',
+    county: 'Rock Island County',
+    headline: 'Replacement Windows, Siding & Doors in Rock Island, Illinois',
+    intro: `Rock Island, Illinois homeowners have been calling on Suburban Construction for quality windows, siding, and doors for nearly four decades. We understand the unique character of Rock Island homes — many of which were built in an era when single-pane windows and aging siding were the norm. Upgrading to Suburban Construction's triple pane krypton glass windows can dramatically reduce your energy bills and increase comfort throughout Rock Island's cold winters and hot summers. From the historic neighborhoods near Black Hawk State Historic Site to the areas along Milan Avenue, we've worked throughout Rock Island. Our installers are experienced, professional, and treat your home with respect. Every project comes with a free estimate, honest pricing, and our lifetime workmanship guarantee. Call today for your free Rock Island home improvement estimate.`,
+    localLandmarks: ['Black Hawk State Historic Site', 'Milan Avenue', 'Longview Park', '11th Street', 'Sears Centre area'],
+    nearbyAreas: ['moline-il', 'east-moline-il', 'sterling-il'],
+    serviceEmphasis: 'siding',
+    mapQuery: 'Rock+Island+Illinois',
+  },
+  {
+    slug: 'east-moline-il',
+    name: 'East Moline',
+    state: 'Illinois',
+    stateAbbr: 'IL',
+    county: 'Rock Island County',
+    headline: 'Replacement Windows, Siding & Doors in East Moline, Illinois',
+    intro: `East Moline, Illinois homeowners trust Suburban Construction for professional home improvement work backed by a lifetime workmanship guarantee. We've been serving East Moline and all of Rock Island County since 1985, and our reputation for honest, high-quality work speaks for itself. Whether you need replacement windows to combat drafts and high energy bills, new vinyl or steel siding to refresh your home's appearance, or a seamless gutter system to protect your foundation, Suburban Construction has you covered in East Moline. Our crews are local to the Quad Cities area, so we're never far away when questions arise after installation. East Moline homeowners appreciate our no-pressure approach — we provide honest estimates and let our product quality do the selling. Schedule your free East Moline estimate today.`,
+    localLandmarks: ['Green River Road', 'Illinois Route 5', 'Hampton Bridge', 'Deer Grove Forest Preserve'],
+    nearbyAreas: ['moline-il', 'rock-island-il', 'sterling-il'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'East+Moline+Illinois',
+  },
+  {
+    slug: 'sterling-il',
+    name: 'Sterling',
+    state: 'Illinois',
+    stateAbbr: 'IL',
+    county: 'Whiteside County',
+    headline: 'Replacement Windows, Siding & Doors in Sterling, Illinois',
+    intro: `Suburban Construction proudly extends its home improvement services to Sterling, Illinois — within our 90-mile service radius from our Davenport showroom. Sterling homeowners can access the same quality windows, siding, doors, and gutter systems that thousands of Quad Cities customers have trusted for nearly four decades. Sterling's climate demands energy-efficient products, and our triple pane krypton glass windows deliver superior insulation performance that single or double pane windows simply cannot match. Whether your Sterling home needs new vinyl siding, a full window replacement, or a new entry door, Suburban Construction provides free in-home estimates with honest, no-pressure pricing. Our lifetime workmanship guarantee applies to every installation — in Sterling just as in the heart of the Quad Cities. Call us today to schedule your free estimate.`,
+    localLandmarks: ['Lawrence Brothers', 'Centennial Bridge area', 'Rock River', 'US Route 30', 'First Avenue'],
+    nearbyAreas: ['rock-falls-il', 'east-moline-il', 'rock-island-il'],
+    serviceEmphasis: 'siding',
+    mapQuery: 'Sterling+Illinois',
+  },
+  {
+    slug: 'rock-falls-il',
+    name: 'Rock Falls',
+    state: 'Illinois',
+    stateAbbr: 'IL',
+    county: 'Whiteside County',
+    headline: 'Replacement Windows, Siding & Doors in Rock Falls, Illinois',
+    intro: `Rock Falls, Illinois homeowners have access to the full range of Suburban Construction home improvement services — all backed by our lifetime workmanship guarantee. From our Davenport showroom, we regularly serve Rock Falls and the surrounding Whiteside County area. Rock Falls homes, particularly those built in the mid-20th century, often benefit greatly from replacement windows and updated siding. Drafty windows and aging siding can cause significant energy waste, and Suburban Construction's triple pane krypton glass windows and insulated siding options address both problems effectively. We offer free, in-home estimates for Rock Falls homeowners with no obligation and no pressure. Our crews arrive on time, complete the work professionally, and leave your property clean. Contact Suburban Construction today for your Rock Falls home improvement estimate.`,
+    localLandmarks: ['Centennial Park', 'Rock River', 'Dixon Avenue', 'Illinois Route 40'],
+    nearbyAreas: ['sterling-il', 'east-moline-il', 'rock-island-il'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'Rock+Falls+Illinois',
+  },
+  {
+    slug: 'muscatine-ia',
+    name: 'Muscatine',
+    state: 'Iowa',
+    stateAbbr: 'IA',
+    county: 'Muscatine County',
+    headline: 'Replacement Windows, Siding & Doors in Muscatine, Iowa',
+    intro: `Muscatine, Iowa homeowners choose Suburban Construction for reliable home improvement services that are backed by a lifetime workmanship guarantee. We've been serving Muscatine and Muscatine County since 1985, completing hundreds of window, siding, door, and gutter projects in this riverside community. Muscatine's older neighborhoods are filled with homes that can benefit tremendously from energy-efficient replacement windows — particularly our triple pane krypton glass option, which provides dramatic reductions in heating and cooling costs. Whether you live near the Muscatine riverfront, along Highway 61, or in the newer developments on the south side of town, Suburban Construction's experienced crews deliver professional results every time. We provide free estimates for Muscatine homeowners with no obligation — just honest information and competitive pricing. Call us today.`,
+    localLandmarks: ['Mississippi Drive', 'Riverside Park', 'Highway 61', 'Muscatine Community College', 'Grandview Avenue'],
+    nearbyAreas: ['davenport-ia', 'bettendorf-ia', 'clinton-ia'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'Muscatine+Iowa',
+  },
+  {
+    slug: 'clinton-ia',
+    name: 'Clinton',
+    state: 'Iowa',
+    stateAbbr: 'IA',
+    county: 'Clinton County',
+    headline: 'Replacement Windows, Siding & Doors in Clinton, Iowa',
+    intro: `Clinton, Iowa homeowners can depend on Suburban Construction for quality home improvement work — the same trusted service that Quad Cities residents have relied on for nearly 40 years. From Clinton's historic neighborhoods along the Mississippi River to the residential areas along US Route 30, Suburban Construction has completed numerous window, siding, door, and gutter projects throughout Clinton County. Clinton winters are no joke, and upgrading to Suburban Construction's triple pane krypton glass windows can make a substantial difference in your home's comfort and energy efficiency. Our steel siding is especially popular in the Clinton area for its unmatched durability in the face of Iowa's weather extremes. Every Clinton project comes with a free in-home estimate, transparent pricing, and our lifetime workmanship guarantee. Call Suburban Construction today.`,
+    localLandmarks: ['Eagle Point Park', 'Riverview Park', 'US Route 30', 'Mississippi River', '6th Avenue'],
+    nearbyAreas: ['davenport-ia', 'muscatine-ia', 'dewitt-ia'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'Clinton+Iowa',
+  },
+  {
+    slug: 'dewitt-ia',
+    name: 'DeWitt',
+    state: 'Iowa',
+    stateAbbr: 'IA',
+    county: 'Clinton County',
+    headline: 'Replacement Windows, Siding & Doors in DeWitt, Iowa',
+    intro: `DeWitt, Iowa homeowners have access to the full range of Suburban Construction home improvement services — from replacement windows and siding to entry doors and Gutter Cap systems. We serve DeWitt and all of Clinton County from our showroom in Davenport, and we bring the same lifetime workmanship guarantee to every DeWitt project. DeWitt's established neighborhoods feature many homes that are ideal candidates for replacement windows — particularly those built in the 1960s and 70s with single-pane aluminum frames that leak heat in winter and let in heat in summer. Suburban Construction's energy-efficient vinyl-framed triple pane windows make a noticeable difference in comfort and utility costs. We also offer vinyl and steel siding in a wide range of colors to refresh the look of any DeWitt home. Call today for a free, no-obligation estimate.`,
+    localLandmarks: ['Bryant Park', 'Lincoln Highway', 'Clinton County Fairgrounds', 'Iowa Route 61'],
+    nearbyAreas: ['davenport-ia', 'bettendorf-ia', 'clinton-ia'],
+    serviceEmphasis: 'windows',
+    mapQuery: 'DeWitt+Iowa',
+  },
+]
+
+export function getCityBySlug(slug: string): CityData | undefined {
+  return cities.find((c) => c.slug === slug)
+}
+
+export function getNearbyCities(city: CityData): CityData[] {
+  return city.nearbyAreas
+    .map((slug) => getCityBySlug(slug))
+    .filter((c): c is CityData => c !== undefined)
+}

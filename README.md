@@ -14,23 +14,52 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ubuntu + Nginx + PM2 Deployment
+1. Server prep (one-time)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Node via nvm (recommended)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm install 20
+nvm use 20
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# PM2 globally
+npm install -g pm2
 
-## Learn More
+# Nginx + Certbot
+sudo apt install -y nginx certbot python3-certbot-nginx
+2. Deploy the app
 
-To learn more about Next.js, take a look at the following resources:
+# Clone / rsync your code to the server
+sudo mkdir -p /var/www/suburban-construction-next
+# rsync or git clone into that directory, then:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+cd /var/www/suburban-construction-next
+npm install
+cp .env.production.example .env.production
+nano .env.production          # fill in SMTP credentials
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm run build
+3. Start with PM2
 
-## Deploy on Vercel
+pm2 start ecosystem.config.js
+pm2 save                      # persist across reboots
+pm2 startup                   # follow the printed command to register systemd service
+4. Nginx + SSL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Copy the config
+sudo cp nginx.conf /etc/nginx/sites-available/suburbanconstruction.com
+sudo ln -s /etc/nginx/sites-available/suburbanconstruction.com /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Get SSL cert (fills in the ssl_certificate lines automatically)
+sudo certbot --nginx -d suburbanconstruction.com -d www.suburbanconstruction.com
+sudo systemctl reload nginx
+5. Future deploys
+
+cd /var/www/suburban-construction-next
+git pull
+npm install
+npm run build
+pm2 reload suburban-construction   # zero-downtime reload
+The ecosystem.config.js uses cluster mode (instances: 'max') so PM2 forks one process per CPU core. The nginx config serves /_next/static/ directly from disk (bypassing Node entirely) with a 1-year immutable cache header — this is the main Lighthouse performance win.
