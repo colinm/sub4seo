@@ -37,7 +37,7 @@ export default function DoorAppPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            <div className="border border-gray-200 rounded-lg p-6 hover:border-amber-400 transition-colors">
+            <div className="border border-gray-200 rounded-lg p-6 hover:border-accent-muted transition-colors">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Storm Door Catalog</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Browse our full storm door lineup including Easy Vent styles, retractable screen
@@ -47,13 +47,13 @@ export default function DoorAppPage() {
                 href="/stormdoor.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-5 py-2 rounded text-sm transition-colors"
+                className="inline-block bg-accent hover:bg-accent-hover text-white font-bold px-5 py-2 rounded text-sm transition-colors"
               >
                 Download Storm Door Catalog (PDF)
               </a>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6 hover:border-amber-400 transition-colors">
+            <div className="border border-gray-200 rounded-lg p-6 hover:border-accent-muted transition-colors">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Pre-Finish Color Options</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 View our pre-finished door color palette including all available factory paint and
@@ -63,7 +63,7 @@ export default function DoorAppPage() {
                 href="/prefinish.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-5 py-2 rounded text-sm transition-colors"
+                className="inline-block bg-accent hover:bg-accent-hover text-white font-bold px-5 py-2 rounded text-sm transition-colors"
               >
                 Download Pre-Finish Guide (PDF)
               </a>
@@ -73,22 +73,22 @@ export default function DoorAppPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Door Product Pages</h2>
           <ul className="space-y-3 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/doors/entry" className="text-amber-600 hover:underline font-medium">
+              <span className="text-accent-mid mt-1">✓</span>
+              <Link href="/doors/entry" className="text-accent hover:underline font-medium">
                 Entry Doors
               </Link>{' '}
               — Therma-Tru fiberglass and steel, dozens of styles and glass options
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/doors/easy-vent" className="text-amber-600 hover:underline font-medium">
+              <span className="text-accent-mid mt-1">✓</span>
+              <Link href="/doors/easy-vent" className="text-accent hover:underline font-medium">
                 Easy Vent Storm Doors
               </Link>{' '}
               — fresh air ventilation with retractable or drop-down screens
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/doors/mini-blinds" className="text-amber-600 hover:underline font-medium">
+              <span className="text-accent-mid mt-1">✓</span>
+              <Link href="/doors/mini-blinds" className="text-accent hover:underline font-medium">
                 Doors with Built-In Mini Blinds
               </Link>{' '}
               — sealed blinds between glass layers, no dusting, no cords
@@ -103,15 +103,15 @@ export default function DoorAppPage() {
             samples. Our showroom is open Monday through Friday, 7:30 AM to 4:30 PM.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">Questions?</h3>
             <p className="text-gray-700 leading-relaxed">
               Call us at{' '}
-              <a href="tel:5633914000" className="text-amber-600 hover:underline font-medium">
+              <a href="tel:5633914000" className="text-accent hover:underline font-medium">
                 563-391-4000
               </a>{' '}
               or{' '}
-              <a href="tel:18007173066" className="text-amber-600 hover:underline font-medium">
+              <a href="tel:18007173066" className="text-accent hover:underline font-medium">
                 1-800-717-3066
               </a>
               . Our team is happy to discuss your door project before you schedule an estimate.
@@ -120,7 +120,7 @@ export default function DoorAppPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -129,7 +129,7 @@ export default function DoorAppPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -137,7 +137,7 @@ export default function DoorAppPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

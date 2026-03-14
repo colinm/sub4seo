@@ -29,7 +29,7 @@ const youtubeVideos = [
 
 function StarRating() {
   return (
-    <div className="flex gap-0.5 text-amber-400 text-lg" aria-label="5 out of 5 stars">
+    <div className="flex gap-0.5 text-accent-muted text-lg" aria-label="5 out of 5 stars">
       {[1, 2, 3, 4, 5].map((i) => (
         <span key={i}>★</span>
       ))}
@@ -101,7 +101,7 @@ export default function TestimonialsPage() {
                   <p className="text-gray-500 text-xs">
                     {t.city}, {t.state}
                     {t.service && (
-                      <span className="ml-2 bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-xs capitalize">
+                      <span className="ml-2 bg-accent-xlight text-accent-dark px-2 py-0.5 rounded-full text-xs capitalize">
                         {t.service}
                       </span>
                     )}
@@ -113,7 +113,7 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Ready to Join Our Happy Customers?
@@ -124,7 +124,7 @@ export default function TestimonialsPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -132,7 +132,7 @@ export default function TestimonialsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

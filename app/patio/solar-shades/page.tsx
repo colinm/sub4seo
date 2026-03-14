@@ -59,40 +59,40 @@ export default function SolarShadesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Features & Benefits</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Blocks 80–97% of UV rays depending on fabric openness factor
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Significantly reduces heat gain without eliminating the outdoor view
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Protects porch furniture and flooring from UV fading
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Available in multiple openness factors to balance view and sun control
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Wide color and pattern selection to complement any home exterior
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Manual roll-up or motorized operation available
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Custom-sized to fit your specific opening
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Can reduce interior cooling costs when installed over windows or glass doors
             </li>
           </ul>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">
               Combine with Awnings for Maximum Comfort
             </h3>
@@ -103,14 +103,14 @@ export default function SolarShadesPage() {
               usable even during peak summer heat. Ask about combining products during your free
               estimate.
             </p>
-            <Link href="/patio/patio-awning" className="inline-block mt-3 text-amber-600 hover:underline font-medium">
+            <Link href="/patio/patio-awning" className="inline-block mt-3 text-accent hover:underline font-medium">
               Learn about patio awnings →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -118,7 +118,7 @@ export default function SolarShadesPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -126,7 +126,7 @@ export default function SolarShadesPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

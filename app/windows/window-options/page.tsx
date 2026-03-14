@@ -50,19 +50,19 @@ export default function WindowOptionsPage() {
           </p>
           <ul className="space-y-2 mb-6">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Colonial grids</strong> — traditional rectangular pattern, classic look for most home styles
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Prairie grids</strong> — perimeter squares with clear center panel, craftsman style
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Contour grids</strong> — raised profile for a more dimensional look
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>No grids</strong> — clean, contemporary look with maximum glass area
             </li>
           </ul>
@@ -102,16 +102,16 @@ export default function WindowOptionsPage() {
           </p>
           <ul className="space-y-2 mb-6">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>White — standard, matches most window frames
+              <span className="text-accent-mid mt-1">✓</span>White — standard, matches most window frames
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>Tan / Beige — warm neutral finish
+              <span className="text-accent-mid mt-1">✓</span>Tan / Beige — warm neutral finish
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>Bronze — traditional complement to dark frames
+              <span className="text-accent-mid mt-1">✓</span>Bronze — traditional complement to dark frames
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>Brass — classic accent for traditional homes
+              <span className="text-accent-mid mt-1">✓</span>Brass — classic accent for traditional homes
             </li>
           </ul>
 
@@ -147,31 +147,31 @@ export default function WindowOptionsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Glass Options</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Standard Low-E</strong> — reflects heat back into the room in winter and blocks it out in summer
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Argon gas fill</strong> — improves insulation over air-filled units
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Triple pane krypton</strong> — our highest-performance option; see the{' '}
-              <Link href="/windows/krypton" className="text-amber-600 hover:underline">
+              <Link href="/windows/krypton" className="text-accent hover:underline">
                 FreedomMaxxx 10
               </Link>{' '}
               page for details
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Tempered safety glass</strong> — required for certain applications (bathrooms, doors, low sills)
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Privacy / obscure glass</strong> — frosted or textured for bathrooms and side-lite panels
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>Laminated glass</strong> — extra strength for security and impact resistance
             </li>
           </ul>
@@ -179,15 +179,15 @@ export default function WindowOptionsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Frame Colors & Interior Finishes</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Exterior frame colors: white, tan, clay, bronze, dark bronze, and more
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Interior wood-grain finishes: oak, pine, cherry — great for painted or stained trim
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Interior color options: white or matching exterior color
             </li>
           </ul>
@@ -195,19 +195,19 @@ export default function WindowOptionsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Screen Options</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Standard half-screen (included on most styles)
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Full screen upgrade for maximum insect protection
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               No-see-um mesh for fine insect protection
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Pet-resistant screen for homes with dogs and cats
             </li>
           </ul>
@@ -224,14 +224,14 @@ export default function WindowOptionsPage() {
             href="/windows.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -240,7 +240,7 @@ export default function WindowOptionsPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -248,7 +248,7 @@ export default function WindowOptionsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

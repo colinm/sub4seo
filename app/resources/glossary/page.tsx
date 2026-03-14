@@ -201,7 +201,7 @@ export default function GlossaryPage() {
               <a
                 key={letter}
                 href={`#letter-${letter}`}
-                className="w-8 h-8 flex items-center justify-center rounded bg-amber-100 text-amber-700 font-bold text-sm hover:bg-amber-500 hover:text-white transition-colors"
+                className="w-8 h-8 flex items-center justify-center rounded bg-accent-xlight text-accent-dark font-bold text-sm hover:bg-accent hover:text-white transition-colors"
               >
                 {letter}
               </a>
@@ -210,7 +210,7 @@ export default function GlossaryPage() {
 
           {letters.map((letter) => (
             <div key={letter} id={`letter-${letter}`} className="mb-8">
-              <h3 className="text-xl font-bold text-amber-600 border-b border-amber-200 pb-2 mb-4">
+              <h3 className="text-xl font-bold text-accent border-b border-accent-faint pb-2 mb-4">
                 {letter}
               </h3>
               <dl className="space-y-4">
@@ -226,7 +226,7 @@ export default function GlossaryPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Still Have Questions?
@@ -237,7 +237,7 @@ export default function GlossaryPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>

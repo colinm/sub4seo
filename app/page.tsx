@@ -87,7 +87,7 @@ export default function HomePage() {
                 </ul>
                 <Link
                   href="/windows/window-styles"
-                  className="text-amber-600 font-semibold hover:text-amber-700 text-sm"
+                  className="text-accent font-semibold hover:text-accent-dark text-sm"
                 >
                   Explore Windows →
                 </Link>
@@ -125,7 +125,7 @@ export default function HomePage() {
                 </ul>
                 <Link
                   href="/siding/vinyl-siding"
-                  className="text-amber-600 font-semibold hover:text-amber-700 text-sm"
+                  className="text-accent font-semibold hover:text-accent-dark text-sm"
                 >
                   Explore Siding →
                 </Link>
@@ -163,7 +163,7 @@ export default function HomePage() {
                 </ul>
                 <Link
                   href="/doors/door-styles"
-                  className="text-amber-600 font-semibold hover:text-amber-700 text-sm"
+                  className="text-accent font-semibold hover:text-accent-dark text-sm"
                 >
                   Explore Doors →
                 </Link>
@@ -203,7 +203,7 @@ export default function HomePage() {
                 </ul>
                 <Link
                   href="/gutters/seamless-gutters"
-                  className="text-amber-600 font-semibold hover:text-amber-700 text-sm"
+                  className="text-accent font-semibold hover:text-accent-dark text-sm"
                 >
                   Explore Gutters →
                 </Link>
@@ -249,7 +249,7 @@ export default function HomePage() {
               href="https://www.instagram.com/suburbanconstructioninc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border-2 border-gray-300 hover:border-amber-500 text-gray-700 hover:text-amber-600 font-bold px-6 py-3 rounded transition-colors"
+              className="inline-block border-2 border-gray-300 hover:border-accent text-gray-700 hover:text-accent font-bold px-6 py-3 rounded transition-colors"
             >
               View More on Instagram →
             </a>
@@ -271,7 +271,7 @@ export default function HomePage() {
             Or call us directly:{" "}
             <a
               href="tel:+15633914000"
-              className="text-amber-400 hover:text-amber-300 font-semibold"
+              className="text-accent-muted hover:text-accent-light font-semibold"
             >
               563-391-4000
             </a>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/gutters/gutter-installation'])
@@ -20,140 +21,107 @@ export default function GutterInstallationPage() {
         ctaText="Get a Free Estimate"
       />
 
+      {/* Intro: text left, image right */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Proper Gutters Are an Engineering Problem
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            A gutter system that performs well isn&apos;t just about the quality of the aluminum or
-            the neatness of the installation. It&apos;s about understanding how water moves across
-            your roof, how much volume your downspouts need to handle during heavy Iowa rainfall
-            events, and where that water should be discharged to protect your foundation, siding,
-            and landscaping.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Suburban Construction&apos;s gutter installation crew evaluates all of these factors
-            before any material is fabricated. We design the downspout layout to move water as far
-            from your foundation as practical, size the system appropriately for your roof&apos;s
-            drainage area, and install every run with the correct slope to ensure complete drainage
-            with no standing water.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Standing water in gutters is not normal or acceptable — it leads to mosquito breeding,
-            premature corrosion, and overflow conditions that defeat the purpose of having gutters at
-            all. Our installation standards prevent it.
-          </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Installation Process</h2>
-
-          <div className="space-y-6 mb-8">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                1
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Free Assessment & Estimate</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  We measure the total linear footage of gutter runs, evaluate the fascia board
-                  condition, assess the roof drainage areas, and determine the optimal downspout
-                  locations and sizing. We discuss color options and any add-ons such as Gutter Cap
-                  or Shur Flow protection systems.
-                </p>
-              </div>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Proper Gutters Are an Engineering Problem
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                A gutter system that performs well isn&apos;t just about the quality of the aluminum or
+                the neatness of the installation. It&apos;s about understanding how water moves across
+                your roof, how much volume your downspouts need to handle during heavy Iowa rainfall
+                events, and where that water should be discharged to protect your foundation, siding,
+                and landscaping.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Suburban Construction&apos;s gutter installation crew evaluates all of these factors
+                before any material is fabricated. We design the downspout layout to move water as far
+                from your foundation as practical, size the system appropriately for your roof&apos;s
+                drainage area, and install every run with the correct slope to ensure complete drainage
+                with no standing water.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Standing water in gutters is not normal or acceptable — it leads to mosquito breeding,
+                premature corrosion, and overflow conditions that defeat the purpose of having gutters at
+                all. Our installation standards prevent it.
+              </p>
             </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                2
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Old Gutter Removal & Fascia Inspection</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Existing gutters are removed and the fascia board behind them is inspected for rot
-                  or damage. We address any fascia issues before installation — new gutters attached
-                  to rotted fascia will fail quickly. We report our findings and discuss any needed
-                  repairs with you before proceeding.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                3
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">On-Site Fabrication</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Using our portable roll-forming machine, we fabricate each gutter run to the exact
-                  length needed for your home. This happens right in your driveway. There are no stock
-                  lengths being cut down and pieced together — each run is a single continuous piece
-                  from end to end.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                4
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Installation with Correct Slope</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Gutters are installed with a slight slope toward the downspouts — typically 1/4 inch
-                  of drop per 10 feet of run. This ensures water drains completely after every rain
-                  event and never sits in the gutter channel. We use hidden hanger brackets on
-                  appropriate spacing for strong, long-lasting support.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                5
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Downspout Placement & Connection</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Downspouts are cut, formed, and installed at the locations determined during the
-                  assessment. Outlet extensions direct water away from the foundation. We connect
-                  all end caps, corners, and miter joints with sealant to prevent leaks at the
-                  points where seams are unavoidable.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center font-bold text-lg">
-                6
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Final Test & Cleanup</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  We test the system and clean up all debris before leaving. You can expect a tidy
-                  job site and a gutter system that is ready to perform from the first rain after
-                  installation.
-                </p>
-              </div>
-            </div>
+            <Image src="/shurflow1.jpg" alt="Gutter installation process showing seamless gutter fabrication on site" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
           </div>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Add Gutter Protection</h3>
-            <p className="text-gray-700 leading-relaxed">
-              New gutters are the ideal time to add a protection system that eliminates future
-              cleaning. We install both{' '}
-              <Link href="/gutters/gutter-cap" className="text-amber-600 hover:underline">Gutter Cap</Link>
-              {' '}and{' '}
-              <Link href="/gutters/shurflo" className="text-amber-600 hover:underline">Shur Flow</Link>
-              {' '}systems — ask about including protection in your estimate.
-            </p>
+          {/* Photo strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <Image src="/shurflow2.jpg" alt="Seamless gutter installation with downspout detail" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/install5.jpg" alt="Gutter installation crew working on home exterior" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/shurflow1.jpg" alt="Completed gutter installation showing clean finished appearance" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* Features: card grid */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Our Installation Process</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { title: '1. Free Assessment & Estimate', body: 'We measure gutter runs, evaluate fascia condition, assess drainage areas, and determine optimal downspout locations and sizing.' },
+              { title: '2. Old Gutter Removal', body: 'Existing gutters are removed and the fascia board is inspected for rot or damage before any new material is installed.' },
+              { title: '3. On-Site Fabrication', body: 'Using our portable roll-forming machine, we fabricate each run to the exact length needed — right in your driveway.' },
+              { title: '4. Correct Slope Installation', body: 'Gutters are installed with a 1/4-inch drop per 10 feet of run to ensure complete drainage with no standing water.' },
+              { title: '5. Downspout Placement', body: 'Downspouts are installed at assessed locations. Outlet extensions direct water away from the foundation.' },
+              { title: '6. Final Test & Cleanup', body: 'We test the system and clean up all debris before leaving — ready to perform from the first rain after installation.' },
+            ].map((f) => (
+              <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-start gap-2 mb-1">
+                  <span className="text-accent-mid font-bold text-base mt-0.5">✓</span>
+                  <h3 className="font-bold text-gray-900 text-sm">{f.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed pl-5">{f.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Secondary: image left, list right */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <Image src="/shurflow2.jpg" alt="Completed gutter system with protection installed on home" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">Add Gutter Protection</h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                New gutters are the ideal time to add a protection system that eliminates future
+                cleaning. We install both Gutter Cap and Shur Flow systems — ask about including
+                protection in your estimate.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  { href: '/gutters/gutter-cap', name: 'Gutter Cap System', desc: 'surface tension technology keeps leaves out permanently' },
+                  { href: '/gutters/shurflo', name: 'Shur Flow System', desc: 'micro-mesh filter with 40-year warranty' },
+                  { href: '/gutters/seamless-gutters', name: 'Seamless Gutters', desc: 'learn about our custom on-site fabricated gutter systems' },
+                ].map((item) => (
+                  <li key={item.href} className="flex items-start gap-3">
+                    <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                      <span className="text-accent text-xs font-bold">✓</span>
+                    </span>
+                    <div>
+                      <Link href={item.href} className="font-semibold text-accent hover:text-accent-dark">{item.name} →</Link>
+                      <span className="text-gray-600"> — {item.desc}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-accent-subtle">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
             Contact Suburban Construction for a free gutter installation estimate throughout the
@@ -161,15 +129,15 @@ export default function GutterInstallationPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

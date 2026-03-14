@@ -41,21 +41,21 @@ export default function StainFormulaFAQPage() {
             installation records and connect you with the appropriate AMI color formula.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6 mb-8">
             <h3 className="text-xl font-bold text-gray-900 mb-3">How to Get Your Stain Formula</h3>
             <ol className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">1</span>
+                <span className="bg-accent text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">1</span>
                 <p className="text-gray-700">
                   <span className="font-semibold">Call us</span> at{' '}
-                  <a href="tel:5633914000" className="text-amber-600 hover:underline">563-391-4000</a>
+                  <a href="tel:5633914000" className="text-accent hover:underline">563-391-4000</a>
                   {' '}or{' '}
-                  <a href="tel:18007173066" className="text-amber-600 hover:underline">1-800-717-3066</a>
+                  <a href="tel:18007173066" className="text-accent hover:underline">1-800-717-3066</a>
                   {' '}during business hours (Monday–Friday, 7:30 AM–4:30 PM).
                 </p>
               </li>
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">2</span>
+                <span className="bg-accent text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">2</span>
                 <p className="text-gray-700">
                   <span className="font-semibold">Have your original installation information</span> ready
                   if possible — the approximate year installed, the product type (vinyl siding, steel
@@ -63,7 +63,7 @@ export default function StainFormulaFAQPage() {
                 </p>
               </li>
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">3</span>
+                <span className="bg-accent text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">3</span>
                 <p className="text-gray-700">
                   <span className="font-semibold">We will look up the formula</span> from your
                   installation records or connect you with AMI directly for the specific product
@@ -100,36 +100,36 @@ export default function StainFormulaFAQPage() {
           </h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Clean the area to be touched up thoroughly before applying any paint or stain
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Apply touch-up paint on a dry day with moderate temperatures for best adhesion
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Use thin coats and allow to dry fully between applications
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               For vinyl siding, confirm the paint is formulated for vinyl surfaces
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               If the damage is extensive, consider whether a panel replacement is more appropriate
             </li>
           </ul>
 
           <p className="text-gray-600 leading-relaxed">
             For questions specific to your product or color, call us at{' '}
-            <a href="tel:5633914000" className="text-amber-600 hover:underline font-semibold">563-391-4000</a>.
+            <a href="tel:5633914000" className="text-accent hover:underline font-semibold">563-391-4000</a>.
             We are happy to assist.
           </p>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Need Help With Your Siding or Windows?
@@ -140,7 +140,7 @@ export default function StainFormulaFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Contact Us
           </Link>
@@ -148,7 +148,7 @@ export default function StainFormulaFAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

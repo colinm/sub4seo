@@ -10,12 +10,12 @@ export default function MobileCTABar() {
         href={PHONE_LOCAL_HREF}
         className="flex-1 flex items-center justify-center gap-2 py-3 text-white font-bold text-sm border-r border-gray-700"
       >
-        <Phone className="w-4 h-4 text-amber-400" />
+        <Phone className="w-4 h-4 text-accent-muted" />
         Call Now
       </a>
       <Link
         href="/contact"
-        className="flex-1 flex items-center justify-center py-3 bg-amber-500 text-slate-900 font-bold text-sm"
+        className="flex-1 flex items-center justify-center py-3 bg-accent text-white font-bold text-sm"
       >
         Free Estimate
       </Link>

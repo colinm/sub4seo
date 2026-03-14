@@ -6,7 +6,7 @@ function StarRating({ rating = 5 }: { rating?: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: rating }).map((_, i) => (
-        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+        <Star key={i} className="w-4 h-4 fill-accent-muted text-accent-muted" />
       ))}
     </div>
   )
@@ -49,7 +49,7 @@ export default function TestimonialsCarousel() {
         <div className="text-center mt-10">
           <Link
             href="/about/testimonials"
-            className="inline-block border-2 border-gray-300 hover:border-amber-500 text-gray-700 hover:text-amber-600 font-bold px-6 py-3 rounded transition-colors"
+            className="inline-block border-2 border-gray-300 hover:border-accent text-gray-700 hover:text-accent font-bold px-6 py-3 rounded transition-colors"
           >
             Read All Testimonials →
           </Link>

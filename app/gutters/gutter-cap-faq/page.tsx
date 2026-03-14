@@ -67,24 +67,24 @@ export default function GutterCapFAQPage() {
 
           <FAQAccordion items={faqs} />
 
-          <div className="mt-10 bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="mt-10 bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">See It in Action</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
               Watch our Gutter Cap video demonstration to see the surface tension principle in
               action, or visit our{' '}
-              <Link href="/gutters/gutter-cap" className="text-amber-600 hover:underline">
+              <Link href="/gutters/gutter-cap" className="text-accent hover:underline">
                 Gutter Cap product page
               </Link>{' '}
               for a full overview of the system.
             </p>
-            <Link href="/contact" className="text-amber-600 hover:underline font-medium">
+            <Link href="/contact" className="text-accent hover:underline font-medium">
               Request a free Gutter Cap estimate →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -92,7 +92,7 @@ export default function GutterCapFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -100,7 +100,7 @@ export default function GutterCapFAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

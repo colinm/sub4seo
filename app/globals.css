@@ -2,8 +2,41 @@
 
 :root {
   --brand-navy: #2a2e40;
-  --brand-amber: #f59e0b;
+
+  /* ─── Accent color system ───────────────────────────────────────────────
+     Change --accent (and its variants) here to retheme the entire site.
+     Current: royal blue #1d4ed8
+  ──────────────────────────────────────────────────────────────────────── */
+  --accent:        #1d4ed8;  /* primary CTA / buttons                     */
+  --accent-hover:  #2563eb;  /* button hover                              */
+  --accent-mid:    #2563eb;  /* icons, checkmarks on white                */
+  --accent-muted:  #60a5fa;  /* text/icons on dark backgrounds            */
+  --accent-light:  #93c5fd;  /* lighter text on dark backgrounds          */
+  --accent-dark:   #1e40af;  /* link hover, darker text                   */
+  --accent-subtle: #eff6ff;  /* section backgrounds                       */
+  --accent-xlight: #dbeafe;  /* lighter bg (hover over subtle)            */
+  --accent-faint:  #bfdbfe;  /* very light border                         */
 }
+
+/* ─── Accent utility classes ─────────────────────────────────────────────
+   Use these instead of Tailwind sky-* classes so one edit above
+   recolors the whole site.
+──────────────────────────────────────────────────────────────────────── */
+@utility bg-accent         { background-color: var(--accent); }
+@utility bg-accent-hover   { background-color: var(--accent-hover); }
+@utility bg-accent-subtle  { background-color: var(--accent-subtle); }
+@utility text-accent       { color: var(--accent); }
+@utility text-accent-dark  { color: var(--accent-dark); }
+@utility text-accent-mid   { color: var(--accent-mid); }
+@utility text-accent-muted { color: var(--accent-muted); }
+@utility text-accent-light { color: var(--accent-light); }
+@utility border-accent     { border-color: var(--accent); }
+@utility border-accent-muted { border-color: var(--accent-muted); }
+@utility ring-accent         { --tw-ring-color: var(--accent); }
+@utility bg-accent-xlight   { background-color: var(--accent-xlight); }
+@utility border-accent-faint { border-color: var(--accent-faint); }
+@utility fill-accent-muted   { fill: var(--accent-muted); }
+@utility text-accent-warm    { color: var(--accent-dark); }
 
 html {
   scroll-behavior: smooth;
@@ -48,15 +81,15 @@ body {
 }
 
 /* CTA button pulse animation */
-@keyframes pulse-amber {
+@keyframes pulse-accent {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+    box-shadow: 0 0 0 8px transparent;
   }
 }
 
 .btn-pulse {
-  animation: pulse-amber 2s infinite;
+  animation: pulse-accent 2s infinite;
 }

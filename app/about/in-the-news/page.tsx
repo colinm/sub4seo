@@ -58,9 +58,9 @@ export default function InTheNewsPage() {
               <div>
                 <p className="text-gray-700 font-semibold">Phone</p>
                 <p className="text-gray-600">
-                  <a href="tel:5633914000" className="text-amber-600 hover:underline">563-391-4000</a>
+                  <a href="tel:5633914000" className="text-accent hover:underline">563-391-4000</a>
                   {' '}or{' '}
-                  <a href="tel:18007173066" className="text-amber-600 hover:underline">1-800-717-3066</a>
+                  <a href="tel:18007173066" className="text-accent hover:underline">1-800-717-3066</a>
                 </p>
               </div>
               <div>
@@ -86,14 +86,14 @@ export default function InTheNewsPage() {
 
           <Link
             href="/about/testimonials"
-            className="text-amber-600 hover:text-amber-700 font-semibold underline"
+            className="text-accent hover:text-accent-dark font-semibold underline"
           >
             Read Customer Testimonials →
           </Link>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Contact Us
@@ -103,7 +103,7 @@ export default function InTheNewsPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -111,7 +111,7 @@ export default function InTheNewsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

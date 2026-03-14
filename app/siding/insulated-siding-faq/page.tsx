@@ -66,17 +66,17 @@ export default function InsulatedSidingFAQPage() {
 
           <FAQAccordion items={faqs} />
 
-          <div className="mt-10 bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="mt-10 bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">Learn More About Insulated Siding</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
               Visit our{' '}
-              <Link href="/siding/insulated-siding" className="text-amber-600 hover:underline">
+              <Link href="/siding/insulated-siding" className="text-accent hover:underline">
                 Insulated Siding product page
               </Link>{' '}
               for a detailed overview of how the EPS foam backing works and the full list of benefits.
               Or contact us to discuss whether insulated siding is the right choice for your home.
             </p>
-            <Link href="/contact" className="text-amber-600 hover:underline font-medium">
+            <Link href="/contact" className="text-accent hover:underline font-medium">
               Request a free estimate →
             </Link>
           </div>
@@ -93,14 +93,14 @@ export default function InsulatedSidingFAQPage() {
             href="/siding.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -109,7 +109,7 @@ export default function InsulatedSidingFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -117,7 +117,7 @@ export default function InsulatedSidingFAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

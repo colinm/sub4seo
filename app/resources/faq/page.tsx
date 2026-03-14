@@ -105,7 +105,7 @@ export default function FAQPage() {
               <Link
                 key={cat.href}
                 href={cat.href}
-                className="flex items-start gap-4 bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:border-amber-400 hover:shadow-md transition-all"
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:border-accent-muted hover:shadow-md transition-all"
               >
                 <span className="text-2xl flex-shrink-0">{cat.icon}</span>
                 <div>
@@ -123,7 +123,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Don&apos;t See Your Question?
@@ -135,7 +135,7 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+              className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
             >
               Contact Us
             </Link>
@@ -150,7 +150,7 @@ export default function FAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

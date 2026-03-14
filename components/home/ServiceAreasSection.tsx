@@ -24,10 +24,10 @@ export default function ServiceAreasSection() {
                 <Link
                   key={city.slug}
                   href={`/service-areas/${city.slug}`}
-                  className="flex items-center gap-2 p-3 bg-gray-50 hover:bg-amber-50 border border-gray-200 hover:border-amber-400 rounded-lg transition-colors group"
+                  className="flex items-center gap-2 p-3 bg-gray-50 hover:bg-accent-subtle border border-gray-200 hover:border-accent-muted rounded-lg transition-colors group"
                 >
-                  <MapPin className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-amber-700">
+                  <MapPin className="w-4 h-4 text-accent-mid flex-shrink-0" />
+                  <span className="text-sm font-medium text-gray-700 group-hover:text-accent-dark">
                     {city.name}, {city.stateAbbr}
                   </span>
                 </Link>
@@ -39,7 +39,7 @@ export default function ServiceAreasSection() {
             <div className="text-center mt-4">
               <Link
                 href="/service-areas"
-                className="inline-block text-amber-600 hover:text-amber-700 font-semibold text-sm"
+                className="inline-block text-accent hover:text-accent-dark font-semibold text-sm"
               >
                 View all service areas →
               </Link>

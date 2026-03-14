@@ -70,7 +70,7 @@ export default function ServicesGrid() {
               <div className="p-4">
                 <h3 className="font-bold text-gray-900 mb-2 flex items-center justify-between">
                   {service.title}
-                  <ArrowRight className="w-4 h-4 text-amber-500 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 text-accent-mid group-hover:translate-x-1 transition-transform" />
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
               </div>

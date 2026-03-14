@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Montserrat, Dancing_Script } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
@@ -19,6 +19,10 @@ const dancingScript = Dancing_Script({
   display: 'swap',
 })
 
+export const viewport: Viewport = {
+  themeColor: '#2a2e40',
+}
+
 export const metadata: Metadata = {
   title: {
     default: 'Suburban Construction | Replacement Windows, Siding & Doors | Quad Cities',
@@ -35,7 +39,6 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
-  themeColor: '#2a2e40',
   openGraph: {
     type: 'website',
     siteName: 'Suburban Construction',

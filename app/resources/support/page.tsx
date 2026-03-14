@@ -28,28 +28,28 @@ export default function SupportPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <Phone className="w-8 h-8 text-amber-500 mx-auto mb-3" />
+              <Phone className="w-8 h-8 text-accent-mid mx-auto mb-3" />
               <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
-              <a href="tel:+15633914000" className="text-amber-600 hover:text-amber-700 block font-medium">
+              <a href="tel:+15633914000" className="text-accent hover:text-accent-dark block font-medium">
                 563-391-4000
               </a>
-              <a href="tel:+18007173066" className="text-amber-600 hover:text-amber-700 block font-medium text-sm">
+              <a href="tel:+18007173066" className="text-accent hover:text-accent-dark block font-medium text-sm">
                 1-800-717-3066
               </a>
               <p className="text-gray-500 text-xs mt-2">Mon–Fri 7:30AM–4:30PM</p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <Mail className="w-8 h-8 text-amber-500 mx-auto mb-3" />
+              <Mail className="w-8 h-8 text-accent-mid mx-auto mb-3" />
               <h3 className="font-bold text-gray-900 mb-2">Submit a Request</h3>
-              <Link href="/contact" className="text-amber-600 hover:text-amber-700 font-medium">
+              <Link href="/contact" className="text-accent hover:text-accent-dark font-medium">
                 Online Contact Form
               </Link>
               <p className="text-gray-500 text-xs mt-2">We typically respond within 1 business day</p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <MapPin className="w-8 h-8 text-amber-500 mx-auto mb-3" />
+              <MapPin className="w-8 h-8 text-accent-mid mx-auto mb-3" />
               <h3 className="font-bold text-gray-900 mb-2">Visit Us</h3>
               <p className="text-gray-600 text-sm">
                 3602 North Harrison<br />
@@ -71,13 +71,13 @@ export default function SupportPage() {
               'Scheduling a post-installation inspection',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-gray-700">
-                <span className="text-amber-500 mt-1">→</span>
+                <span className="text-accent-mid mt-1">→</span>
                 {item}
               </li>
             ))}
           </ul>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <p className="text-gray-700 text-sm">
               <strong>Note:</strong> Suburban Construction handles all warranty claims with Associated
               Materials Inc. (AMI) and other manufacturers on your behalf. When you call us about a
@@ -89,7 +89,7 @@ export default function SupportPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

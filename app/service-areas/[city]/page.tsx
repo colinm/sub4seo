@@ -113,9 +113,9 @@ export default async function CityPage({ params }: Props) {
               <Link
                 key={svc.title}
                 href={svc.href}
-                className="bg-white rounded-lg p-5 border border-gray-200 hover:border-amber-400 hover:shadow-md transition-all group"
+                className="bg-white rounded-lg p-5 border border-gray-200 hover:border-accent-muted hover:shadow-md transition-all group"
               >
-                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-amber-700">{svc.title}</h3>
+                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-accent-dark">{svc.title}</h3>
                 <p className="text-sm text-gray-600">{svc.desc}</p>
               </Link>
             ))}
@@ -135,7 +135,7 @@ export default async function CityPage({ params }: Props) {
                 <div key={t.id} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                   <div className="flex gap-0.5 mb-3">
                     {[1,2,3,4,5].map((s) => (
-                      <Star key={s} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      <Star key={s} className="w-4 h-4 fill-accent-muted text-accent-muted" />
                     ))}
                   </div>
                   <blockquote className="text-gray-700 mb-3 italic">&ldquo;{t.quote}&rdquo;</blockquote>
@@ -144,7 +144,7 @@ export default async function CityPage({ params }: Props) {
               ))}
             </div>
             <div className="text-center mt-6">
-              <Link href="/about/testimonials" className="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+              <Link href="/about/testimonials" className="text-accent hover:text-accent-dark font-semibold text-sm">
                 Read all testimonials →
               </Link>
             </div>
@@ -164,7 +164,7 @@ export default async function CityPage({ params }: Props) {
           <LeadCaptureForm prefilledCity={city.name} />
           <p className="text-gray-500 text-sm mt-4">
             Or call us:{' '}
-            <a href="tel:+15633914000" className="text-amber-400 hover:text-amber-300 font-semibold">
+            <a href="tel:+15633914000" className="text-accent-muted hover:text-accent-light font-semibold">
               563-391-4000
             </a>
           </p>
@@ -181,7 +181,7 @@ export default async function CityPage({ params }: Props) {
                 <Link
                   key={nearby.slug}
                   href={`/service-areas/${nearby.slug}`}
-                  className="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-full hover:border-amber-400 hover:text-amber-700 transition-colors text-sm text-gray-600"
+                  className="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-full hover:border-accent-muted hover:text-accent-dark transition-colors text-sm text-gray-600"
                 >
                   <MapPin className="w-3 h-3" />
                   {nearby.name}, {nearby.stateAbbr}
@@ -189,7 +189,7 @@ export default async function CityPage({ params }: Props) {
               ))}
               <Link
                 href="/service-areas"
-                className="flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full text-amber-700 text-sm font-medium hover:bg-amber-100 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-accent-subtle border border-accent-faint rounded-full text-accent-dark text-sm font-medium hover:bg-accent-xlight transition-colors"
               >
                 View all service areas →
               </Link>
@@ -199,7 +199,7 @@ export default async function CityPage({ params }: Props) {
       )}
 
       {/* Contact CTA */}
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Serving {city.name} Since 1985
@@ -210,14 +210,14 @@ export default async function CityPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+15633914000"
-              className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+              className="flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
             >
               <Phone className="w-4 h-4" />
               563-391-4000
             </a>
             <Link
               href="/contact"
-              className="border-2 border-gray-300 hover:border-amber-500 text-gray-700 hover:text-amber-600 font-bold px-8 py-3 rounded transition-colors"
+              className="border-2 border-gray-300 hover:border-accent text-gray-700 hover:text-accent font-bold px-8 py-3 rounded transition-colors"
             >
               Online Request
             </Link>

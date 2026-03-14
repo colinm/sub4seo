@@ -41,11 +41,11 @@ export default function ReferralProgramPage() {
             If they complete a project, you earn a reward.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6 mb-8">
             <h3 className="text-xl font-bold text-gray-900 mb-4">How It Works</h3>
             <ol className="space-y-4">
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">1</span>
+                <span className="bg-accent text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">1</span>
                 <div>
                   <p className="font-semibold text-gray-800">Tell someone about us</p>
                   <p className="text-gray-600 text-sm">
@@ -55,7 +55,7 @@ export default function ReferralProgramPage() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">2</span>
+                <span className="bg-accent text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">2</span>
                 <div>
                   <p className="font-semibold text-gray-800">They mention your name when they call</p>
                   <p className="text-gray-600 text-sm">
@@ -65,7 +65,7 @@ export default function ReferralProgramPage() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">3</span>
+                <span className="bg-accent text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">3</span>
                 <div>
                   <p className="font-semibold text-gray-800">They complete a project</p>
                   <p className="text-gray-600 text-sm">
@@ -75,7 +75,7 @@ export default function ReferralProgramPage() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="bg-amber-500 text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">4</span>
+                <span className="bg-accent text-white font-bold w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm mt-0.5">4</span>
                 <div>
                   <p className="font-semibold text-gray-800">You receive your reward</p>
                   <p className="text-gray-600 text-sm">
@@ -96,27 +96,27 @@ export default function ReferralProgramPage() {
           </p>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Professional installation with no mess left behind
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Honest, no-pressure sales process from start to finish
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               High-quality AMI / Freedom Series products that hold up over time
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Lifetime workmanship guarantee — real warranty service, not just words
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Responsive service even years after the original project
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               A local, family-owned company that actually cares about its reputation
             </li>
           </ul>
@@ -124,15 +124,15 @@ export default function ReferralProgramPage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             For more details about the referral program or to let us know about a referral you
             have already made, call us at{' '}
-            <a href="tel:5633914000" className="text-amber-600 hover:underline font-semibold">563-391-4000</a>
+            <a href="tel:5633914000" className="text-accent hover:underline font-semibold">563-391-4000</a>
             {' '}or{' '}
-            <a href="tel:18007173066" className="text-amber-600 hover:underline font-semibold">1-800-717-3066</a>
+            <a href="tel:18007173066" className="text-accent hover:underline font-semibold">1-800-717-3066</a>
             {' '}during business hours (Monday–Friday, 7:30 AM–4:30 PM).
           </p>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Have Someone to Refer?
@@ -143,7 +143,7 @@ export default function ReferralProgramPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Contact Us
           </Link>
@@ -151,7 +151,7 @@ export default function ReferralProgramPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

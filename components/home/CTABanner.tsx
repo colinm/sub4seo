@@ -20,7 +20,7 @@ export default function CTABanner() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a
             href={PHONE_LOCAL_HREF}
-            className="flex items-center gap-2 text-3xl font-bold text-amber-400 hover:text-amber-300 transition-colors"
+            className="flex items-center gap-2 text-3xl font-bold text-accent-muted hover:text-accent-light transition-colors"
           >
             <Phone className="w-7 h-7" />
             {PHONE_LOCAL}
@@ -36,7 +36,7 @@ export default function CTABanner() {
 
         <Link
           href="/contact"
-          className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-10 py-4 rounded text-lg transition-colors"
+          className="inline-block bg-accent hover:bg-accent-hover text-white font-bold px-10 py-4 rounded text-lg transition-colors"
         >
           Schedule a Free Estimate Online
         </Link>

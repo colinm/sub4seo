@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion, { type FAQItem } from '@/components/shared/FAQAccordion'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/windows/replacement-windows-faq'])
@@ -63,42 +64,66 @@ export default function ReplacementWindowsFAQPage() {
         ctaText="Get a Free Estimate"
       />
 
+      {/* Intro: text left, image right */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Common Questions About Window Replacement
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            We&apos;ve been answering questions about replacement windows since 1985. Below are the most
-            common ones. If you don&apos;t find the answer you&apos;re looking for, call us or request a
-            free estimate — we&apos;re happy to talk through any question without pressure.
-          </p>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Common Questions About Window Replacement
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                We&apos;ve been answering questions about replacement windows since 1985. Below are the most
+                common ones. If you don&apos;t find the answer you&apos;re looking for, call us or request a
+                free estimate — we&apos;re happy to talk through any question without pressure.
+              </p>
+            </div>
+            <Image src="/window2.jpg" alt="Replacement windows installed in Quad Cities home" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          </div>
 
+          {/* Photo strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
+            <Image src="/window2.jpg" alt="Interior view of replacement window" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/double-hung.jpg" alt="Double hung replacement window" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/triple-pane-glass.jpg" alt="Triple pane glass system" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Accordion */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
           <FAQAccordion items={faqs} />
 
-          <div className="mt-10 bg-amber-50 border border-amber-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Have More Questions?</h3>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              Our team is available by phone at{' '}
-              <a href="tel:5633914000" className="text-amber-600 hover:underline font-medium">
-                563-391-4000
-              </a>{' '}
-              or{' '}
-              <a href="tel:18007173066" className="text-amber-600 hover:underline font-medium">
-                1-800-717-3066
-              </a>
-              . You can also visit our showroom at 3602 North Harrison Street, Davenport, Iowa — open
-              Monday through Friday, 7:30 AM to 4:30 PM.
-            </p>
-            <Link href="/contact" className="text-amber-600 hover:underline font-medium">
-              Send us a message →
+          <div className="mt-10 bg-accent-subtle border border-accent-faint rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Have More Questions?</h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                Our team is available by phone at{' '}
+                <a href="tel:5633914000" className="text-accent hover:text-accent-dark font-medium">
+                  563-391-4000
+                </a>{' '}
+                or{' '}
+                <a href="tel:18007173066" className="text-accent hover:text-accent-dark font-medium">
+                  1-800-717-3066
+                </a>
+                . You can also visit our showroom at 3602 North Harrison Street, Davenport, Iowa — open
+                Monday through Friday, 7:30 AM to 4:30 PM.
+              </p>
+              <Link href="/contact" className="text-accent hover:text-accent-dark font-medium">
+                Send us a message →
+              </Link>
+            </div>
+            <Link href="/contact" className="whitespace-nowrap bg-accent hover:bg-accent-hover text-white font-bold px-5 py-2.5 rounded transition-colors text-sm">
+              Contact Us →
             </Link>
           </div>
         </div>
       </section>
 
+      {/* PDF download */}
       <section className="py-6 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Download Our Windows Brochure</p>
             <p className="text-sm text-gray-600">Full product catalog with styles, options, and specifications</p>
@@ -107,15 +132,15 @@ export default function ReplacementWindowsFAQPage() {
             href="/windows.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-12 bg-accent-subtle">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
             Schedule a free, no-pressure in-home estimate. We serve Davenport, Bettendorf, Moline,
@@ -123,15 +148,15 @@ export default function ReplacementWindowsFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

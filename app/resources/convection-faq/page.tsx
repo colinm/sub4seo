@@ -71,7 +71,7 @@ export default function ConvectionFAQPage() {
 
           <FAQAccordion items={convectionFaqs} />
 
-          <div className="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-5">
+          <div className="mt-8 bg-accent-subtle border border-accent-faint rounded-lg p-5">
             <h3 className="font-bold text-gray-900 mb-2">Interested in Triple Pane Krypton Windows?</h3>
             <p className="text-gray-600 text-sm mb-3">
               Suburban Construction specializes in triple pane krypton glass window installations —
@@ -79,7 +79,7 @@ export default function ConvectionFAQPage() {
             </p>
             <Link
               href="/windows/krypton"
-              className="text-amber-600 hover:text-amber-700 font-semibold underline text-sm"
+              className="text-accent hover:text-accent-dark font-semibold underline text-sm"
             >
               Learn About Triple Pane Krypton Windows →
             </Link>
@@ -87,7 +87,7 @@ export default function ConvectionFAQPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Ready to Upgrade Your Windows?
@@ -98,7 +98,7 @@ export default function ConvectionFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -106,7 +106,7 @@ export default function ConvectionFAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

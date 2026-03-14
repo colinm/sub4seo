@@ -40,7 +40,7 @@ export default function PageHero({
           <nav className="flex justify-center mb-4" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-sm text-gray-300">
               <li>
-                <Link href="/" className="hover:text-amber-400 transition-colors">
+                <Link href="/" className="hover:text-accent-muted transition-colors">
                   Home
                 </Link>
               </li>
@@ -48,7 +48,7 @@ export default function PageHero({
                 <li key={i} className="flex items-center gap-2">
                   <span>/</span>
                   {crumb.href ? (
-                    <Link href={crumb.href} className="hover:text-amber-400 transition-colors">
+                    <Link href={crumb.href} className="hover:text-accent-muted transition-colors">
                       {crumb.label}
                     </Link>
                   ) : (
@@ -69,7 +69,7 @@ export default function PageHero({
         {ctaText && (
           <Link
             href={ctaHref}
-            className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors text-base"
+            className="inline-block bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors text-base"
           >
             {ctaText}
           </Link>

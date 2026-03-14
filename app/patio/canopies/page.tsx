@@ -48,27 +48,27 @@ export default function CanopiesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Canopy Applications</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Freestanding patio shade structures over decks and patios
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Entryway canopies over commercial or residential doors
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Pool deck shade canopies for outdoor entertaining areas
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Walkway covers and carport canopies
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Outdoor dining and event spaces at restaurants and venues
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Pergola fabric tops and replacement covers
             </li>
           </ul>
@@ -76,36 +76,36 @@ export default function CanopiesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Features & Options</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Custom sizing — designed to fit your specific space dimensions
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Solution-dyed acrylic fabric — fade resistant, mildew resistant, UV blocking
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Wide range of fabric colors and patterns
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Aluminum frame construction in powder-coat colors to match your home
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Post-mounted configurations that don&apos;t require wall attachment
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Removable or retractable fabric panels for seasonal storage
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Professional installation with proper anchoring for wind resistance
             </li>
           </ul>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">
               Not Sure Which Product You Need?
             </h3>
@@ -115,14 +115,14 @@ export default function CanopiesPage() {
               recommend the product that best fits your goals — whether that&apos;s a wall-mounted
               awning, a freestanding canopy, or a combination of products.
             </p>
-            <Link href="/contact" className="text-amber-600 hover:underline font-medium">
+            <Link href="/contact" className="text-accent hover:underline font-medium">
               Schedule a free estimate →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -130,7 +130,7 @@ export default function CanopiesPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -138,7 +138,7 @@ export default function CanopiesPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

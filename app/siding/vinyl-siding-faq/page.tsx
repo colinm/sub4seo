@@ -62,7 +62,7 @@ export default function VinylSidingFAQPage() {
           <p className="text-gray-600 leading-relaxed mb-8">
             We&apos;ve been answering questions about vinyl siding for nearly four decades. Here are
             the most common ones. If you have a question that isn&apos;t covered here, please{' '}
-            <Link href="/contact" className="text-amber-600 hover:underline">contact us</Link> —
+            <Link href="/contact" className="text-accent hover:underline">contact us</Link> —
             we&apos;re always happy to help.
           </p>
 
@@ -80,14 +80,14 @@ export default function VinylSidingFAQPage() {
             href="/siding.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -96,7 +96,7 @@ export default function VinylSidingFAQPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -104,7 +104,7 @@ export default function VinylSidingFAQPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

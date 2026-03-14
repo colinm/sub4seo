@@ -30,8 +30,8 @@ export default function WarrantyPage() {
       <section className="py-12">
         <div className="max-w-4xl mx-auto px-4">
           {/* Lifetime Guarantee */}
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-10 text-center">
-            <Shield className="w-12 h-12 text-amber-500 mx-auto mb-4" />
+          <div className="bg-accent-subtle border border-accent-faint rounded-xl p-8 mb-10 text-center">
+            <Shield className="w-12 h-12 text-accent-mid mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Lifetime Workmanship Guarantee
             </h2>
@@ -52,7 +52,7 @@ export default function WarrantyPage() {
               'Flashing and trim work performed by our crews',
             ].map((item) => (
               <li key={item} className="flex items-start gap-2 text-gray-700">
-                <span className="text-amber-500 mt-1">✓</span>
+                <span className="text-accent-mid mt-1">✓</span>
                 {item}
               </li>
             ))}
@@ -72,10 +72,10 @@ export default function WarrantyPage() {
                 href={doc.file}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition-colors group"
+                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
               >
-                <Download className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span className="text-gray-700 group-hover:text-amber-700 text-sm font-medium">
+                <Download className="w-5 h-5 text-accent-mid flex-shrink-0" />
+                <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
                   {doc.label}
                 </span>
               </a>
@@ -86,11 +86,11 @@ export default function WarrantyPage() {
             <h3 className="font-bold text-gray-900 mb-2">How to Make a Warranty Claim</h3>
             <p className="text-gray-600 text-sm mb-4">
               Simply call us at{' '}
-              <a href="tel:+15633914000" className="text-amber-600 font-semibold">
+              <a href="tel:+15633914000" className="text-accent font-semibold">
                 563-391-4000
               </a>{' '}
               or use our{' '}
-              <Link href="/contact" className="text-amber-600 font-semibold hover:underline">
+              <Link href="/contact" className="text-accent font-semibold hover:underline">
                 online contact form
               </Link>
               . Describe the issue and we&apos;ll schedule an inspection at no charge. We handle
@@ -101,7 +101,7 @@ export default function WarrantyPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

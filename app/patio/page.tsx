@@ -73,13 +73,13 @@ export default function PatioPage() {
               <Link
                 key={p.href}
                 href={p.href}
-                className="block border border-gray-200 rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group"
+                className="block border border-gray-200 rounded-lg p-5 hover:border-accent-muted hover:shadow-md transition-all group"
               >
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-amber-600 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-accent mb-2">
                   {p.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{p.description}</p>
-                <span className="inline-block mt-3 text-amber-500 text-sm font-medium group-hover:text-amber-600">
+                <span className="inline-block mt-3 text-accent-mid text-sm font-medium group-hover:text-accent">
                   Learn more →
                 </span>
               </Link>
@@ -89,30 +89,30 @@ export default function PatioPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Suburban Construction?</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Serving the Quad Cities since 1985 — decades of local outdoor product expertise
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Every product custom-sized to fit your specific space
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Professional installation crew with experience in all patio product types
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Free in-home estimate with no obligation
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Lifetime workmanship guarantee on all installations
             </li>
           </ul>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -121,7 +121,7 @@ export default function PatioPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -129,7 +129,7 @@ export default function PatioPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

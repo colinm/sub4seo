@@ -59,10 +59,10 @@ export default function DownloadsPage() {
                     href={file.file}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition-colors group"
+                    className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
                   >
-                    <Download className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                    <span className="text-gray-700 group-hover:text-amber-700 text-sm font-medium">
+                    <Download className="w-5 h-5 text-accent-mid flex-shrink-0" />
+                    <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
                       {file.label}
                     </span>
                   </a>

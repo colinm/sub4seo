@@ -62,7 +62,7 @@ export default function ContactForm({ prefilledCity }: { prefilledCity?: string 
   }
 
   const inputClass =
-    'w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500'
+    'w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent'
   const labelClass = 'block text-sm font-medium text-gray-700 mb-1'
   const errorClass = 'text-red-500 text-xs mt-1'
 
@@ -161,7 +161,7 @@ export default function ContactForm({ prefilledCity }: { prefilledCity?: string 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-4 w-full bg-amber-500 hover:bg-amber-400 disabled:bg-amber-300 text-slate-900 font-bold py-3 rounded transition-colors text-base"
+        className="mt-4 w-full bg-accent hover:bg-accent-hover disabled:bg-accent-muted text-white font-bold py-3 rounded transition-colors text-base"
       >
         {isSubmitting ? 'Sending...' : 'Get My Free Estimate'}
       </button>

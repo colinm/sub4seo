@@ -96,7 +96,7 @@ export default function Footer() {
             <ul className="space-y-1.5">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-400 hover:text-amber-400 transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-accent-muted transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -117,12 +117,12 @@ export default function Footer() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-gray-400 hover:text-amber-400 transition-colors"
+                      className="text-sm text-gray-400 hover:text-accent-muted transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
-                    <Link href={link.href} className="text-sm text-gray-400 hover:text-amber-400 transition-colors">
+                    <Link href={link.href} className="text-sm text-gray-400 hover:text-accent-muted transition-colors">
                       {link.label}
                     </Link>
                   )}
@@ -135,13 +135,13 @@ export default function Footer() {
             <ul className="space-y-1.5">
               {cityLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-400 hover:text-amber-400 transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-accent-muted transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/service-areas" className="text-sm text-amber-400 hover:text-amber-300 transition-colors">
+                <Link href="/service-areas" className="text-sm text-accent-muted hover:text-accent-light transition-colors">
                   View All Service Areas →
                 </Link>
               </li>
@@ -155,21 +155,21 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm">
-                <MapPin className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-accent-muted mt-0.5 flex-shrink-0" />
                 <span>
                   3602 North Harrison<br />
                   Davenport, Iowa 52806
                 </span>
               </li>
               <li className="flex items-center gap-2 text-sm">
-                <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <a href={PHONE_LOCAL_HREF} className="hover:text-amber-400 transition-colors">
+                <Phone className="w-4 h-4 text-accent-muted flex-shrink-0" />
+                <a href={PHONE_LOCAL_HREF} className="hover:text-accent-muted transition-colors">
                   {PHONE_LOCAL}
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm">
-                <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <a href={PHONE_TOLL_FREE_HREF} className="hover:text-amber-400 transition-colors">
+                <Phone className="w-4 h-4 text-accent-muted flex-shrink-0" />
+                <a href={PHONE_TOLL_FREE_HREF} className="hover:text-accent-muted transition-colors">
                   {PHONE_TOLL_FREE} (Toll Free)
                 </a>
               </li>
@@ -180,7 +180,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1 text-sm">
               <li className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <Clock className="w-4 h-4 text-accent-muted flex-shrink-0" />
                 <span>Mon–Fri: 7:30AM – 4:30PM</span>
               </li>
               <li className="text-gray-400 text-sm pl-6">Sat: By Appointment</li>
@@ -189,7 +189,7 @@ export default function Footer() {
 
             <Link
               href="/contact"
-              className="mt-4 block w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm py-2.5 rounded transition-colors"
+              className="mt-4 block w-full text-center bg-accent hover:bg-accent-hover text-white font-bold text-sm py-2.5 rounded transition-colors"
             >
               Get a Free Estimate
             </Link>

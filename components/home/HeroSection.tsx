@@ -9,13 +9,13 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto py-24">
         <h1 className=" text-4xl md:text-5xl lg:text-6xl mb-4 text-white drop-shadow-lg">
-          Suburban <span className="pe-0.5 italic text-amber-200">is</span> the
+          Suburban <span className="pe-0.5 italic text-accent">is</span> the
           company that goes a step beyond!
         </h1>
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
           Replacement Windows, Siding & Doors
           <br />
-          <span className="text-amber-300">in the Quad Cities</span>
+          <span className="text-accent-light">in the Quad Cities</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
           Family owned &amp; operated since 1985. Over 35,000 installations
@@ -24,13 +24,13 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-4 rounded text-base transition-colors btn-pulse"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded text-base transition-colors btn-pulse"
           >
             Schedule a Free Estimate
           </Link>
           <a
             href={PHONE_TOLL_FREE_HREF}
-            className="border-2 border-white hover:border-amber-400 hover:text-amber-400 text-white font-bold px-8 py-4 rounded text-base transition-colors"
+            className="border-2 border-white hover:border-accent-muted hover:text-accent-muted text-white font-bold px-8 py-4 rounded text-base transition-colors"
           >
             Call {PHONE_TOLL_FREE}
           </a>

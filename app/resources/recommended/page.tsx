@@ -83,7 +83,7 @@ export default function RecommendedPage() {
               <ul className="space-y-2">
                 {section.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-700">
-                    <span className="text-amber-500 mt-1 flex-shrink-0">✓</span>
+                    <span className="text-accent-mid mt-1 flex-shrink-0">✓</span>
                     {item}
                   </li>
                 ))}
@@ -91,7 +91,7 @@ export default function RecommendedPage() {
             </div>
           ))}
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mt-8">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6 mt-8">
             <h3 className="font-bold text-gray-900 mb-2">Have a Warranty Issue?</h3>
             <p className="text-gray-700 text-sm mb-4">
               If you notice a problem with any of your Suburban Construction products — cracked glass,
@@ -100,7 +100,7 @@ export default function RecommendedPage() {
             </p>
             <Link
               href="/contact"
-              className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm"
+              className="bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm"
             >
               Contact Us
             </Link>
@@ -109,7 +109,7 @@ export default function RecommendedPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

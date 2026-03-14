@@ -37,7 +37,7 @@ function StatItem({ end, suffix, label, display, active }: typeof stats[0] & { a
 
   return (
     <div>
-      <div className="text-4xl md:text-5xl font-bold text-amber-400 mb-2">{formatted}</div>
+      <div className="text-4xl md:text-5xl font-bold text-accent-muted mb-2">{formatted}</div>
       <div className="text-gray-400 text-sm uppercase tracking-wide">{label}</div>
     </div>
   )

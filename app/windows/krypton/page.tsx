@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/windows/krypton'])
@@ -20,35 +21,52 @@ export default function KryptonWindowsPage() {
         ctaText="Get a Free Estimate"
       />
 
+      {/* Intro: text left, image right */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Introducing the FreedomMaxxx 10 Glass System
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            The FreedomMaxxx 10 is the ultimate glass system — 300% more energy-efficient than ordinary
-            Low-E glass. This isn&apos;t a marginal upgrade. It represents a fundamental rethinking of what
-            a window glass system can accomplish for a homeowner&apos;s comfort and utility bills.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            The system combines two panes of multiple-layer vacuum-deposition Low-E glass with an interior
-            glass pane and two krypton gas chambers. Each component plays a specific role in blocking heat
-            transfer: the Low-E coatings reflect radiant energy, the triple-pane construction creates multiple
-            insulating barriers, and the krypton gas — which insulates 50% better than argon — fills the
-            spaces between those barriers.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            The result is a window glass system that outperforms everything else on the market and delivers
-            real, measurable energy savings to Quad Cities homeowners who deal with both bitter Iowa winters
-            and hot, humid summers.
-          </p>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Introducing the FreedomMaxxx 10 Glass System
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                The FreedomMaxxx 10 is the ultimate glass system — 300% more energy-efficient than ordinary
+                Low-E glass. This isn&apos;t a marginal upgrade. It represents a fundamental rethinking of what
+                a window glass system can accomplish for a homeowner&apos;s comfort and utility bills.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                The system combines two panes of multiple-layer vacuum-deposition Low-E glass with an interior
+                glass pane and two krypton gas chambers. Each component plays a specific role in blocking heat
+                transfer: the Low-E coatings reflect radiant energy, the triple-pane construction creates multiple
+                insulating barriers, and the krypton gas — which insulates 50% better than argon — fills the
+                spaces between those barriers.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                The result is a window glass system that outperforms everything else on the market and delivers
+                real, measurable energy savings to Quad Cities homeowners who deal with both bitter Iowa winters
+                and hot, humid summers.
+              </p>
+            </div>
+            <Image src="/triple-pane-glass.jpg" alt="Triple pane krypton glass system cross-section showing insulating layers" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Glass Quality Is Everything</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          {/* Photo strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <Image src="/freedommaxxlowehp.jpg" alt="FreedomMaxxx Low-E HP glass system" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/mult-chambered-sash.jpg" alt="Multi-chambered sash detail showing insulation performance" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/window2.jpg" alt="Replacement window with triple pane glass installed" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Features: card grid */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Why Glass Quality Is Everything</h2>
+          <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-3xl mx-auto">
             Here is a fact that most homeowners don&apos;t realize: nearly 50% of a home&apos;s energy
             dollars are lost through poorly insulated windows. And consider that 80% of a window is glass —
-            not frame. The glass is where energy is won or lost. That&apos;s why, when you invest in
-            replacement windows, the quality of the glass system should be your top priority.
+            not frame. The glass is where energy is won or lost.
           </p>
 
           {/* YouTube embed */}
@@ -62,75 +80,57 @@ export default function KryptonWindowsPage() {
             />
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Performance Metrics Explained</h2>
-
-          <div className="space-y-6 mb-8">
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Improved Thermal Performance</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Krypton gas insulates 50% better than argon. Combined with three panes of glass, the
-                FreedomMaxxx system creates a thermal barrier that dramatically slows the movement of heat
-                in and out of your home in every season.
-              </p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">U-Factor</h3>
-              <p className="text-gray-600 leading-relaxed">
-                U-Factor measures how quickly a window transfers heat — lower is better. The FreedomMaxxx 10
-                outperforms a standard clear glass unit by 70%. That means 70% less heat escaping through
-                your windows on a cold January night in Davenport.
-              </p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">R-Value</h3>
-              <p className="text-gray-600 leading-relaxed">
-                R-Value measures resistance to heat flow — higher is better. The FreedomMaxxx 10 is 80%
-                more energy efficient than a standard double-paned unit. For context, most replacement
-                windows sold today are double-pane. This system leaves them far behind.
-              </p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Solar Heat Gain Coefficient (SHGC)</h3>
-              <p className="text-gray-600 leading-relaxed">
-                SHGC measures how much solar heat passes through the glass — lower values are better for
-                cooling-dominated climates. The FreedomMaxxx 10 outperforms a standard clear glass unit by
-                56%, significantly reducing the amount of solar heat that enters your home during those
-                hot Quad Cities summers.
-              </p>
-            </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Performance Metrics Explained</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { title: 'Improved Thermal Performance', body: 'Krypton gas insulates 50% better than argon. Combined with three panes, the FreedomMaxxx dramatically slows heat movement in every season.' },
+              { title: 'U-Factor', body: 'U-Factor measures how quickly a window transfers heat — lower is better. The FreedomMaxxx 10 outperforms standard clear glass by 70%.' },
+              { title: 'R-Value', body: 'R-Value measures resistance to heat flow — higher is better. The FreedomMaxxx 10 is 80% more efficient than a standard double-paned unit.' },
+              { title: 'Solar Heat Gain (SHGC)', body: 'SHGC measures how much solar heat passes through — lower is better for cooling. FreedomMaxxx 10 outperforms standard clear glass by 56%.' },
+            ].map((f) => (
+              <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-start gap-2 mb-1">
+                  <span className="text-accent-mid font-bold text-base mt-0.5">✓</span>
+                  <h3 className="font-bold text-gray-900 text-sm">{f.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed pl-5">{f.body}</p>
+              </div>
+            ))}
           </div>
-
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Available on All Window Styles</h2>
-          <ul className="space-y-2 mb-8">
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/windows/single-hung" className="text-amber-600 hover:underline">Single Hung Windows</Link>
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/windows/double-hung" className="text-amber-600 hover:underline">Double Hung Windows</Link>
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/windows/slider" className="text-amber-600 hover:underline">Slider / Glider Windows</Link>
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/windows/casement" className="text-amber-600 hover:underline">Casement & Awning Windows</Link>
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              <Link href="/windows/basement" className="text-amber-600 hover:underline">Basement Windows</Link>
-            </li>
-          </ul>
         </div>
       </section>
 
+      {/* Secondary: image left, list right */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <Image src="/mult-chambered-sash.jpg" alt="Multi-chambered sash detail" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-5">Available on All Window Styles</h2>
+              <ul className="space-y-4">
+                {[
+                  { label: 'Single Hung Windows', href: '/windows/single-hung' },
+                  { label: 'Double Hung Windows', href: '/windows/double-hung' },
+                  { label: 'Slider / Glider Windows', href: '/windows/slider' },
+                  { label: 'Casement & Awning Windows', href: '/windows/casement' },
+                  { label: 'Basement Windows', href: '/windows/basement' },
+                ].map((item) => (
+                  <li key={item.href} className="flex items-start gap-3">
+                    <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                      <span className="text-accent text-xs font-bold">✓</span>
+                    </span>
+                    <Link href={item.href} className="font-semibold text-accent hover:text-accent-dark">{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PDF download */}
       <section className="py-6 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Download Our Windows Brochure</p>
             <p className="text-sm text-gray-600">Full product catalog with styles, options, and specifications</p>
@@ -139,15 +139,15 @@ export default function KryptonWindowsPage() {
             href="/windows.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-12 bg-accent-subtle">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
             Ask about the FreedomMaxxx 10 upgrade when you request your free estimate. Our team will
@@ -156,15 +156,15 @@ export default function KryptonWindowsPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

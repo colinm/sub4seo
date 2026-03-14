@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'brand-navy': '#2a2e40',
-        'brand-amber': '#f59e0b',
+        'brand-accent': '#1d4ed8',
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'sans-serif'],

@@ -66,7 +66,7 @@ export default function Navbar() {
             {/* Phone */}
             <a
               href={PHONE_TOLL_FREE_HREF}
-              className="flex items-center gap-1 text-amber-400 font-semibold text-sm px-3 py-2 hover:text-amber-300 transition-colors"
+              className="flex items-center gap-1 text-accent-muted font-semibold text-sm px-3 py-2 hover:text-accent-light transition-colors"
             >
               <Phone className="w-4 h-4" />
               {PHONE_TOLL_FREE}
@@ -76,14 +76,14 @@ export default function Navbar() {
             {navDropdowns.map((dropdown) => (
               <div key={dropdown.label} className="relative group">
                 <button
-                  className="flex items-center gap-1 px-3 py-5 text-white text-sm font-medium hover:text-amber-400 transition-colors uppercase tracking-wide"
+                  className="flex items-center gap-1 px-3 py-5 text-white text-sm font-medium hover:text-accent-muted transition-colors uppercase tracking-wide"
                   aria-haspopup="true"
                 >
                   {dropdown.label}
                   <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
                 </button>
                 <ul
-                  className="absolute top-full left-0 min-w-[220px] bg-brand-navy border-t-2 border-amber-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl z-50 py-1"
+                  className="absolute top-full left-0 min-w-[220px] bg-brand-navy border-t-2 border-accent opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl z-50 py-1"
                   style={{ backgroundColor: "#2a2e40" }}
                 >
                   {dropdown.items.map((item) => (
@@ -145,7 +145,7 @@ export default function Navbar() {
             {/* Get Estimate CTA */}
             <Link
               href="/contact"
-              className="ml-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm px-4 py-2 rounded transition-colors"
+              className="ml-2 bg-accent hover:bg-accent-hover text-white font-bold text-sm px-4 py-2 rounded transition-colors"
             >
               Free Estimate
             </Link>
@@ -181,7 +181,7 @@ export default function Navbar() {
             <div className="flex gap-2 mb-4">
               <a
                 href={PHONE_TOLL_FREE_HREF}
-                className="flex-1 flex items-center justify-center gap-2 bg-amber-500 text-slate-900 font-bold py-3 rounded text-sm"
+                className="flex-1 flex items-center justify-center gap-2 bg-accent text-white font-bold py-3 rounded text-sm"
               >
                 <Phone className="w-4 h-4" />
                 Call Now

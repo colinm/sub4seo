@@ -32,20 +32,20 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-amber-500 mt-1 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-accent-mid mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <a href="tel:+15633914000" className="text-gray-600 hover:text-amber-600 block">
+                    <a href="tel:+15633914000" className="text-gray-600 hover:text-accent block">
                       563-391-4000
                     </a>
-                    <a href="tel:+18007173066" className="text-gray-600 hover:text-amber-600 block">
+                    <a href="tel:+18007173066" className="text-gray-600 hover:text-accent block">
                       1-800-717-3066 (Toll Free)
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-amber-500 mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-accent-mid mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Showroom Address</p>
                     <p className="text-gray-600">
@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-amber-500 mt-1 flex-shrink-0" />
+                  <Clock className="w-5 h-5 text-accent-mid mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Showroom Hours</p>
                     <p className="text-gray-600">
@@ -81,8 +81,8 @@ export default function ContactPage() {
                 />
               </div>
 
-              <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                <p className="text-sm text-amber-800 font-medium">
+              <div className="mt-6 p-4 bg-accent-subtle border border-accent-faint rounded-lg">
+                <p className="text-sm text-accent-dark font-medium">
                   We serve all of the Quad Cities and surrounding 90-mile radius including
                   Davenport, Bettendorf, Moline, Rock Island, East Moline, Sterling, Rock Falls,
                   Muscatine, Clinton, DeWitt, and more.

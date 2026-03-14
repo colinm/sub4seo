@@ -87,7 +87,7 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
             type="text"
             {...register('name')}
             placeholder="Your Name *"
-            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
           />
           {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>}
         </div>
@@ -97,7 +97,7 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
             type="tel"
             {...register('phone')}
             placeholder="Phone Number *"
-            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
           />
           {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone.message}</p>}
         </div>
@@ -105,7 +105,7 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
         <div className="flex-1">
           <select
             {...register('service')}
-            className="w-full px-4 py-3 rounded bg-white text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+            className="w-full px-4 py-3 rounded bg-white text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
           >
             <option value="">Service Needed *</option>
             <option value="Windows">Replacement Windows</option>
@@ -120,7 +120,7 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-amber-500 hover:bg-amber-400 disabled:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded whitespace-nowrap transition-colors text-sm"
+          className="bg-accent hover:bg-accent-hover disabled:bg-accent-muted text-white font-bold px-6 py-3 rounded whitespace-nowrap transition-colors text-sm"
         >
           {isSubmitting ? 'Sending...' : 'Get Free Estimate'}
         </button>

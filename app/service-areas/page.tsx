@@ -34,16 +34,16 @@ export default function ServiceAreasPage() {
               <Link
                 key={city.slug}
                 href={`/service-areas/${city.slug}`}
-                className="group border border-gray-200 rounded-xl p-5 hover:border-amber-400 hover:bg-amber-50 transition-all"
+                className="group border border-gray-200 rounded-xl p-5 hover:border-accent-muted hover:bg-accent-subtle transition-all"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <MapPin className="w-5 h-5 text-amber-500" />
-                  <h3 className="font-bold text-gray-900 group-hover:text-amber-700">
+                  <MapPin className="w-5 h-5 text-accent-mid" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-accent-dark">
                     {city.name}, {city.stateAbbr}
                   </h3>
                 </div>
                 <p className="text-sm text-gray-600">{city.county}</p>
-                <p className="text-xs text-amber-600 font-medium mt-2 group-hover:text-amber-700">
+                <p className="text-xs text-accent font-medium mt-2 group-hover:text-accent-dark">
                   View {city.name} service page →
                 </p>
               </Link>
@@ -68,7 +68,7 @@ export default function ServiceAreasPage() {
             </div>
             <p className="text-sm text-gray-500 mt-4">
               Call us at{' '}
-              <a href="tel:+15633914000" className="text-amber-600 font-medium">
+              <a href="tel:+15633914000" className="text-accent font-medium">
                 563-391-4000
               </a>{' '}
               to confirm we serve your area.

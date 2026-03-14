@@ -21,104 +21,147 @@ export default function SteelSidingPage() {
         ctaText="Get a Free Estimate"
       />
 
-      <section className="py-8 bg-white">
-        <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Image src="/steel-siding.jpg" alt="Steel siding installed on home showing durable impact-resistant finish" width={900} height={560} className="rounded-lg shadow-md w-full h-auto" />
-          <Image src="/steel-reinforcement.jpg" alt="Steel siding reinforcement detail showing structural strength and quality" width={900} height={560} className="rounded-lg shadow-md w-full h-auto" />
-        </div>
-      </section>
-
+      {/* Intro: text left, image right */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Why Steel Is the Toughest Siding You Can Buy
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Steel siding outperforms vinyl, composite, and wood in virtually every durability category.
-            It is fire resistant, termite-proof, and significantly more impact resistant than vinyl —
-            meaning it won&apos;t dent or crack from hail, flying debris, or accidental impacts the way
-            vinyl siding can. For Quad Cities homeowners who have experienced hail storms or severe
-            thunderstorms, steel siding is the obvious answer.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Steel siding is also exceptionally well-suited to the Iowa and Illinois climate. It handles
-            the region&apos;s dramatic temperature swings — from -20°F winter lows to 100°F+ summer
-            highs — without warping, buckling, or degrading over time. The finish is baked on at the
-            factory, not applied as a surface coating, which means the color is integral to the material
-            and far more resistant to fading, chalking, and peeling than painted wood or cheaper
-            alternatives.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Suburban Construction has been installing steel siding throughout Davenport, Bettendorf,
-            Moline, Rock Island, and the surrounding region for decades. We are experienced in proper
-            installation techniques that account for steel&apos;s unique thermal expansion characteristics,
-            ensuring a long-lasting, problem-free installation.
-          </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Steel vs. Vinyl Siding</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="border border-gray-200 rounded-lg p-5">
-              <h3 className="font-bold text-gray-900 mb-2">Steel Siding Advantages</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Far more impact resistant — won&apos;t dent from hail</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Fire resistant (Class A rating)</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Color baked in — superior fade resistance</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Termite and pest proof</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Can be repainted if desired</li>
-              </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Why Steel Is the Toughest Siding You Can Buy
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Steel siding outperforms vinyl, composite, and wood in virtually every durability category.
+                It is fire resistant, termite-proof, and significantly more impact resistant than vinyl —
+                meaning it won&apos;t dent or crack from hail, flying debris, or accidental impacts the way
+                vinyl siding can. For Quad Cities homeowners who have experienced hail storms or severe
+                thunderstorms, steel siding is the obvious answer.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Steel siding is also exceptionally well-suited to the Iowa and Illinois climate. It handles
+                the region&apos;s dramatic temperature swings — from -20°F winter lows to 100°F+ summer
+                highs — without warping, buckling, or degrading over time. The finish is baked on at the
+                factory, not applied as a surface coating, which means the color is integral to the material
+                and far more resistant to fading, chalking, and peeling than painted wood or cheaper
+                alternatives.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Suburban Construction has been installing steel siding throughout Davenport, Bettendorf,
+                Moline, Rock Island, and the surrounding region for decades. We are experienced in proper
+                installation techniques that account for steel&apos;s unique thermal expansion characteristics,
+                ensuring a long-lasting, problem-free installation.
+              </p>
             </div>
-            <div className="border border-gray-200 rounded-lg p-5">
-              <h3 className="font-bold text-gray-900 mb-2">Vinyl Siding Advantages</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Lower initial cost</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Lighter weight</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Wide color and profile selection</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Never needs painting</li>
-                <li className="flex items-start gap-2"><span className="text-amber-500 mt-0.5">✓</span>Good long-term durability in mild climates</li>
-              </ul>
-            </div>
+            <Image src="/steel-siding.jpg" alt="Steel siding installed on home showing durable impact-resistant finish" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Features & Benefits</h2>
-          <ul className="space-y-2 mb-8">
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Fire resistant — Class A fire rating for maximum safety
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Dent and impact resistant — superior protection against hail and debris
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Baked-on finish resists fading and chalking far better than painted products
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Virtually maintenance-free — no painting, caulking, or re-staining required
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Wide color selection to complement any home exterior
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Available in horizontal lap, vertical, and board-and-batten profiles
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Ideal for the Iowa and Illinois climate — handles extreme temperature swings without warping
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Professional installation with lifetime workmanship guarantee
-            </li>
-          </ul>
+          {/* Photo strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <Image src="/steel-reinforcement.jpg" alt="Steel siding reinforcement detail showing structural strength" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/sidinghouse.jpg" alt="Home with new siding installed" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/siding-installation.png" alt="Professional siding installation in progress" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+          </div>
         </div>
       </section>
 
+      {/* Features: card grid */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Features &amp; Benefits</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { title: 'Fire Resistant', body: 'Class A fire rating for maximum safety on your home.' },
+              { title: 'Dent & Impact Resistant', body: 'Superior protection against hail and debris — won\'t crack or dent.' },
+              { title: 'Baked-On Finish', body: 'Factory-baked finish resists fading and chalking far better than painted products.' },
+              { title: 'Virtually Maintenance-Free', body: 'No painting, caulking, or re-staining required.' },
+              { title: 'Wide Color Selection', body: 'Wide color selection to complement any home exterior.' },
+              { title: 'Multiple Profiles', body: 'Available in horizontal lap, vertical, and board-and-batten profiles.' },
+              { title: 'Climate-Ready', body: 'Handles extreme temperature swings without warping — ideal for Iowa and Illinois.' },
+              { title: 'Workmanship Guarantee', body: 'Professional installation with lifetime workmanship guarantee.' },
+            ].map((f) => (
+              <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-start gap-2 mb-1">
+                  <span className="text-accent-mid font-bold text-base mt-0.5">✓</span>
+                  <h3 className="font-bold text-gray-900 text-sm">{f.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed pl-5">{f.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Secondary: image left, list right */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <Image src="/steel-reinforcement.jpg" alt="Steel siding reinforcement detail showing structural strength and quality" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Steel vs. Vinyl Siding</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">Steel Siding Advantages</h3>
+                  <ul className="space-y-2">
+                    {[
+                      'Far more impact resistant — won\'t dent from hail',
+                      'Fire resistant (Class A rating)',
+                      'Color baked in — superior fade resistance',
+                      'Termite and pest proof',
+                      'Can be repainted if desired',
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                          <span className="text-accent text-xs font-bold">✓</span>
+                        </span>
+                        <span className="text-gray-700 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">Vinyl Siding Advantages</h3>
+                  <ul className="space-y-2">
+                    {[
+                      'Lower initial cost',
+                      'Lighter weight',
+                      'Wide color and profile selection',
+                      'Never needs painting',
+                      'Good long-term durability in mild climates',
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                          <span className="text-accent text-xs font-bold">✓</span>
+                        </span>
+                        <span className="text-gray-700 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Callout */}
+      <section className="pb-10">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="bg-accent-subtle border border-accent-faint rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Comparing Siding Options?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Browse our full siding lineup — vinyl, composite, insulated, and steel — to find the best fit for your home and budget.
+              </p>
+            </div>
+            <Link href="/siding/siding-options" className="whitespace-nowrap bg-accent hover:bg-accent-hover text-white font-bold px-5 py-2.5 rounded transition-colors text-sm">
+              View All Siding →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* PDF download */}
       <section className="py-6 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Download Our Siding Brochure</p>
             <p className="text-sm text-gray-600">Full product catalog with styles, options, and specifications</p>
@@ -127,15 +170,15 @@ export default function SteelSidingPage() {
             href="/siding.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
+            className="flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2 rounded transition-colors text-sm whitespace-nowrap"
           >
             ↓ Download PDF
           </a>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-12 bg-accent-subtle">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
             Contact Suburban Construction for a free steel siding estimate. We serve Davenport,
@@ -143,15 +186,15 @@ export default function SteelSidingPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

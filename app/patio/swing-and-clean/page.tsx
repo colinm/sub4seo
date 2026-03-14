@@ -47,31 +47,31 @@ export default function SwingAndCleanPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Features & Benefits</h2>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Side-hinged sash swings in for complete exterior glass access from inside
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               No ladders or tools required for cleaning — safe and easy
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Available in large sizes suitable for porch panel applications
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Energy-efficient glass options for three-season enclosures
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Weatherstripping provides a good seal when closed against wind and cold
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Operable for ventilation — enjoy fresh air on comfortable days
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Multiple frame colors and glass options available
             </li>
           </ul>
@@ -89,11 +89,11 @@ export default function SwingAndCleanPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Combined with{' '}
-            <Link href="/patio/solar-shades" className="text-amber-600 hover:underline">
+            <Link href="/patio/solar-shades" className="text-accent hover:underline">
               solar shades
             </Link>{' '}
             or an{' '}
-            <Link href="/patio/patio-awning" className="text-amber-600 hover:underline">
+            <Link href="/patio/patio-awning" className="text-accent hover:underline">
               awning
             </Link>
             {' '}overhead, swing and clean windows can transform an ordinary porch into a comfortable
@@ -103,7 +103,7 @@ export default function SwingAndCleanPage() {
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -112,7 +112,7 @@ export default function SwingAndCleanPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -120,7 +120,7 @@ export default function SwingAndCleanPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

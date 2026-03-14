@@ -38,102 +38,116 @@ export default function DoorStylesPage() {
         ctaText="Get a Free Estimate"
       />
 
-      <section className="py-8 bg-white">
-        <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Image src="/door.png" alt="Fiberglass entry door showing classic style and curb appeal" width={900} height={560} className="rounded-lg shadow-md w-full h-auto" />
-          <Image src="/fiberclassicmain.jpg" alt="Fiber Classic entry door showcasing wood grain texture and glass insert options" width={900} height={560} className="rounded-lg shadow-md w-full h-auto" />
+      {/* Intro: text left, image right */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Your Front Door Makes a Statement
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Your entry door is the focal point of your home&apos;s exterior. It&apos;s the first thing
+                guests see and a critical component of your home&apos;s curb appeal. Beyond aesthetics, a
+                quality entry door plays a significant role in your home&apos;s security and energy
+                efficiency. An old, drafty door can account for a surprising amount of your home&apos;s
+                heat loss during Quad Cities winters.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Suburban Construction has been installing doors throughout Davenport, Bettendorf, Moline,
+                Rock Island, and the surrounding area since 1985. We work with leading door manufacturers
+                to provide products that combine beauty, performance, and durability — and we install every
+                door with the care and precision that guarantees a weathertight, long-lasting result.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Our door product lines include entry doors, storm doors, and specialty options like doors
+                with built-in mini blinds. Browse the options below or contact us to schedule a free
+                in-home estimate.
+              </p>
+            </div>
+            <Image src="/fiberclassicmain.jpg" alt="Fiber Classic entry door showcasing wood grain texture and glass insert options" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          </div>
+
+          {/* Photo strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <Image src="/door.png" alt="Fiberglass entry door showing classic style and curb appeal" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/door.png" alt="Fiberglass door showing decorative glass insert and custom finish options" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/entry.png" alt="Energy-efficient entry door installed on Quad Cities home" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/fiberclassicmain.jpg" alt="Fiber Classic entry door" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+          </div>
         </div>
       </section>
 
-      <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Your Front Door Makes a Statement
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Your entry door is the focal point of your home&apos;s exterior. It&apos;s the first thing
-            guests see and a critical component of your home&apos;s curb appeal. Beyond aesthetics, a
-            quality entry door plays a significant role in your home&apos;s security and energy
-            efficiency. An old, drafty door can account for a surprising amount of your home&apos;s
-            heat loss during Quad Cities winters.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Suburban Construction has been installing doors throughout Davenport, Bettendorf, Moline,
-            Rock Island, and the surrounding area since 1985. We work with leading door manufacturers
-            to provide products that combine beauty, performance, and durability — and we install every
-            door with the care and precision that guarantees a weathertight, long-lasting result.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            Our door product lines include entry doors, storm doors, and specialty options like doors
-            with built-in mini blinds. Browse the options below or contact us to schedule a free
-            in-home estimate.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+      {/* Features: card grid */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Door Styles We Install</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {doorTypes.map((d) => (
-              <Link
-                key={d.href}
-                href={d.href}
-                className="block border border-gray-200 rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-amber-600 mb-2">
-                  {d.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{d.description}</p>
-                <span className="inline-block mt-3 text-amber-500 text-sm font-medium group-hover:text-amber-600">
-                  Learn more →
-                </span>
+              <Link key={d.href} href={d.href} className="block bg-white rounded-lg border border-gray-200 p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start gap-2 mb-1">
+                  <span className="text-accent-mid font-bold text-base mt-0.5">✓</span>
+                  <h3 className="font-bold text-gray-900 text-sm">{d.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed pl-5">{d.description}</p>
+                <span className="inline-block mt-2 pl-5 text-accent-mid text-sm font-medium">Learn more →</span>
               </Link>
             ))}
           </div>
-
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">See It Before You Buy</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Door selection involves a lot of decisions — style, color, glass insert, hardware finish,
-            and sidelight options, among others. We make the selection process easier in several ways:
-          </p>
-          <ul className="space-y-2 mb-8">
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Visit our showroom at 3602 North Harrison, Davenport — see actual door samples in person
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Browse our{' '}
-              <Link href="/doors/door-app" className="text-amber-600 hover:underline">
-                door catalog
-              </Link>{' '}
-              including downloadable PDF brochures
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Watch our installation overview on YouTube to see the quality of our door work
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
-              Request a free in-home estimate — we bring samples and discuss options at your home
-            </li>
-          </ul>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* Secondary: image left, list right */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <Image src="/entry.png" alt="Entry door installed on Quad Cities home" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">See It Before You Buy</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Door selection involves a lot of decisions — style, color, glass insert, hardware finish,
+                and sidelight options, among others. We make the selection process easier in several ways:
+              </p>
+              <ul className="space-y-4">
+                {[
+                  { name: 'Visit our showroom', desc: '3602 North Harrison, Davenport — see actual door samples in person' },
+                  { name: 'Browse our door catalog', desc: 'including downloadable PDF brochures' },
+                  { name: 'Watch our installation overview', desc: 'on YouTube to see the quality of our door work' },
+                  { name: 'Request a free in-home estimate', desc: 'we bring samples and discuss options at your home' },
+                ].map((item) => (
+                  <li key={item.name} className="flex items-start gap-3">
+                    <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                      <span className="text-accent text-xs font-bold">✓</span>
+                    </span>
+                    <div>
+                      <span className="font-semibold text-gray-900">{item.name}</span>
+                      <span className="text-gray-600"> — {item.desc}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-accent-subtle">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
             Contact Suburban Construction for a free door estimate throughout the Quad Cities.
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>

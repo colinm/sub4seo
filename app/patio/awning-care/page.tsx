@@ -47,23 +47,23 @@ export default function AwningCarePage() {
           </p>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Brush off loose dirt and debris with a soft-bristle brush before wetting the fabric
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Mix 1/4 cup mild dish soap (not detergent) per gallon of lukewarm water
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Apply with a soft brush or sponge using light, circular motions
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Rinse thoroughly with clean water — no soap residue should remain
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Allow the awning to air dry fully in the extended position before retracting
             </li>
           </ul>
@@ -75,23 +75,23 @@ export default function AwningCarePage() {
           </p>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Mix 1 cup of bleach and 1/4 cup of mild soap per gallon of water
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Apply to the affected area and allow to soak for 15 minutes
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Scrub gently with a soft brush
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Rinse thoroughly and repeat if necessary
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Note: bleach solutions are safe for solution-dyed acrylic fabrics but may affect
               other fabric types — check your product documentation
             </li>
@@ -106,19 +106,19 @@ export default function AwningCarePage() {
           </p>
           <ul className="space-y-2 mb-8">
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Complete a thorough cleaning and allow to dry completely — never store a damp awning
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Inspect the frame for any loose fasteners or brackets and tighten as needed
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Check the spring tension on the retraction mechanism — consult us if it feels wrong
             </li>
             <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-amber-500 mt-1">✓</span>
+              <span className="text-accent-mid mt-1">✓</span>
               Apply a water-resistant awning protector spray if recommended for your fabric type
             </li>
           </ul>
@@ -131,19 +131,19 @@ export default function AwningCarePage() {
             Avoid petroleum-based lubricants, which can attract dirt and degrade rubber components.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-6">
             <h3 className="text-lg font-bold text-gray-900 mb-2">Need Service or Repairs?</h3>
             <p className="text-gray-700 leading-relaxed">
               If your awning needs fabric replacement, frame adjustment, or mechanical repair,
               contact Suburban Construction. We service awnings we&apos;ve installed and can often
               assist with awnings installed by others. Call us at{' '}
-              <a href="tel:5633914000" className="text-amber-600 hover:underline">563-391-4000</a>.
+              <a href="tel:5633914000" className="text-accent hover:underline">563-391-4000</a>.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-accent-subtle">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">
@@ -152,7 +152,7 @@ export default function AwningCarePage() {
           </p>
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded transition-colors"
+            className="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3 rounded transition-colors"
           >
             Get a Free Estimate
           </Link>
@@ -160,7 +160,7 @@ export default function AwningCarePage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-amber-600 hover:text-amber-700 underline">
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
           Not sure about home improvement terminology? Visit our Glossary of Terms →
         </Link>
       </div>
