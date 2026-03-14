@@ -70,6 +70,12 @@ export default function CasementWindowsPage() {
             {[
               { title: 'Maximum Ventilation', body: 'Full sash opening delivers maximum ventilation — more than any double-hung or slider.' },
               { title: 'Compression Seal', body: 'Multi-point locking system creates a compression seal when closed.' },
+              { title: '90° Opening', body: 'Opens a full 90° for maximum airflow and easy exterior glass cleaning from inside.' },
+              { title: 'Coved Glazing Beads', body: 'Coved glazing beads give the sash a refined, classic wood-like appearance.' },
+              { title: 'FreedomMaxx Low-E HP Glass', body: 'FreedomMaxx Low-E HP high-performance glass standard; optional FreedomMaxx 10 upgrade available.' },
+              { title: 'AllWeather Sloped Sill', body: 'AllWeather sloped sill channels water away from the frame and prevents infiltration.' },
+              { title: 'Stainless Steel Hardware', body: 'Stainless steel operating hardware for smooth, corrosion-free operation.' },
+              { title: 'EverLast PVC Vinyl', body: 'EverLast PVC vinyl never needs painting or staining.' },
               { title: 'Easy Operation', body: 'Easy-turn crank mechanism — no lifting or straining required.' },
               { title: 'Energy Star Certified', body: 'Energy Star certified options available with Low-E glass.' },
               { title: 'No Dirt-Trapping Tracks', body: 'No horizontal tracks to collect dirt or impede operation.' },

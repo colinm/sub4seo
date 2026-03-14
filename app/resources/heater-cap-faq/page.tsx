@@ -9,6 +9,11 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/h
 
 const heaterCapFaqs = [
   {
+    question: 'How long does a Heater Cap estimate take?',
+    answer:
+      'An on-site estimate takes between 30 and 45 minutes. During that visit we will measure the house, show you available color options, and bring a sample so you can see what the installed system looks like.',
+  },
+  {
     question: 'What is the Heater Cap system?',
     answer:
       'Heater Cap is a heating element system designed to work in conjunction with your gutters to prevent ice dams and keep gutters clear and functional during winter conditions. It consists of a low-wattage electric heating cable that runs along the gutter and, when necessary, along the roof edge. When temperatures drop near freezing, the system activates to maintain just enough warmth to prevent ice from forming and blocking water flow. It is especially valuable in the Quad Cities climate where freeze-thaw cycles can cause significant damage to gutters, rooflines, and home interiors.',
@@ -22,6 +27,31 @@ const heaterCapFaqs = [
     question: 'Does Heater Cap use a lot of electricity?',
     answer:
       'No. The Heater Cap system is designed to be energy efficient. Because it is thermostatically controlled, it only activates when temperatures reach the threshold where ice formation is a risk — not continuously throughout the winter. The heating cables themselves are low-wattage. Most homeowners find the energy cost during a typical Iowa or Illinois winter to be modest compared to the potential cost of ice dam damage, which can run into thousands of dollars in roof repairs, interior water damage, and drywall remediation.',
+  },
+  {
+    question: 'Is Heater Cap hard-wired or does it plug in?',
+    answer:
+      'Heater Cap is hard-wired into the circuit box. The system is turned on and off with a wall switch when needed. We suggest turning it on when temperatures are forecast to fall below 30 degrees Fahrenheit. During periods of cold weather and continuous snowfall, it is best to leave it on continuously — if it is off while snow is accumulating, it will take longer to melt the snow out of the gutter system once you turn it on.',
+  },
+  {
+    question: 'Does Heater Cap need to be on all year?',
+    answer:
+      'No. Heater Cap is only needed during cold weather when ice formation is a risk. You can leave it off through spring, summer, and fall. Turn it on when temperatures are forecast to drop below 30°F, and leave it running during extended cold and snowy periods. Turning it off during mild stretches will reduce energy usage without any downside.',
+  },
+  {
+    question: 'What if I have a gutter protection system other than Gutter Cap?',
+    answer:
+      'Heater Cap can be installed on most other gutter protection systems. However, be aware that installing Heater Cap on a system from another manufacturer may void that system\'s warranty. If you have a non-Gutter Cap system and want to add ice protection, check your existing warranty terms before proceeding.',
+  },
+  {
+    question: 'What warranty does Heater Cap carry?',
+    answer:
+      'Heater Cap carries a lifetime warranty on the Heater Cap panel itself. The heating cable is covered for 10 years. For the complete ice-dam prevention warranty: 10 years on materials, 5 years on electrical components, and a lifetime warranty on labor. This warranty structure reflects the confidence the manufacturer and Suburban Construction have in the system\'s long-term performance.',
+  },
+  {
+    question: 'Will Heater Cap significantly increase my electric bill?',
+    answer:
+      'It depends on the linear footage installed and the severity of the winter. The heating cables are low-wattage, and because the system is switched on only when temperatures warrant it, usage is naturally limited to the coldest periods. Most homeowners find the energy cost to be modest compared to the potential cost of ice dam damage — repairs from ice backing up under shingles and into a home can run into thousands of dollars in roof, drywall, and mold remediation work.',
   },
   {
     question: 'Is Heater Cap compatible with the Gutter Cap system?',

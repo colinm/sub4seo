@@ -14,7 +14,29 @@ const warrantyDocs = [
   { label: 'AMI Glass Breakage Warranty', file: '/AMIGlassBreakageWarranty.pdf' },
   { label: 'AMI Ultra Premium Siding Warranty', file: '/AMIUltraPremSidingWarrantyrev.pdf' },
   { label: 'AMI Warranty Rider', file: '/AMIWarrantyRider.pdf' },
-  { label: 'AMI BBG Warranty Rider', file: '/AMIBBGWarrantyRider.pdf' },
+  { label: 'AMI BBG Warranty Rider (Patio Door Mini-Blinds)', file: '/AMIBBGWarrantyRider.pdf' },
+]
+
+const amiSupplementalDocs = [
+  { label: 'AMI Window Operation Brochure', file: '/AMI_Care_Operation_brochure.pdf' },
+  { label: 'AMI Window Condensation Brochure', file: '/AMI_Condensation_brochure.pdf' },
+  { label: 'AMI Patio Door Mini-Blinds Care Guide', file: '/MiniBlindsBetweentheGlass.pdf' },
+]
+
+const aristocratDocs = [
+  { label: 'RTS Visual Reference Guide', file: '/RTSVisualReferenceGuide.pdf' },
+  { label: 'Simu Visual Guide', file: '/SimuVisualGuide9.06.pdf' },
+  { label: 'Simu Programming Sheet', file: '/Simu_Programmingsheet.pdf' },
+  { label: 'Motor Instructions Packet', file: '/MotorInstructionsPacket.pdf' },
+]
+
+const republicDocs = [
+  { label: 'Republic Window Warranty', file: '/RepublicWarranty.pdf' },
+  { label: 'Republic / Suburban Letter', file: '/RepublicLetter.pdf' },
+]
+
+const gutterCapDocs = [
+  { label: 'Gutter Cap Warranty and FAQ', file: '/guttercapwarranty.pdf' },
 ]
 
 export default function WarrantyPage() {
@@ -35,12 +57,18 @@ export default function WarrantyPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Lifetime Workmanship Guarantee
             </h2>
-            <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto mb-4">
               Suburban Construction guarantees our workmanship for the life of your installation.
               If you ever experience a problem with how your windows, siding, doors, or gutters were
               installed — not just the product itself — we will fix it at no charge. This is our
               commitment to every Quad Cities homeowner we serve.
             </p>
+            <blockquote className="border-l-4 border-accent-mid pl-4 text-left max-w-2xl mx-auto text-gray-700 italic">
+              &ldquo;We&apos;re one of the only companies in the nation that offers a lifetime warranty on the
+              product after we install it. The company doesn&apos;t make money if things go wrong after the
+              installation, so crews make sure the job is done properly.&rdquo;
+              <footer className="text-sm text-gray-500 mt-1 not-italic">— Darin Wilson, Suburban Construction</footer>
+            </blockquote>
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What the Guarantee Covers</h2>
@@ -74,7 +102,127 @@ export default function WarrantyPage() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
               >
-                <Download className="w-5 h-5 text-accent-mid flex-shrink-0" />
+                <Download className="w-5 h-5 text-accent-mid shrink-0" />
+                <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
+                  {doc.label}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          {/* AMI Supplemental Info */}
+          <h3 className="text-lg font-bold text-gray-900 mt-10 mb-3">Associated Materials Supplemental Information</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {amiSupplementalDocs.map((doc) => (
+              <a
+                key={doc.file}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
+              >
+                <Download className="w-5 h-5 text-accent-mid shrink-0" />
+                <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
+                  {doc.label}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          {/* Aristocrat & Craft-Bilt Awnings */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Aristocrat &amp; Craft-Bilt Awnings</h3>
+          <div className="mb-4">
+            <a
+              href="http://www.aristocratawnings.com/about/warranty.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-dark underline text-sm"
+            >
+              Aristocrat Awnings Warranty — aristocratawnings.com
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {aristocratDocs.map((doc) => (
+              <a
+                key={doc.file}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
+              >
+                <Download className="w-5 h-5 text-accent-mid shrink-0" />
+                <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
+                  {doc.label}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          {/* Gutter Cap */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Gutter Cap</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {gutterCapDocs.map((doc) => (
+              <a
+                key={doc.file}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
+              >
+                <Download className="w-5 h-5 text-accent-mid shrink-0" />
+                <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
+                  {doc.label}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          {/* Larson Storm Door */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Larson Storm Door</h3>
+          <div className="mb-8">
+            <a
+              href="http://www.larsondoors.com/storm_doors/warranty_claim/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-dark underline text-sm"
+            >
+              Larson Storm Door Warranty Claim — larsondoors.com
+            </a>
+          </div>
+
+          {/* Therma-Tru Entry Doors */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Therma-Tru Entry Door Warranties</h3>
+          <div className="flex flex-col gap-2 mb-8">
+            <a
+              href="http://thermatru.com/customer-support/ownersmanual-warranties/index.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-dark underline text-sm"
+            >
+              Therma-Tru Owner&apos;s Manuals &amp; Warranties — thermatru.com
+            </a>
+            <a
+              href="http://legacy.thermatru.com/learn-plan/shopping-tips-tricks/faqs/finishing/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent-dark underline text-sm"
+            >
+              Therma-Tru Finishing FAQs — legacy.thermatru.com
+            </a>
+          </div>
+
+          {/* Republic Windows and Doors */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Republic Windows and Doors</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {republicDocs.map((doc) => (
+              <a
+                key={doc.file}
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-accent-muted hover:bg-accent-subtle transition-colors group"
+              >
+                <Download className="w-5 h-5 text-accent-mid shrink-0" />
                 <span className="text-gray-700 group-hover:text-accent-dark text-sm font-medium">
                   {doc.label}
                 </span>

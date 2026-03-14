@@ -31,10 +31,11 @@ export default function CompositeSidingPage() {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Composite siding captures the warm, textured appearance of real cedar or wood lap siding
-                without any of the ongoing maintenance that natural wood demands. It is made from real wood
-                fibers encased in a moisture-resistant polymer coating — giving you the authentic grain
-                pattern and dimensional depth that vinyl cannot replicate, combined with the weather and rot
-                resistance that wood never had.
+                without any of the ongoing maintenance that natural wood demands. We install ALIGN Composite
+                Cladding by Gentek — engineered with exclusive GP² technology (Glass-Reinforced Polymer +
+                Graphite-Infused Polystyrene) for superior wind load resistance, impact resistance, and flame
+                spread performance. It gives you the authentic grain pattern and dimensional depth that vinyl
+                cannot replicate, combined with the weather and rot resistance that wood never had.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 For Quad Cities homeowners who love the look of traditional wood siding but are tired of
@@ -64,17 +65,21 @@ export default function CompositeSidingPage() {
       {/* Features: card grid */}
       <section className="py-10 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Features &amp; Benefits</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">ALIGN Features &amp; Benefits</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { title: 'Authentic Wood Grain', body: 'Wood grain texture that vinyl cannot duplicate.' },
-              { title: 'Real Wood Fibers', body: 'Real wood fiber composition for natural warmth and depth.' },
-              { title: 'Moisture Resistant', body: 'Moisture-resistant coating prevents rot, warping, and mold growth.' },
-              { title: 'No Peeling', body: 'Will not peel, crack, or blister like painted wood.' },
-              { title: 'Wide Color Selection', body: 'Including stained, painted, and natural finishes.' },
-              { title: 'Multiple Profiles', body: 'Available in lap, shingle, and panel profiles.' },
-              { title: 'Impact Resistant', body: 'Resistant to impact damage from hail and debris.' },
-              { title: 'Long Warranty', body: 'Typical manufacturer warranty of 30 years or more.' },
+              { title: 'GP² Technology', body: 'Exclusive GP² (Glass-Reinforced Polymer + Graphite-Infused Polystyrene) for structural strength, heat resistance, and fade protection.' },
+              { title: 'Class A Fire Rating', body: 'Class A fire rating for both flame spread and smoke developed — meets even the most stringent building codes.' },
+              { title: '180 mph Wind Resistance', body: 'Reinforced Nail Hem provides windload resistance up to 180 mph.' },
+              { title: 'Self-Aligning Stack Lock', body: 'Self-Aligning Stack Lock system makes installation quick and accurate.' },
+              { title: '7" Flat Face / Cedar Grain Mill', body: '7" Flat Face and Cedar Grain Mill creates the organic beauty of natural wood on the 7" Flat Plank profile.' },
+              { title: 'Compatible 3/4" Projection', body: '3/4" projection works beautifully with both standard and architectural trim accents.' },
+              { title: 'Defined Butt Edge', body: 'Defined Butt Edge replicates the look of wood with added dimension and a crisp shadow line.' },
+              { title: 'Forgiving Hang', body: 'Forgiving Hang conceals minor wall imperfections for a cleaner finished appearance.' },
+              { title: 'Authentic Wood Grain', body: 'Realistic woodgrain texture that vinyl cannot duplicate.' },
+              { title: 'Moisture Resistant', body: 'Non-moisture-absorbing materials prevent rotting, warping, shrinking, and swelling.' },
+              { title: 'No Peeling', body: 'Integral weatherable pigments provide strong fade resistance even in dark colors.' },
+              { title: 'Long Warranty', body: 'Lifetime limited, transferable warranty for added peace of mind.' },
             ].map((f) => (
               <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-start gap-2 mb-1">
@@ -128,6 +133,67 @@ export default function CompositeSidingPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ALIGN Profiles */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">ALIGN Profiles</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            ALIGN Composite Cladding is available in two popular profiles:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+              <h3 className="font-bold text-gray-900 mb-2">12&quot; Board &amp; Batten</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-2">
+                Recreates the authentic details of this time-honored profile with a distinctive 10&quot; board
+                and 2&quot; batten look. Custom-crafted elegance as an accent or whole-home exterior.
+              </p>
+              <p className="text-gray-500 text-sm">Available textures: <strong>Matte</strong> and <strong>Woodgrain</strong></p>
+            </div>
+            <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+              <h3 className="font-bold text-gray-900 mb-2">7&quot; Flat Plank</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-2">
+                Tall 7&quot; profile with a realistic woodgrain appearance that drives a stunning high-end look.
+                Provides exceptional value and curb appeal.
+              </p>
+              <p className="text-gray-500 text-sm">Available texture: <strong>Cedar Mill Grain</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ALIGN Color Palette */}
+      <section className="py-10">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">20 On-Trend Colors</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            ALIGN&apos;s 20 fade-resistant, low-gloss colors provide extensive design flexibility. GP²&apos;s
+            integral weatherable pigments ensure strong fade resistance even on darker shades.
+          </p>
+          <div className="flex flex-wrap gap-2 mb-6">
+            {[
+              'Snow White', 'Majestic Brick', 'Chesapeake Gray', 'Coastal Blue', 'Fired Brick',
+            ].map((color) => (
+              <span key={color} className="bg-gray-100 border border-gray-200 rounded px-3 py-1 text-sm text-gray-700">{color}</span>
+            ))}
+          </div>
+          <p className="text-gray-500 text-sm mb-6">Plus 15 additional on-trend colors — ask us for the full palette or use the Gentek Visualizer below to explore all options.</p>
+          <div className="bg-accent-subtle border border-accent-faint rounded-lg p-4">
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong>Visualize your home:</strong> Use the{' '}
+              <a href="https://gentekusa.renoworks.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark underline">
+                Gentek Visualizer
+              </a>{' '}
+              to preview ALIGN colors on your home before ordering. Gentek and Sherwin-Williams have also
+              partnered to provide{' '}
+              <a href="https://gentekinc.com/wp-content/uploads/2023/10/Gentek-ALIGN-Sherwin-Williams-Color-Match-Formulas-sheet-1.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark underline">
+                exact color match formulas
+              </a>{' '}
+              for the full ALIGN palette — so your trim and other painted surfaces can match perfectly.
+            </p>
           </div>
         </div>
       </section>

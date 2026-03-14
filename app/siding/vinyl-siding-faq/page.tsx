@@ -9,6 +9,36 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/viny
 
 const faqs: FAQItem[] = [
   {
+    question: 'How does vinyl siding compare to aluminum or steel siding?',
+    answer:
+      'Vinyl siding has clear advantages over metal alternatives. Aluminum siding scratches easily, dents, and requires periodic repainting as the surface fades. Steel siding is heavier and more prone to rust at cut edges and fastener locations. Both metals conduct heat and cold, which can affect comfort near exterior walls. Vinyl, by contrast, will not dent, rot, chip, or peel. Its color runs throughout the material rather than being applied as a surface coat, so scratches are far less visible. Vinyl also provides a better thermal barrier than metal. It has become the most popular siding material in the country for good reason.',
+  },
+  {
+    question: 'Is it less costly to just repaint my home instead of re-siding?',
+    answer:
+      'If you plan to move within the next three years, repainting may be the more economical short-term choice. But if you plan to stay longer than that, the calculations heavily favor vinyl siding. Paint typically needs to be redone every three to five years. If your home also has problems like warped clapboards that need to be replaced, or lead-based paint that requires special handling, the cost of repainting can become very significant. According to Remodeling magazine, homeowners in the Midwest recoup approximately 69% of the cost of new siding in added resale value — compare that to paint, which adds little resale value and must be repeated indefinitely.',
+  },
+  {
+    question: 'What design options are available with vinyl siding?',
+    answer:
+      'Vinyl siding is one of the most versatile exterior design products available. Suburban Construction offers many different vinyl siding lines with a wide variety of options: horizontal and vertical orientations; traditional clapboard and authentically detailed shaped profiles; wide and narrow panel exposures; smooth, subtle, and deep wood grain textures; and a broad assortment of traditional and contemporary colors. Trim accessories — including window and door surrounds, corner posts, soffit, and fascia — are available in matching colors so your entire exterior looks coordinated.',
+  },
+  {
+    question: 'How do I clean vinyl siding properly?',
+    answer:
+      'For routine cleaning, a garden hose is usually sufficient — rain naturally washes most dirt off vinyl siding. For a more thorough cleaning, use a soft-bristled, long-handled brush (the kind that attaches to a garden hose) and a cleaning solution of 1/3 cup powdered laundry detergent, 2/3 cup household cleaner (such as Spic and Span), and 1 gallon of water. Do not rub vigorously, as this can create glossy areas on the finish. Start at the bottom and work up to minimize streaking. Rinse thoroughly with clean water immediately after washing. Avoid directing pressurized water upward under the panels.',
+  },
+  {
+    question: 'Can vinyl siding be painted?',
+    answer:
+      'Technically yes, but it is rarely recommended or necessary. Vinyl siding\'s color is integral to the material — it runs throughout the panel rather than sitting on the surface — so it does not peel, chip, or fade the way paint does. If you are considering painting vinyl siding to change its color, use only paint specifically formulated for vinyl surfaces, and choose a color that is the same shade or lighter than the existing siding. Dark colors on vinyl can absorb heat and cause warping. In most cases, if you want a color change, replacing the siding panels is the more durable and long-term solution.',
+  },
+  {
+    question: 'What warranty comes with vinyl siding?',
+    answer:
+      'Suburban Construction installs Freedom Series vinyl siding, which is backed by a manufacturer\'s Lifetime Limited Warranty covering the siding panels against defects, and including fade and chalk resistance provisions. The warranty is transferable to subsequent homeowners, which adds resale value. Suburban Construction also backs every installation with our lifetime workmanship guarantee — if an installation-related issue develops, we return and correct it at no charge. Ask us for the current warranty specifics during your free estimate.',
+  },
+  {
     question: 'How do I clean vinyl siding?',
     answer:
       'Vinyl siding is easy to clean. For light dirt and dust, a garden hose with a spray nozzle is usually sufficient. For more stubborn stains, use a soft-bristle brush with a mixture of 70% water and 30% white vinegar, or a commercially available siding cleaner. Avoid abrasive brushes or steel wool, which can scratch the surface. Always rinse from top to bottom and avoid directing pressurized water upward under the panels, which could force water behind the siding.',

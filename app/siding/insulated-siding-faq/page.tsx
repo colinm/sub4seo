@@ -9,6 +9,16 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/insu
 
 const faqs: FAQItem[] = [
   {
+    question: 'What is ThermoWall insulated siding?',
+    answer:
+      'ThermoWall is Suburban Construction\'s exclusive wall system for insulated siding installations. It uses a contoured rigid foam underlayment that provides a solid, continuous foundation behind the siding panel. The result is a maintenance-free exterior that maintains its appearance for a lifetime. Manufacturer tests show that the ThermoWall contoured underlayment system increases the impact resistance of the siding by over 300% compared to conventional vinyl siding. ThermoWall also offers up to four times the insulation value of the most commonly used substitute systems, significantly reducing drafts and air infiltration without trapping harmful water vapor.',
+  },
+  {
+    question: 'What does "prevent thermal bridging" mean, and why does it matter?',
+    answer:
+      'Thermal bridging occurs when a material that conducts heat well creates a direct path through an otherwise well-insulated wall. In standard wall construction, approximately 25% of your wall area consists of wooden studs — and studs cannot be insulated from inside the wall cavity. Heat passes through those studs relatively easily, bypassing the fiberglass insulation between them. ThermoWall\'s laminated rigid foam is contoured to fill the gap between the siding and the sheathing continuously across the entire wall surface — studs included. This breaks the thermal bridge at the stud locations and delivers more uniform insulation performance across the whole wall.',
+  },
+  {
     question: 'How much energy will insulated siding save me?',
     answer:
       'Energy savings from insulated siding depend on the existing state of your wall insulation, your home\'s construction, and local climate conditions. Studies have shown that insulated vinyl siding can reduce heating and cooling costs by 5–20% compared to standard siding. The savings are greatest in older homes with minimal wall insulation, where the foam backing provides a meaningful improvement to the wall\'s total R-value. In the Quad Cities climate — with cold winters and hot summers — the payback period is typically favorable.',

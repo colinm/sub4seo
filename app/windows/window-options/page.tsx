@@ -63,6 +63,10 @@ export default function WindowOptionsPage() {
             </li>
             <li className="flex items-start gap-2 text-gray-700">
               <span className="text-accent-mid mt-1">✓</span>
+              <strong>Double Prairie grids</strong> — two rows of perimeter squares for a bolder craftsman statement
+            </li>
+            <li className="flex items-start gap-2 text-gray-700">
+              <span className="text-accent-mid mt-1">✓</span>
               <strong>No grids</strong> — clean, contemporary look with maximum glass area
             </li>
           </ul>
@@ -114,6 +118,9 @@ export default function WindowOptionsPage() {
               <span className="text-accent-mid mt-1">✓</span>Brass — classic accent for traditional homes
             </li>
           </ul>
+          <p className="text-sm text-gray-600 mb-6">
+            <strong>Note:</strong> White and Beige windows receive matching interior hardware. Windows with a Light Oak, Dark Oak, or Rich Maple interior finish receive Pontiac Gold hardware. Windows with a Cherry or Foxwood interior finish receive Brown hardware.
+          </p>
 
           {/* Hardware / latch photos */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">

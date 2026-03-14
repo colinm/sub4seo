@@ -9,6 +9,21 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/c
 
 const convectionFaqs = [
   {
+    question: 'What is convection?',
+    answer:
+      'Convection is a way energy transfers through glass. Especially in northern central climates, warmer air reacts with the cool inside pane of your windows. The air is cooled and becomes denser. This cool, dense air then drops to the floor and is immediately replaced by more warm air from above. You may perceive this as a cold draft coming from your windows — but it is not a draft. It is convection: a continuous cycle of warm air chilling against the glass, sinking, and drawing more warm air down in its place.',
+  },
+  {
+    question: 'What can I do about convection?',
+    answer:
+      'When convection occurs, many people\'s instinct is to turn up the heat. However, this directly increases energy costs. For every 1°F drop in the interior glass surface temperature, energy costs increase approximately 2%. Turning the heat up simply compensates for the heat loss rather than stopping it. The better alternative is to install new windows that cut down on the convection process itself — keeping the interior glass surface warmer so that less heat is lost and the cycle slows.',
+  },
+  {
+    question: 'What features should I look for in a window to reduce convection?',
+    answer:
+      'When looking for a window that saves energy and reduces convection, look for: multiple glazing (double or triple pane glass), gas fillers between the panes (argon or krypton, which are denser than air and resist convective flow), warm edge spacers (which keep the edges of the glass warmer, reducing the temperature differential that drives convection), and thermally resistant frame materials (which prevent heat from conducting around the glass edge). These features raise interior glass temperature, slow convection, and improve overall home comfort. New windows will help decrease convection, though it can still occur to some degree — these features minimize its effects.',
+  },
+  {
     question: 'What is convection in the context of windows?',
     answer:
       'Convection is a form of heat transfer that occurs through the movement of fluids — including gases like air. In a window, convection happens within the space between the glass panes. The gas in that space (air, argon, or krypton) absorbs heat from the warmer interior pane, rises, moves across to the cooler exterior pane, transfers heat to it, cools, and sinks — creating a circular flow. This movement continuously transfers heat from inside your home to the outside, reducing the window\'s insulating effectiveness.',

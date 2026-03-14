@@ -68,12 +68,20 @@ export default function DoubleHungWindowsPage() {
             {[
               { title: 'Dual Operable Sashes', body: 'Both upper and lower sashes operate independently for flexible ventilation.' },
               { title: 'Tilt-In Cleaning', body: 'Tilt-in sashes let you clean exterior glass from inside your home.' },
-              { title: 'Classic Aesthetic', body: 'Fits virtually every home style — from traditional to contemporary.' },
-              { title: 'Multi-Point Lock', body: 'Multi-point locking system for enhanced security and weatherproof seal.' },
-              { title: 'Triple Pane Krypton', body: 'Triple pane krypton glass available for superior energy efficiency.' },
+              { title: 'Classic Aesthetic', body: 'Narrowline frame and sashes with a classic wood-like design that fits virtually every home style.' },
+              { title: 'InterWeld Corners', body: 'InterWeld fusion-welded sashes and mainframe for lifetime structural strength.' },
+              { title: 'EverLast PVC Vinyl', body: 'EverLast PVC vinyl never needs painting or staining — truly maintenance-free.' },
+              { title: 'ConstantForce Balances', body: 'ConstantForce balances make raising and lowering the sash effortless.' },
+              { title: 'FreedomMaxx Low-E HP Glass', body: 'FreedomMaxx Low-E HP high-performance glass standard for superior energy efficiency.' },
+              { title: 'NonConductive Frame', body: 'NonConductive composite frame reinforcement eliminates thermal bridging.' },
+              { title: 'Dual Locks', body: 'Dual locks on all windows over 25" wide for enhanced security and a tighter weatherproof seal.' },
+              { title: 'AllWeather Sloped Sill', body: 'AllWeather sloped sill channels water away and prevents infiltration.' },
+              { title: 'Heavy-Duty Weatherstripping', body: 'Heavy-duty weatherstripping with integrated Mylar fin for an airtight seal.' },
+              { title: 'Triple Pane Krypton', body: 'Optional FreedomMaxx 10 triple pane krypton glass for maximum energy savings.' },
               { title: 'Frame Color Selection', body: 'White, tan, bronze, clay, and more — interior wood-grain available.' },
               { title: 'Grid Options', body: 'Colonial, prairie, contour, and more grid patterns available.' },
               { title: 'Full Screen Standard', body: 'Full screen included as standard; half-screen option available.' },
+              { title: 'Lifetime Glass Breakage Warranty', body: 'Covered by a Lifetime Glass Breakage Warranty in addition to the Lifetime Limited Transferable Warranty.' },
             ].map((f) => (
               <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-start gap-2 mb-1">

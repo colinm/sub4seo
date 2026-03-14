@@ -74,6 +74,92 @@ export default function StainFormulaFAQPage() {
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Window Trim Stain Formulas
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            The following stain formulas are for Oak, Pine, and Poplar trim. Both Pine and Poplar
+            require an application of Wood Conditioner prior to staining. All formulas below are
+            quart-size formulas tinted by Sherwin-Williams.
+          </p>
+
+          <div className="space-y-8 mb-8">
+
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
+                Sherwin-Williams Wood Classics Stain — Fruitwood Base (A49N202)
+              </h3>
+              <p className="font-semibold text-gray-800 mb-2">Foxwood (fruitwood base)</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                <li>B1 Black — 5/32 + 1/64</li>
+                <li>R2 Maroon — 21/32 + 1/128</li>
+                <li>Y1 Yellow — 10/32</li>
+                <li>Y3 Deep Gold — 24/32 + 1/64</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Oak Trim Stain Options</h3>
+
+              <p className="font-semibold text-gray-800 mb-1">Light Oak</p>
+              <p className="text-gray-700 text-sm mb-1">Minwax Fruitwood Stain plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm mb-4">
+                <li>Green Colorant — 1/32 + 1/64</li>
+                <li>Red Colorant — 1/32</li>
+              </ul>
+
+              <p className="font-semibold text-gray-800 mb-1">Dark Oak</p>
+              <p className="text-gray-700 text-sm mb-1">Minwax Provincial Stain plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm mb-4">
+                <li>Green Colorant — 2/32</li>
+              </ul>
+
+              <p className="font-semibold text-gray-800 mb-1">Cherry Oak</p>
+              <p className="text-gray-700 text-sm mb-1">Minwax Red Oak Stain plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                <li>Green Colorant — 22/32</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Poplar Trim Stain Options</h3>
+
+              <p className="font-semibold text-gray-800 mb-1">Light Oak</p>
+              <p className="text-gray-700 text-sm mb-1">Sherwin-Williams Wood Classics Golden Oak plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm mb-4">
+                <li>White Colorant — 20/32</li>
+                <li>Red Colorant — 5/32</li>
+                <li>Green Colorant — 2/32 + 1/128</li>
+              </ul>
+
+              <p className="font-semibold text-gray-800 mb-1">Dark Oak</p>
+              <p className="text-gray-700 text-sm mb-1">Minwax Fruitwood Stain plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm mb-4">
+                <li>Black Colorant — 28/32</li>
+                <li>Red Oxide Colorant — 3/32</li>
+                <li>Raw Umber Colorant — 3/32</li>
+                <li>Yellow Oxide Colorant — 3/32</li>
+                <li>Green Colorant — 2/32</li>
+              </ul>
+
+              <p className="font-semibold text-gray-800 mb-1">Cherry</p>
+              <p className="text-gray-700 text-sm mb-1">Minwax Red Oak Stain plus:</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                <li>Green Colorant — 1/32</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="bg-yellow-50 border border-yellow-300 rounded-lg p-4 mb-8 text-sm text-gray-700">
+            <p>
+              <strong>Disclaimer:</strong> The above formulations are based on quart sizes being tinted
+              by Sherwin-Williams. We do not have current formulas for pine trim due to the difficulty
+              in staining pine on a consistent basis. Suburban Construction will not be held liable for
+              the above-mentioned information. Use at your own risk.
+            </p>
+          </div>
+
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
             About AMI Color Formulas
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">

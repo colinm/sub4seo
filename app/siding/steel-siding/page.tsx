@@ -69,14 +69,18 @@ export default function SteelSidingPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Features &amp; Benefits</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { title: 'Fire Resistant', body: 'Class A fire rating for maximum safety on your home.' },
-              { title: 'Dent & Impact Resistant', body: 'Superior protection against hail and debris — won\'t crack or dent.' },
-              { title: 'Baked-On Finish', body: 'Factory-baked finish resists fading and chalking far better than painted products.' },
+              { title: 'Fire Resistant', body: 'Class A fire rating for maximum safety — steel is non-combustible.' },
+              { title: 'Galvalume AZ-50 Steel', body: 'Roll-formed from 29 gauge Galvalume AZ-50 steel for maximum hail and dent resistance.' },
+              { title: 'Kynar PVDF Finish', body: 'Kynar PVDF fluoropolymer finish seals the steel core — resists scratches, fading, chalking, and mildew.' },
+              { title: 'Low-Gloss Rating of 7', body: 'Low-gloss rating of 7 creates a beautifully strong finish with superior scratch resistance.' },
+              { title: 'UTS 45,000 / YTS 40,000 PSI', body: 'Ultimate Tensile Strength of 45,000 PSI and Yield Tensile Strength of 40,000 PSI — engineered to resist cracking and deforming.' },
+              { title: '160 mph Wind Resistance', body: 'Independently tested to withstand hurricane-force winds exceeding 160 mph.' },
+              { title: 'Minimal Thermal Expansion', body: 'Thermal expansion less than 1/8" over a 12\' panel — walls stay straight and uniform in any weather.' },
+              { title: '1/2" Panel Projection', body: 'Deep 1/2" panel projection creates bold edges and dramatic shadow lines.' },
               { title: 'Virtually Maintenance-Free', body: 'No painting, caulking, or re-staining required.' },
-              { title: 'Wide Color Selection', body: 'Wide color selection to complement any home exterior.' },
               { title: 'Multiple Profiles', body: 'Available in horizontal lap, vertical, and board-and-batten profiles.' },
               { title: 'Climate-Ready', body: 'Handles extreme temperature swings without warping — ideal for Iowa and Illinois.' },
-              { title: 'Workmanship Guarantee', body: 'Professional installation with lifetime workmanship guarantee.' },
+              { title: '50-Year Hail / 35-Year Warranty', body: 'Non-prorated, transferable warranty with 50-year hail protection and 35-year chalk and color change coverage.' },
             ].map((f) => (
               <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-start gap-2 mb-1">

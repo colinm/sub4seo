@@ -29,9 +29,11 @@ export default function StormWindowsPage() {
                 A Cost-Effective Energy Upgrade
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Storm windows are installed on the exterior of your existing windows, creating an additional
-                air chamber between the two window layers. This dead air space acts as insulation, reducing
-                heat transfer and improving the overall energy performance of the window assembly. For
+                It&apos;s no secret that quality storm windows — including the Larson Manufacturing storm door
+                line we carry — can save you a tremendous amount of money on your energy bills in just a few
+                short years. Storm windows are installed on the exterior of your existing windows, creating an
+                additional air chamber between the two window layers. This dead air space acts as insulation,
+                reducing heat transfer and improving the overall energy performance of the window assembly. For
                 homeowners who are not ready to commit to full window replacement, storm windows can be a
                 practical intermediate step.
               </p>
@@ -50,6 +52,24 @@ export default function StormWindowsPage() {
               </p>
             </div>
             <Image src="/storm.jpg" alt="Storm window installed over existing window for added insulation and weather protection" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          </div>
+
+          {/* About Larson */}
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">About Larson Manufacturing</h3>
+            <p className="text-gray-700 leading-relaxed mb-2">
+              Larson Manufacturing was founded in 1954 by Oscar Larson in Albert Lea, Minnesota, as a small
+              door, window, and awning operation. The company grew quickly and moved to larger facilities,
+              eventually expanding to Brookings, South Dakota. Storm door sales took off in 1966 when Larson
+              designed and built its first wood core storm door, and in the 1980s the company became the first
+              in the industry to utilize magnetic weather-stripping that seals like a refrigerator.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Over its history, Larson has been a consistent industry innovator. In 2000 they introduced the
+              ScreenAway&#174; Storm Door — the first storm door on the market to feature a disappearing
+              retractable screen. In the years since, Larson has filed for 16 patents covering technologies
+              from design innovations to new hardware systems.
+            </p>
           </div>
 
           {/* Photo strip */}
@@ -74,6 +94,11 @@ export default function StormWindowsPage() {
               { title: 'Triple-Track Design', body: 'Triple-track design combines glass and screen in one unit — no seasonal storage.' },
               { title: 'Cost Effective', body: 'Significantly less expensive than full window replacement.' },
               { title: 'Custom Fit', body: 'Custom fit to your existing window openings.' },
+              { title: 'ScreenAway® Retractable Screen', body: 'Larson\'s patented ScreenAway® screen disappears into the door frame — no removing or storing seasonal panels.' },
+              { title: 'Durable Steel Construction', body: 'Larson storm doors feature durable steel construction with a baked-on enamel finish for lasting appearance.' },
+              { title: 'Non-Pry Latches & Quality Closers', body: 'Built-in frame hinges, quality-built closers, and non-pry latches for security and smooth operation.' },
+              { title: 'Variety of Styles & Finishes', body: 'Multiple color options and a variety of decorative styles to complement any home exterior.' },
+              { title: 'Self-Storing Panels', body: 'Self-storing storm and screen panels for year-round convenience.' },
             ].map((f) => (
               <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-start gap-2 mb-1">

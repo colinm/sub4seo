@@ -44,7 +44,9 @@ export default function VinylSidingPage() {
               <p className="text-gray-600 leading-relaxed">
                 The color in vinyl siding is integral to the material — not painted on. That means
                 it won&apos;t peel, chip, or blister the way painted wood does. Freedom Series uses
-                UV stabilizers that maintain color significantly better than budget vinyl products.
+                an advanced copolymer compound with STAY-TRUE COLORS technology and UV stabilizers
+                that maintain color significantly better than budget vinyl products, even in darker
+                shades.
               </p>
             </div>
             <Image src="/vinyl.jpg" alt="Vinyl siding installed on home showing clean low-maintenance finish" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
@@ -65,13 +67,17 @@ export default function VinylSidingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: 'No Maintenance', body: 'No painting, caulking, or staining — ever. A hose-down is all it needs.' },
-              { title: 'Integral Color', body: "Color runs through the material so it won't peel, chip, or blister." },
-              { title: 'UV Stabilized', body: 'Superior UV inhibitors maintain color far longer than budget vinyl.' },
+              { title: 'STAY-TRUE COLORS', body: 'Advanced copolymer compound with STAY-TRUE COLORS technology delivers superior color retention — choose darker shades with confidence.' },
+              { title: '.046" Wall Thickness', body: 'Heavy-duty .046" thickness provides superior rigidity, ensuring straight, smooth walls.' },
+              { title: 'Double-Strength Nail Hem', body: 'Resilient full-roll Double-Strength Nail Hem increases strength and bridges uneven wall surfaces.' },
+              { title: 'Secure Panel Locking System', body: 'Interlocking Secure Panel Locking System secures panels in place for enhanced rigidity and stability.' },
+              { title: '253 mph Wind Tested', body: 'Laboratory tested to withstand windloads up to 253 mph — hurricane-force conditions.' },
+              { title: '3/4" Lap Height', body: 'Attractive 3/4" lap height creates a deeper dimensional look with enhanced shadow lines.' },
               { title: 'Moisture Resistant', body: 'Impervious to rot, insects, and fungal growth that damage wood.' },
               { title: 'Dozens of Colors', body: 'Multiple profiles and palettes to match any home style.' },
               { title: 'Insulated Option', body: 'EPS foam-backed panels available for added R-value and rigidity.' },
               { title: 'Lightweight', body: 'Minimal structural stress — easier and faster to install correctly.' },
-              { title: 'Lifetime Warranty', body: "Manufacturer's lifetime warranty plus our workmanship guarantee." },
+              { title: 'Lifetime Non-Prorated Warranty', body: 'Non-prorated, transferable lifetime warranty with lifetime fade and hail protection.' },
             ].map((f) => (
               <div key={f.title} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-start gap-2 mb-1">
