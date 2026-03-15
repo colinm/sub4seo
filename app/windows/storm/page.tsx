@@ -73,9 +73,8 @@ export default function StormWindowsPage() {
           </div>
 
           {/* Photo strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <Image src="/window2.jpg" alt="Replacement window installed in home" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/window2.jpg" alt="Interior view of window" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
             <Image src="/double-hung.jpg" alt="Double hung replacement window exterior view" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
           </div>
         </div>
