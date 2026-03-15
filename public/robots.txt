@@ -1,1 +1,40 @@
 # See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /sent
+
+# AI & ML Crawlers - Allow for AI-powered search
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: claude-web
+Allow: /
+
+User-agent: Perplexity
+Allow: /
+
+User-agent: Semanticscholar
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+# Bad Bots - Rate limit
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+Sitemap: https://www.suburbanconstruction.com/sitemap.xml

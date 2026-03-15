@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
+import ProductSchema from "@/components/seo/ProductSchema";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,8 +11,21 @@ export const metadata: Metadata = generatePageMetadata(
 );
 
 export default function EntryDoorsPage() {
+  const serviceAreas = [
+    { city: "Davenport", state: "IA" },
+    { city: "Bettendorf", state: "IA" },
+    { city: "Moline", state: "IL" },
+    { city: "Rock Island", state: "IL" },
+  ];
+
   return (
     <>
+      <ProductSchema
+        name="Entry Doors"
+        description="Beautiful, energy-efficient entry doors that make a lasting first impression. Fiberglass, steel, and wood options available."
+        serviceAreas={serviceAreas}
+        url="/doors/entry"
+      />
       <PageHero
         title="Entry Doors"
         subtitle="Beautiful, energy-efficient entry doors that make a lasting first impression"

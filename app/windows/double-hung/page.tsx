@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
+import ProductSchema from "@/components/seo/ProductSchema";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,8 +11,21 @@ export const metadata: Metadata = generatePageMetadata(
 );
 
 export default function DoubleHungWindowsPage() {
+  const serviceAreas = [
+    { city: "Davenport", state: "IA" },
+    { city: "Bettendorf", state: "IA" },
+    { city: "Moline", state: "IL" },
+    { city: "Rock Island", state: "IL" },
+  ];
+
   return (
     <>
+      <ProductSchema
+        name="Double Hung Replacement Windows"
+        description="The most popular window style with two operable sashes for ventilation and effortless cleaning. Triple pane, energy-efficient options."
+        serviceAreas={serviceAreas}
+        url="/windows/double-hung"
+      />
       <PageHero
         title="Double Hung Replacement Windows"
         subtitle="The most popular window style — two operable sashes for ventilation and effortless cleaning"

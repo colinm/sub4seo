@@ -1,48 +1,50 @@
-import type { Metadata, Viewport } from 'next'
-import { Montserrat, Dancing_Script } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import MobileCTABar from '@/components/layout/MobileCTABar'
-import FloatingEstimateButton from '@/components/shared/FloatingEstimateButton'
-import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
+import type { Metadata, Viewport } from "next";
+import Script from "next/script";
+import { Montserrat, Dancing_Script } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import MobileCTABar from "@/components/layout/MobileCTABar";
+import FloatingEstimateButton from "@/components/shared/FloatingEstimateButton";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 const dancingScript = Dancing_Script({
-  subsets: ['latin'],
-  variable: '--font-dancing-script',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
-  themeColor: '#2a2e40',
-}
+  themeColor: "#2a2e40",
+};
 
 export const metadata: Metadata = {
   title: {
-    default: 'Suburban Construction | Replacement Windows, Siding & Doors | Quad Cities',
-    template: '%s | Suburban Construction',
+    default:
+      "Suburban Construction | Replacement Windows, Siding & Doors | Quad Cities",
+    template: "%s | Suburban Construction",
   },
   description:
     "Suburban Construction — the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, gutters, and patio enclosures in Davenport, Bettendorf, Moline, Rock Island, and the surrounding 90-mile radius.",
-  metadataBase: new URL('https://www.suburbanconstruction.com'),
+  metadataBase: new URL("https://www.suburbanconstruction.com"),
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: "/apple-touch-icon.png",
   },
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",
   openGraph: {
-    type: 'website',
-    siteName: 'Suburban Construction',
-    locale: 'en_US',
+    type: "website",
+    siteName: "Suburban Construction",
+    locale: "en_US",
   },
   robots: {
     index: true,
@@ -52,15 +54,33 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${dancingScript.variable}`}>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${dancingScript.variable}`}
+    >
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SMSKZH24G0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SMSKZH24G0');
+          `}
+        </Script>
+      </head>
       <body className="antialiased">
         <LocalBusinessSchema />
         <Navbar />
@@ -70,5 +90,5 @@ export default function RootLayout({
         <FloatingEstimateButton />
       </body>
     </html>
-  )
+  );
 }
