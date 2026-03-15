@@ -13,13 +13,10 @@ export interface ContactFormData {
 }
 
 function createTransporter() {
-  // For localhost sendmail development
-  if (
-    process.env.NODE_ENV === "development" &&
-    process.env.MAIL_HOST === "localhost"
-  ) {
+  // Check if localhost sendmail/mailhog is configured
+  if (process.env.MAIL_HOST === "localhost") {
     return nodemailer.createTransport({
-      host: process.env.MAIL_HOST || "localhost",
+      host: "localhost",
       port: parseInt(process.env.MAIL_PORT || "25"),
       secure: false,
       tls: {
