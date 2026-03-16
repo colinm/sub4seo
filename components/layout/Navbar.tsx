@@ -82,32 +82,40 @@ export default function Navbar() {
                   {dropdown.label}
                   <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
                 </button>
-                <ul
-                  className="absolute top-full left-0 min-w-[220px] bg-brand-navy border-t-2 border-accent opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl z-50 py-1"
+                <div
+                  className="absolute top-full left-0 bg-brand-navy border-t-2 border-accent opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl z-50 py-2"
                   style={{ backgroundColor: "#2a2e40" }}
                 >
-                  {dropdown.items.map((item) => (
-                    <li key={item.href}>
-                      {item.external ? (
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
-                        >
-                          {item.label}
-                        </a>
-                      ) : (
-                        <Link
-                          href={item.href}
-                          className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
-                        >
-                          {item.label}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                  <ul
+                    className={`${
+                      dropdown.items.length > 7
+                        ? 'grid grid-cols-2 min-w-90'
+                        : 'min-w-55'
+                    }`}
+                  >
+                    {dropdown.items.map((item) => (
+                      <li key={item.href}>
+                        {item.external ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap"
+                          >
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap"
+                          >
+                            {item.label}
+                          </Link>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
 
@@ -210,7 +218,7 @@ export default function Navbar() {
                   />
                 </button>
                 {openDropdown === dropdown.label && (
-                  <ul className="pb-2">
+                  <ul className={`pb-2 ${dropdown.items.length > 6 ? 'grid grid-cols-2' : ''}`}>
                     {dropdown.items.map((item) => (
                       <li key={item.href}>
                         {item.external ? (
