@@ -2,10 +2,34 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import FAQSchema from '@/components/seo/FAQSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/windows/window-styles'])
+
+const windowFaqs = [
+  {
+    question: 'How long does replacement window installation take?',
+    answer: 'Most whole-home window replacement projects are completed in a single day. Individual window replacements typically take 30–60 minutes per window. Suburban Construction measures precisely beforehand so windows arrive ready to install.',
+  },
+  {
+    question: 'What is the most energy-efficient window available?',
+    answer: 'Suburban Construction offers triple pane krypton glass windows — the most energy-efficient replacement window on the market. Krypton gas fills both chambers between three panes of glass, providing up to 80% more energy efficiency than standard double-pane windows.',
+  },
+  {
+    question: 'What window style is best for the Quad Cities climate?',
+    answer: 'Double hung windows are the most popular choice for Quad Cities homeowners. Their dual operable sashes allow flexible ventilation in summer, and when paired with triple pane krypton glass, they provide excellent insulation against Iowa and Illinois winters.',
+  },
+  {
+    question: 'Do replacement windows come with a warranty?',
+    answer: 'Yes. All Suburban Construction windows come with a Lifetime Limited Transferable Warranty on the frame and glass, plus a Lifetime Glass Breakage Warranty. Our installation is covered by our own lifetime workmanship guarantee.',
+  },
+  {
+    question: 'How much do replacement windows cost in the Quad Cities?',
+    answer: 'Replacement window costs vary based on style, size, and glass package. Double hung windows typically range from $400–$900 per window installed. Triple pane krypton upgrades add efficiency but minimal cost. Suburban Construction provides free, no-pressure in-home estimates.',
+  },
+]
 
 const windowTypes = [
   {
@@ -61,6 +85,7 @@ const windowTypes = [
 export default function WindowStylesPage() {
   return (
     <>
+      <FAQSchema faqs={windowFaqs} />
       <PageHero
         title="Window Styles"
         subtitle="Browse Our Complete Line of Replacement Windows"
@@ -186,10 +211,12 @@ export default function WindowStylesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
-          Not sure about home improvement terminology? Visit our Glossary of Terms →
-        </Link>
+      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+        <Link href="/windows/window-replacement-cost" className="text-accent hover:text-accent-dark underline">Window Replacement Cost Guide →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/windows/double-hung-vs-casement" className="text-accent hover:text-accent-dark underline">Double Hung vs. Casement →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">Glossary of Terms →</Link>
       </div>
     </>
   )

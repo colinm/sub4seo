@@ -11,6 +11,7 @@ import ServiceAreasSection from "@/components/home/ServiceAreasSection";
 import HomeFAQAccordion from "@/components/home/HomeFAQAccordion";
 import StatsCounter from "@/components/home/StatsCounter";
 import LeadCaptureForm from "@/components/shared/LeadCaptureForm";
+import VideoSchema from "@/components/seo/VideoSchema";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -280,6 +281,38 @@ export default function HomePage() {
       </section>
 
       {/* Video testimonials */}
+      <VideoSchema
+        videos={[
+          {
+            name: "Customer Testimonial — Window Replacement | Suburban Construction",
+            description: "A satisfied Quad Cities homeowner shares their experience with Suburban Construction's replacement window installation.",
+            thumbnailUrl: "https://img.youtube.com/vi/LJs-AMZb_QQ/maxresdefault.jpg",
+            uploadDate: "2023-01-01",
+            embedUrl: "https://www.youtube.com/embed/LJs-AMZb_QQ",
+          },
+          {
+            name: "Customer Testimonial — Home Improvement | Suburban Construction",
+            description: "A Quad Cities homeowner reviews their experience with Suburban Construction's home improvement services.",
+            thumbnailUrl: "https://img.youtube.com/vi/G8vZj5-6rKY/maxresdefault.jpg",
+            uploadDate: "2023-01-01",
+            embedUrl: "https://www.youtube.com/embed/G8vZj5-6rKY",
+          },
+          {
+            name: "Customer Testimonial — Siding & Windows | Suburban Construction",
+            description: "Hear from a happy customer about their siding and window project completed by Suburban Construction in the Quad Cities.",
+            thumbnailUrl: "https://img.youtube.com/vi/o0ruKXXcrzo/maxresdefault.jpg",
+            uploadDate: "2023-01-01",
+            embedUrl: "https://www.youtube.com/embed/o0ruKXXcrzo",
+          },
+          {
+            name: "Customer Testimonial — Gutters & Doors | Suburban Construction",
+            description: "A satisfied customer shares their experience with gutter and door installation by Suburban Construction.",
+            thumbnailUrl: "https://img.youtube.com/vi/NTSy-mbr2Cg/maxresdefault.jpg",
+            uploadDate: "2023-01-01",
+            embedUrl: "https://www.youtube.com/embed/NTSy-mbr2Cg",
+          },
+        ]}
+      />
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Suburban Construction",
   },
   description:
-    "Suburban Construction — the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, gutters, and patio enclosures in Davenport, Bettendorf, Moline, Rock Island, and the surrounding 90-mile radius.",
+    "Suburban Construction — the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, and gutters in Davenport, Bettendorf, Moline, Rock Island, and the surrounding 90-mile radius.",
   metadataBase: new URL("https://www.suburbanconstruction.com"),
   icons: {
     icon: [

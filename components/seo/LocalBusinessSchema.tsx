@@ -7,7 +7,7 @@ export default function LocalBusinessSchema() {
     logo: 'https://www.suburbanconstruction.com/logo.png',
     image: 'https://www.suburbanconstruction.com/main.jpg',
     description:
-      "Suburban Construction is the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, gutters, and patio enclosures.",
+      "Suburban Construction is the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, and gutters.",
     address: {
       '@type': 'PostalAddress',
       streetAddress: '3602 North Harrison',
@@ -73,10 +73,6 @@ export default function LocalBusinessSchema() {
         {
           '@type': 'Offer',
           itemOffered: { '@type': 'Service', name: 'Gutter Installation' },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: 'Patio Enclosures & Awnings' },
         },
       ],
     },

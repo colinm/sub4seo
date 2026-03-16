@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
       { source: '/window-installation', destination: '/windows/window-installation', permanent: true },
       { source: '/storm', destination: '/windows/storm', permanent: true },
       { source: '/replacement_windows_faq', destination: '/windows/replacement-windows-faq', permanent: true },
-      { source: '/swing_and_clean', destination: '/patio/swing-and-clean', permanent: true },
+      { source: '/swing_and_clean', destination: '/contact', permanent: true },
 
       // Siding — flat → nested
       { source: '/steel-siding', destination: '/siding/steel-siding', permanent: true },
@@ -48,11 +48,13 @@ const nextConfig: NextConfig = {
       { source: '/gutter-installation', destination: '/gutters/gutter-installation', permanent: true },
       { source: '/gutter_cap_faq', destination: '/gutters/gutter-cap-faq', permanent: true },
 
-      // Patio — flat → nested
-      { source: '/patio-awning', destination: '/patio/patio-awning', permanent: true },
-      { source: '/solar-shades', destination: '/patio/solar-shades', permanent: true },
-      { source: '/awning-care', destination: '/patio/awning-care', permanent: true },
-      { source: '/canopies', destination: '/patio/canopies', permanent: true },
+      // Patio — service discontinued, redirect all patio URLs to contact
+      { source: '/patio', destination: '/contact', permanent: true },
+      { source: '/patio/:path*', destination: '/contact', permanent: true },
+      { source: '/patio-awning', destination: '/contact', permanent: true },
+      { source: '/solar-shades', destination: '/contact', permanent: true },
+      { source: '/awning-care', destination: '/contact', permanent: true },
+      { source: '/canopies', destination: '/contact', permanent: true },
 
       // About — flat → nested
       { source: '/our-story', destination: '/about/our-story', permanent: true },

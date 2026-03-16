@@ -3,12 +3,36 @@ import { generatePageMetadata } from "@/lib/seo/metadata";
 import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
 import ProductSchema from "@/components/seo/ProductSchema";
+import FAQSchema from "@/components/seo/FAQSchema";
 import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = generatePageMetadata(
   pageSeoData["/siding/vinyl-siding"],
 );
+
+const sidingFaqs = [
+  {
+    question: 'How long does vinyl siding last?',
+    answer: 'Quality vinyl siding typically lasts 30–40 years or more with minimal maintenance. Freedom Series vinyl siding is engineered to resist fading, warping, and cracking, and requires only occasional rinsing with a garden hose to look great year after year.',
+  },
+  {
+    question: 'Does new siding increase home value?',
+    answer: 'Yes. New siding consistently ranks among the highest-return home improvement investments. According to Remodeling Magazine\'s Cost vs. Value report, vinyl siding replacement typically returns 70–80% of its cost at resale, while dramatically improving curb appeal.',
+  },
+  {
+    question: 'What is the difference between vinyl and insulated siding?',
+    answer: 'Standard vinyl siding is hollow-backed, while insulated vinyl siding has a rigid foam backing that improves the R-value of your wall assembly. Insulated siding reduces energy costs and provides a more solid feel when tapped. Both options are low-maintenance and available in many colors.',
+  },
+  {
+    question: 'How long does siding installation take?',
+    answer: 'A typical whole-home siding project takes 2–5 days depending on the size of the home and complexity of the project. Suburban Construction\'s experienced crews work efficiently to minimize disruption and leave your property clean each day.',
+  },
+  {
+    question: 'What siding colors are available?',
+    answer: 'Suburban Construction offers vinyl siding in a wide range of colors including classic whites and tans, bold blues and greens, and deep charcoals. Our Freedom Series siding comes in dozens of colors with fade-resistant pigments that hold their appearance for decades.',
+  },
+]
 
 export default function VinylSidingPage() {
   const serviceAreas = [
@@ -20,6 +44,7 @@ export default function VinylSidingPage() {
 
   return (
     <>
+      <FAQSchema faqs={sidingFaqs} />
       <ProductSchema
         name="Vinyl Siding — Freedom Series"
         description="America's most popular siding choice — durable, beautiful, and virtually maintenance-free. Professional installation in the Quad Cities."
@@ -296,14 +321,14 @@ export default function VinylSidingPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link
-          href="/resources/glossary"
-          className="text-accent hover:text-accent-dark underline"
-        >
-          Not sure about home improvement terminology? Visit our Glossary of
-          Terms →
-        </Link>
+      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+        <Link href="/siding/siding-replacement-cost" className="text-accent hover:text-accent-dark underline">Siding Replacement Cost Guide →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/siding/steel-vs-vinyl-siding" className="text-accent hover:text-accent-dark underline">Steel vs. Vinyl Siding →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/siding/vinyl-vs-composite-siding" className="text-accent hover:text-accent-dark underline">Vinyl vs. Composite Siding →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">Glossary of Terms →</Link>
       </div>
     </>
   );

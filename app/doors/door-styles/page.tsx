@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
+import FAQSchema from "@/components/seo/FAQSchema";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,9 +31,29 @@ const doorTypes = [
   },
 ];
 
+const doorFaqs = [
+  {
+    question: 'How long does entry door installation take?',
+    answer: 'Most entry door installations are completed in a single day — often in 2–4 hours. Suburban Construction measures your opening in advance, custom-orders your door, and installs it with proper weatherstripping, insulation, and hardware in one efficient visit.',
+  },
+  {
+    question: 'What is the most energy-efficient entry door material?',
+    answer: 'Fiberglass doors offer the best combination of energy efficiency, durability, and aesthetics. Fiberglass does not conduct heat or cold the way steel or wood can, making it an excellent insulator. Quality fiberglass doors are also resistant to warping, cracking, and denting.',
+  },
+  {
+    question: 'Can I add a storm door to an existing entry door?',
+    answer: 'Yes. Adding an Easy Vent storm door is an excellent way to improve your entry\'s energy efficiency and allow fresh air without bugs. Suburban Construction installs storm doors on existing door frames throughout the Quad Cities.',
+  },
+  {
+    question: 'What door colors and styles are available?',
+    answer: 'Suburban Construction offers entry doors in dozens of styles, colors, and glass insert options. We carry fiberglass and steel doors with wood-grain textures, smooth finishes, and a wide selection of pre-finished colors. Visit our showroom at 3602 North Harrison, Davenport to see samples.',
+  },
+]
+
 export default function DoorStylesPage() {
   return (
     <>
+      <FAQSchema faqs={doorFaqs} />
       <PageHero
         title="Door Styles"
         subtitle="Entry doors, storm doors, and innovative built-in blind options for Quad Cities homes"
@@ -192,14 +213,10 @@ export default function DoorStylesPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link
-          href="/resources/glossary"
-          className="text-accent hover:text-accent-dark underline"
-        >
-          Not sure about home improvement terminology? Visit our Glossary of
-          Terms →
-        </Link>
+      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+        <Link href="/doors/door-installation-cost" className="text-accent hover:text-accent-dark underline">Door Installation Cost Guide →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">Glossary of Terms →</Link>
       </div>
     </>
   );

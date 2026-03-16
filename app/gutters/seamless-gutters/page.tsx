@@ -2,14 +2,39 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import FAQSchema from '@/components/seo/FAQSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/gutters/seamless-gutters'])
 
+const gutterFaqs = [
+  {
+    question: 'What is the difference between seamless and sectional gutters?',
+    answer: 'Sectional gutters are assembled from pre-cut pieces joined with seams — these seams are the most common point of failure and leaking. Seamless gutters are custom-fabricated on-site in one continuous piece to fit your home exactly. With no seams, there are no joints to fail, caulk to dry out, or sections to separate.',
+  },
+  {
+    question: 'How long do seamless gutters last?',
+    answer: 'Quality aluminum seamless gutters typically last 20–30 years with proper maintenance. When paired with a Gutter Cap or Shur Flow protection system, you eliminate the clogging that shortens gutter lifespan, making them last even longer.',
+  },
+  {
+    question: 'What gutter size do I need?',
+    answer: 'Most Quad Cities homes use 5-inch gutters, which handle the majority of rain events efficiently. Homes with steep roofs, large roof surfaces, or heavy rainfall areas may benefit from 6-inch gutters. Suburban Construction assesses your home and recommends the right size at no charge.',
+  },
+  {
+    question: 'What is Gutter Cap and how does it work?',
+    answer: 'Gutter Cap is a gutter protection system that uses surface tension to guide water into the gutter while leaves and debris slide off the edge. It eliminates the need for regular gutter cleaning. Suburban Construction is a local Gutter Cap dealer and installer serving the Quad Cities.',
+  },
+  {
+    question: 'How much do seamless gutters cost?',
+    answer: 'Seamless gutter installation typically costs $8–$15 per linear foot installed, depending on gutter size, material, and height. A typical Quad Cities home with 150–200 linear feet of gutter runs $1,200–$3,000. Suburban Construction provides free, no-pressure estimates.',
+  },
+]
+
 export default function SeamlessGuttersPage() {
   return (
     <>
+      <FAQSchema faqs={gutterFaqs} />
       <PageHero
         title="Seamless Gutters"
         subtitle="Custom fabricated on-site for a perfect fit — no seams means no leaks"
@@ -142,10 +167,10 @@ export default function SeamlessGuttersPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
-          Not sure about home improvement terminology? Visit our Glossary of Terms →
-        </Link>
+      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+        <Link href="/gutters/gutter-installation-cost" className="text-accent hover:text-accent-dark underline">Gutter Installation Cost Guide →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">Glossary of Terms →</Link>
       </div>
     </>
   )

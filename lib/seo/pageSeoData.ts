@@ -5,7 +5,7 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
   '/': {
     title: 'Replacement Windows, Siding & Doors | Quad Cities General Contractor',
     description:
-      "Suburban Construction — the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, gutters, and patio enclosures. Serving Davenport, Bettendorf, Moline, Rock Island, and surrounding 90-mile radius.",
+      "Suburban Construction — the Quad Cities' trusted home improvement contractor since 1985. Replacement windows, siding, doors, and gutters. Serving Davenport, Bettendorf, Moline, Rock Island, and surrounding 90-mile radius.",
     keywords: [
       'replacement windows Quad Cities',
       'siding contractor Davenport IA',
@@ -165,6 +165,31 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
     canonicalPath: '/windows/replacement-windows-faq',
     ogImage: '/main.jpg',
   },
+  '/windows/window-replacement-cost': {
+    title: 'Window Replacement Cost Guide | Quad Cities Pricing',
+    description:
+      'How much does window replacement cost in the Quad Cities? Honest price ranges by window style, plus the key factors that affect your quote. Free estimates from Suburban Construction.',
+    keywords: [
+      'window replacement cost Quad Cities',
+      'how much do replacement windows cost Iowa',
+      'window installation price Davenport',
+      'replacement window cost estimate',
+    ],
+    canonicalPath: '/windows/window-replacement-cost',
+    ogImage: '/double-hung.jpg',
+  },
+  '/windows/double-hung-vs-casement': {
+    title: 'Double Hung vs. Casement Windows | Which Is Right for You?',
+    description:
+      'Compare double hung and casement replacement windows side-by-side. Ventilation, energy efficiency, cleaning, price, and more. Expert guidance from Suburban Construction.',
+    keywords: [
+      'double hung vs casement windows',
+      'double hung or casement windows Quad Cities',
+      'casement vs double hung window comparison',
+    ],
+    canonicalPath: '/windows/double-hung-vs-casement',
+    ogImage: '/casement1.jpg',
+  },
 
   // Siding
   '/siding/steel-siding': {
@@ -251,6 +276,44 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
     keywords: ['insulated siding FAQ', 'insulated siding questions Iowa'],
     canonicalPath: '/siding/insulated-siding-faq',
     ogImage: '/sidinghouse.jpg',
+  },
+  '/siding/siding-replacement-cost': {
+    title: 'Siding Replacement Cost Guide | Quad Cities Pricing',
+    description:
+      'How much does new siding cost in the Quad Cities? Transparent price ranges for vinyl, steel, and composite siding. Free estimates from Suburban Construction.',
+    keywords: [
+      'siding replacement cost Quad Cities',
+      'how much does siding cost Iowa',
+      'vinyl siding price Davenport',
+      'siding installation cost estimate',
+    ],
+    canonicalPath: '/siding/siding-replacement-cost',
+    ogImage: '/sidinghouse.jpg',
+  },
+  '/siding/steel-vs-vinyl-siding': {
+    title: 'Steel vs. Vinyl Siding | Which Is Right for Your Home?',
+    description:
+      'Compare steel and vinyl siding side-by-side: durability, cost, maintenance, appearance, and more. Honest guidance from Suburban Construction in the Quad Cities.',
+    keywords: [
+      'steel vs vinyl siding',
+      'steel or vinyl siding Quad Cities',
+      'siding comparison Iowa',
+      'best siding material Davenport',
+    ],
+    canonicalPath: '/siding/steel-vs-vinyl-siding',
+    ogImage: '/steel-siding.jpg',
+  },
+  '/siding/vinyl-vs-composite-siding': {
+    title: 'Vinyl vs. Composite Siding | Side-by-Side Comparison',
+    description:
+      'Vinyl or composite siding — which is right for your Quad Cities home? Compare appearance, cost, maintenance, and durability. Expert advice from Suburban Construction.',
+    keywords: [
+      'vinyl vs composite siding',
+      'composite siding vs vinyl Quad Cities',
+      'best siding Iowa',
+    ],
+    canonicalPath: '/siding/vinyl-vs-composite-siding',
+    ogImage: '/composite1.jpg',
   },
 
   // Doors
@@ -355,6 +418,32 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
       'Frequently asked questions about the Gutter Cap system. Learn how it works, how it compares to other gutter guards, and what installation involves.',
     keywords: ['gutter cap FAQ', 'gutter guard questions Iowa', 'gutter protection FAQ'],
     canonicalPath: '/gutters/gutter-cap-faq',
+    ogImage: '/main.jpg',
+  },
+  '/gutters/gutter-installation-cost': {
+    title: 'Gutter Installation Cost Guide | Quad Cities Pricing',
+    description:
+      'How much does gutter installation cost in the Quad Cities? Price ranges for seamless gutters, Gutter Cap, and Shur Flow systems. Free estimates from Suburban Construction.',
+    keywords: [
+      'gutter installation cost Quad Cities',
+      'how much do gutters cost Iowa',
+      'seamless gutter price Davenport',
+      'gutter replacement cost estimate',
+    ],
+    canonicalPath: '/gutters/gutter-installation-cost',
+    ogImage: '/main.jpg',
+  },
+  '/doors/door-installation-cost': {
+    title: 'Door Installation Cost Guide | Quad Cities Pricing',
+    description:
+      'How much does entry door or storm door installation cost in the Quad Cities? Honest price ranges by door type. Free estimates from Suburban Construction.',
+    keywords: [
+      'door installation cost Quad Cities',
+      'entry door price Iowa',
+      'storm door installation cost Davenport',
+      'new door cost estimate',
+    ],
+    canonicalPath: '/doors/door-installation-cost',
     ogImage: '/main.jpg',
   },
 

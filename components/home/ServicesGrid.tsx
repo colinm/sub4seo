@@ -51,11 +51,12 @@ export default function ServicesGrid() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
+          {services.map((service, i) => (
             <Link
               key={service.title}
               href={service.href}
-              className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 service-card-animate"
+              style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="relative h-44 overflow-hidden">
                 <Image

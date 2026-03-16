@@ -198,10 +198,12 @@ export default function CasementWindowsPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 text-center text-gray-500">
-        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">
-          Not sure about home improvement terminology? Visit our Glossary of Terms →
-        </Link>
+      <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
+        <Link href="/windows/double-hung-vs-casement" className="text-accent hover:text-accent-dark underline">Double Hung vs. Casement →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/windows/window-replacement-cost" className="text-accent hover:text-accent-dark underline">Window Replacement Cost Guide →</Link>
+        <span className="hidden sm:inline text-gray-300">|</span>
+        <Link href="/resources/glossary" className="text-accent hover:text-accent-dark underline">Glossary of Terms →</Link>
       </div>
     </>
   )

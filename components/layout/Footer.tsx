@@ -57,7 +57,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer style={{ backgroundColor: "#2a2e40" }} className="text-gray-300">
+    <footer style={{ backgroundColor: "#2a2e40" }} className="text-gray-300 border-t-4 border-accent footer-texture">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -226,7 +226,7 @@ export default function Footer() {
 
             <Link
               href="/contact"
-              className="mt-4 block w-full text-center bg-accent hover:bg-accent-hover text-white font-bold text-sm py-2.5 rounded transition-colors"
+              className="mt-4 block w-full text-center bg-accent hover:bg-accent-hover text-white font-bold text-sm py-3 px-6 rounded transition-colors btn-pulse"
             >
               Get a Free Estimate
             </Link>

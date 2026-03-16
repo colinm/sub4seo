@@ -222,6 +222,14 @@ export default function DoubleHungWindowsPage() {
                     name: "Our installation process",
                     href: "/windows/window-installation",
                   },
+                  {
+                    name: "Double hung vs. casement — compare styles",
+                    href: "/windows/double-hung-vs-casement",
+                  },
+                  {
+                    name: "Window replacement cost guide",
+                    href: "/windows/window-replacement-cost",
+                  },
                 ].map((item) => (
                   <li key={item.href} className="flex items-start gap-3">
                     <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">

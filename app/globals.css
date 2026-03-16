@@ -93,3 +93,33 @@ body {
 .btn-pulse {
   animation: pulse-accent 2s infinite;
 }
+
+/* Service card staggered entrance animation */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card-animate {
+  animation: fade-up 0.5s ease both;
+}
+
+/* Footer subtle texture overlay */
+.footer-texture {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  background-size: 200px 200px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .service-card-animate {
+    animation: none;
+  }
+}
