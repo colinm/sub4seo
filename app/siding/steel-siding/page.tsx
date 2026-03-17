@@ -152,6 +152,78 @@ export default function SteelSidingPage() {
         </div>
       </section>
 
+      {/* Steel Color Palette */}
+      <section className="py-10 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Available Colors</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Freedom Steel Siding&apos;s Kynar coating features heat-reflective pigments for a remarkably strong,
+            fade-resistant finish — available in a curated palette of on-trend exterior colors.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
+            {[
+              { name: 'Bright White',   hex: '#F2F0EB' },
+              { name: 'Chelsea Bluff',  hex: '#C9B99A' },
+              { name: 'Adobe',          hex: '#B89B7A' },
+              { name: 'Delray Sand',    hex: '#A6916E' },
+              { name: 'Thistle',        hex: '#9B91A4' },
+              { name: 'Sable',          hex: '#5C4A35' },
+              { name: 'Juniper Grove',  hex: '#5E7A62' },
+              { name: 'Dover Gray',     hex: '#8F9196' },
+              { name: 'Harbor Bay',     hex: '#607D8B' },
+              { name: 'Chevron Smoke',  hex: '#4A4D52' },
+              { name: 'Windmill Blue',  hex: '#4A6FA5' },
+              { name: 'Taylor Red',     hex: '#8B2424' },
+            ].map((color) => (
+              <div key={color.name} className="flex items-center gap-3 bg-white border border-gray-200 rounded-lg px-3 py-2.5 shadow-sm">
+                <span
+                  className="w-8 h-8 rounded shrink-0 border border-black/10 shadow-inner"
+                  style={{ backgroundColor: color.hex }}
+                />
+                <span className="text-sm text-gray-700 font-medium leading-tight">{color.name}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-500 text-sm">Ask us for physical color samples — make final selections using actual product samples.</p>
+        </div>
+      </section>
+
+      {/* Profiles */}
+      <section className="py-10">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Available Profiles</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Double 4" Clapboard', texture: 'Roughsawn Texture', desc: 'Classic residential profile with a traditional roughsawn finish.' },
+              { name: 'Double 5" Clapboard', texture: 'Roughsawn Texture', desc: 'Slightly wider exposure for a bolder shadow line and contemporary feel.' },
+              { name: '8" Clapboard', texture: 'Roughsawn Texture', desc: 'Wide-board profile delivers a modern, architectural aesthetic.' },
+              { name: '12" Vertical Board & Batten', texture: 'Medium Woodgrain Texture', desc: 'Farmhouse and craftsman look with a realistic woodgrain finish.' },
+            ].map((p) => (
+              <div key={p.name} className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <h3 className="font-bold text-gray-900 text-sm mb-1">{p.name}</h3>
+                <p className="text-xs text-accent-mid font-medium mb-2">{p.texture}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Did You Know callout */}
+      <section className="pb-6">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="bg-gray-900 text-white rounded-xl p-6">
+            <h3 className="font-bold text-white text-lg mb-3">Did You Know?</h3>
+            <ul className="space-y-2 text-sm text-gray-300 leading-relaxed">
+              <li>• Freedom Steel Siding&apos;s Kynar coating has a performance additive that results in improved scuff resistance over PVC finishes.</li>
+              <li>• Steel siding can be cut with an approved saw blade — making installation faster and easier than fiber cement.</li>
+              <li>• Because steel siding is &quot;hung,&quot; it floats on the exterior wall for a smoother appearance; fiber cement installs tightly to the wall and can reveal substructure imperfections.</li>
+              <li>• Steel siding is 100% recyclable and does not produce silica dust during installation — unlike fiber cement, no dust respirator is required.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Callout */}
       <section className="pb-10">
         <div className="max-w-5xl mx-auto px-4">

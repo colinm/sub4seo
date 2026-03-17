@@ -66,7 +66,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${dancingScript.variable}`}
     >
-      <head>
+      <body className="antialiased">
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SMSKZH24G0"
@@ -80,8 +80,6 @@ export default function RootLayout({
             gtag('config', 'G-SMSKZH24G0');
           `}
         </Script>
-      </head>
-      <body className="antialiased">
         <LocalBusinessSchema />
         <Navbar />
         <main className="pt-16">{children}</main>

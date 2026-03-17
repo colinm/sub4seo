@@ -154,6 +154,47 @@ export default function WindowStylesPage() {
         </div>
       </section>
 
+      {/* FreedomMaxx Glass Tiers */}
+      <section className="py-10">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Choose Your Glass Package</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            All window styles are available with three glass performance tiers — from high-performance
+            double pane to our ultimate triple pane krypton system. Nearly 80% of a window&apos;s surface
+            area is glass, so the glass package you choose has a major impact on energy performance.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Standard</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">FreedomMaxx Low-E HP</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Double pane with multiple-layer vacuum-deposition Low-E glass filled with argon gas.
+                Significantly more energy-efficient than a clear single-pane window.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Upgraded</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">FreedomMaxx 7</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Triple pane with two Low-E glass panes and two argon gas chambers. A powerful shield
+                against energy loss beyond standard double pane.
+              </p>
+            </div>
+            <div className="bg-accent-subtle border border-accent-faint rounded-xl p-5 shadow-sm relative">
+              <p className="text-xs font-bold uppercase tracking-wider text-accent mb-2">Best Performance</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">FreedomMaxx 10</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Triple pane with two Low-E glass panes and two chambers of krypton gas — the densest,
+                most insulating gas available. Our ultimate glass system for maximum energy efficiency.
+              </p>
+              <Link href="/windows/krypton" className="inline-block mt-3 text-sm font-semibold text-accent hover:text-accent-dark">
+                Learn more →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Secondary: image left, list right */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4">

@@ -171,6 +171,33 @@ export default function CompositeSidingPage() {
         </div>
       </section>
 
+      {/* GP² Technology Breakdown */}
+      <section className="py-10">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Inside GP² Technology</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            ALIGN is the world&apos;s first composite cladding incorporating Glass-Reinforced Polymer and
+            Graphite-Infused Polystyrene. Each ingredient plays a specific role in the final product&apos;s
+            performance.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {[
+              { ingredient: 'Glass Fibers', benefit: 'Add strength and stability' },
+              { ingredient: 'Titanium Dioxide', benefit: 'Protects against UV degradation' },
+              { ingredient: 'Flame Retardants', benefit: 'Decrease the spread of smoke and flames' },
+              { ingredient: 'Water-Resistant Resins', benefit: 'Prevents rotting, warping, shrinking and swelling' },
+              { ingredient: 'Weatherable Pigments', benefit: 'Resist fading, even on dark colors' },
+              { ingredient: 'Impact Modifiers', benefit: 'Resist dents and dings' },
+            ].map((item) => (
+              <div key={item.ingredient} className="bg-gray-900 text-white rounded-lg p-4">
+                <p className="font-bold text-sm text-white mb-1">{item.ingredient}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{item.benefit}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ALIGN Color Palette */}
       <section className="py-10">
         <div className="max-w-5xl mx-auto px-4">
@@ -179,14 +206,39 @@ export default function CompositeSidingPage() {
             ALIGN&apos;s 20 fade-resistant, low-gloss colors provide extensive design flexibility. GP²&apos;s
             integral weatherable pigments ensure strong fade resistance even on darker shades.
           </p>
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 mb-6">
             {[
-              'Snow White', 'Majestic Brick', 'Chesapeake Gray', 'Coastal Blue', 'Fired Brick',
+              { name: 'Snow White',      hex: '#F2F0EB' },
+              { name: 'Almond',          hex: '#EDE0C8' },
+              { name: 'Monterey Sand',   hex: '#C8B89A' },
+              { name: 'Pebble',          hex: '#A89278' },
+              { name: 'Dark Drift',      hex: '#6B5A48' },
+              { name: 'Rockport Brown',  hex: '#5C4638' },
+              { name: 'Smoked Timber',   hex: '#3D3028' },
+              { name: 'Dover Gray',      hex: '#9EAAB0' },
+              { name: 'Storm',           hex: '#8A9298' },
+              { name: 'Chesapeake Gray', hex: '#A0A8A8' },
+              { name: 'Hudson Slate',    hex: '#7A8C96' },
+              { name: 'Windswept Smoke', hex: '#606870' },
+              { name: 'Iron Ore',        hex: '#3A3E42' },
+              { name: 'Coastal Blue',    hex: '#3A6878' },
+              { name: 'Rockwell Blue',   hex: '#4A6890' },
+              { name: 'Midnight Surf',   hex: '#2A3A58' },
+              { name: 'Marine Dusk',     hex: '#2A3040' },
+              { name: 'Meadow Fern',     hex: '#7A8C5C' },
+              { name: 'Moonlit Moss',    hex: '#5C6845' },
+              { name: 'Majestic Brick',  hex: '#8B3530' },
             ].map((color) => (
-              <span key={color} className="bg-gray-100 border border-gray-200 rounded px-3 py-1 text-sm text-gray-700">{color}</span>
+              <div key={color.name} className="flex items-center gap-2.5 bg-white border border-gray-200 rounded-lg px-3 py-2.5 shadow-sm">
+                <span
+                  className="w-7 h-7 rounded shrink-0 border border-black/10 shadow-inner"
+                  style={{ backgroundColor: color.hex }}
+                />
+                <span className="text-xs text-gray-700 font-medium leading-tight">{color.name}</span>
+              </div>
             ))}
           </div>
-          <p className="text-gray-500 text-sm mb-6">Plus 15 additional on-trend colors — ask us for the full palette or use the Gentek Visualizer below to explore all options.</p>
+          <p className="text-gray-500 text-sm mb-6">Colors shown are approximate representations. Ask us for physical samples — make final selections using actual product samples.</p>
           <div className="bg-accent-subtle border border-accent-faint rounded-lg p-4">
             <p className="text-gray-700 text-sm leading-relaxed">
               <strong>Visualize your home:</strong> Use the{' '}

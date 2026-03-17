@@ -238,7 +238,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-4">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500">
           <p>© {year} Suburban Construction, Inc. All rights reserved.</p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 lg:pr-36">
             <Link
               href="/about/our-story"
               className="hover:text-gray-300 transition-colors"
@@ -262,6 +262,12 @@ export default function Footer() {
               className="hover:text-gray-300 transition-colors"
             >
               Service Areas
+            </Link>
+            <Link
+              href="/sitemap.xml"
+              className="hover:text-gray-300 transition-colors"
+            >
+              Sitemap
             </Link>
           </div>
         </div>

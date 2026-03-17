@@ -191,21 +191,65 @@ export default function WindowOptionsPage() {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frame Colors & Interior Finishes</h2>
-          <ul className="space-y-2 mb-8">
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-accent-mid mt-1">✓</span>
-              Exterior frame colors: white, tan, clay, bronze, dark bronze, and more
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-accent-mid mt-1">✓</span>
-              Interior wood-grain finishes: oak, pine, cherry — great for painted or stained trim
-            </li>
-            <li className="flex items-start gap-2 text-gray-700">
-              <span className="text-accent-mid mt-1">✓</span>
-              Interior color options: white or matching exterior color
-            </li>
-          </ul>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Exterior Frame Colors</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Our windows are available in a full architectural color collection. Exterior colors feature a
+            cutting-edge polyurethane coating with heat-reflective pigments for a strong, fade-resistant finish.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 mb-2">
+            {[
+              { name: 'White',               hex: '#F2F0EB' },
+              { name: 'Beige',               hex: '#DDD3C0' },
+              { name: 'Classic Clay',        hex: '#C4B49A' },
+              { name: 'Castle Gray',         hex: '#8F9196' },
+              { name: 'Silver',              hex: '#A8ACAE' },
+              { name: 'Hudson Khaki',        hex: '#9A8C6E' },
+              { name: 'Desert Clay',         hex: '#B8906A' },
+              { name: 'Sand Dune',           hex: '#C2A87A' },
+              { name: 'American Terra',      hex: '#9E6040' },
+              { name: 'English Red',         hex: '#8B3030' },
+              { name: 'Forest Green',        hex: '#3E5C3E' },
+              { name: 'Architectural Bronze',hex: '#5C4830' },
+              { name: 'Black',               hex: '#2A2A2A' },
+            ].map((color) => (
+              <div key={color.name} className="flex items-center gap-2.5 bg-white border border-gray-200 rounded-lg px-3 py-2.5 shadow-sm">
+                <span
+                  className="w-7 h-7 rounded shrink-0 border border-black/10 shadow-inner"
+                  style={{ backgroundColor: color.hex }}
+                />
+                <span className="text-xs text-gray-700 font-medium leading-tight">{color.name}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-500 text-xs mb-8">Colors shown are approximate. Make final selections using actual product samples.</p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Interior Woodgrain Finishes</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Interior woodgrain laminates are expertly crafted for superb durability while maintaining
+            a warm, natural appearance. Perfect for homes with wood trim and millwork.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-2">
+            {[
+              { name: 'White',        hex: '#F2F0EB', note: 'Available on Beige or Classic Clay base only' },
+              { name: 'Light Oak',    hex: '#C8A870', note: 'Pontiac Gold hardware' },
+              { name: 'Rich Maple',   hex: '#B87840', note: 'Pontiac Gold hardware' },
+              { name: 'Dark Oak',     hex: '#7A5030', note: 'Pontiac Gold hardware' },
+              { name: 'Foxwood',      hex: '#8C6040', note: 'Brown hardware' },
+              { name: 'Cherry',       hex: '#7A3828', note: 'Brown hardware' },
+            ].map((finish) => (
+              <div key={finish.name} className="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-3 py-3 shadow-sm">
+                <span
+                  className="w-7 h-7 rounded shrink-0 border border-black/10 shadow-inner mt-0.5"
+                  style={{ backgroundColor: finish.hex }}
+                />
+                <div>
+                  <p className="text-sm text-gray-800 font-semibold leading-tight">{finish.name}</p>
+                  <p className="text-xs text-gray-500 leading-tight mt-0.5">{finish.note}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-500 text-xs mb-8">Hardware color is automatically matched to your interior finish selection.</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Screen Options</h2>
           <ul className="space-y-2 mb-8">
