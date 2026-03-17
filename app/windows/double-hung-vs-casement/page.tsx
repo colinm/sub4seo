@@ -4,10 +4,18 @@ import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
 import FAQSchema from "@/components/seo/FAQSchema";
 import Link from "next/link";
+import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(
   pageSeoData["/windows/double-hung-vs-casement"],
 );
+
+const windowFaqLinks = [
+  { href: '/windows/replacement-windows-faq', title: 'Window FAQ', description: 'Replacement windows, installation timelines, energy savings, warranties, and more.', icon: '🪟' },
+  { href: '/resources/condensation-faq', title: 'Condensation FAQ', description: 'What causes condensation on windows, what it means, and how to address it.', icon: '💧' },
+  { href: '/resources/convection-faq', title: 'Convection FAQ', description: 'How convection causes heat loss through windows and how gas fills reduce it.', icon: '🌡️' },
+  { href: '/resources/stain-formula-faq', title: 'Stain Formulas', description: 'How to get color match information for touch-ups on siding and windows.', icon: '🎨' },
+]
 
 const faqs = [
   {
@@ -232,6 +240,8 @@ export default function DoubleHungVsCasementPage() {
           </div>
         </div>
       </section>
+
+      <RelatedFAQs items={windowFaqLinks} />
 
       <section className="py-12 bg-accent-subtle">
         <div className="max-w-5xl mx-auto px-4 text-center">

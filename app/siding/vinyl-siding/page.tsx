@@ -6,10 +6,16 @@ import ProductSchema from "@/components/seo/ProductSchema";
 import FAQSchema from "@/components/seo/FAQSchema";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(
   pageSeoData["/siding/vinyl-siding"],
 );
+
+const sidingFaqLinks = [
+  { href: '/siding/vinyl-siding-faq', title: 'Siding FAQ', description: 'Vinyl and steel siding questions: durability, maintenance, cost, and color choices.', icon: '🏠' },
+  { href: '/resources/stain-formula-faq', title: 'Stain Formulas', description: 'How to get color match information for touch-ups on siding and windows.', icon: '🎨' },
+]
 
 const sidingFaqs = [
   {
@@ -300,6 +306,8 @@ export default function VinylSidingPage() {
           </a>
         </div>
       </section>
+
+      <RelatedFAQs items={sidingFaqLinks} />
 
       {/* CTA */}
       <section className="py-12 bg-accent-subtle">

@@ -4,8 +4,14 @@ import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import Image from 'next/image'
 import Link from 'next/link'
+import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/siding-options'])
+
+const sidingFaqLinks = [
+  { href: '/siding/vinyl-siding-faq', title: 'Siding FAQ', description: 'Vinyl and steel siding questions: durability, maintenance, cost, and color choices.', icon: '🏠' },
+  { href: '/resources/stain-formula-faq', title: 'Stain Formulas', description: 'How to get color match information for touch-ups on siding and windows.', icon: '🎨' },
+]
 
 const sidingTypes = [
   {
@@ -181,6 +187,8 @@ export default function SidingOptionsPage() {
           </a>
         </div>
       </section>
+
+      <RelatedFAQs items={sidingFaqLinks} />
 
       <section className="py-12 bg-accent-subtle">
         <div className="max-w-5xl mx-auto px-4 text-center">

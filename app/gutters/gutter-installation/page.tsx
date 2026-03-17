@@ -4,8 +4,14 @@ import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import Image from 'next/image'
 import Link from 'next/link'
+import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/gutters/gutter-installation'])
+
+const gutterFaqLinks = [
+  { href: '/gutters/gutter-cap-faq', title: 'Gutter Cap FAQ', description: 'How the Gutter Cap system works, how it compares, and what installation involves.', icon: '🌧️' },
+  { href: '/resources/heater-cap-faq', title: 'Heater Cap FAQ', description: 'How the Heater Cap gutter system prevents ice dams and keeps gutters clear in winter.', icon: '❄️' },
+]
 
 export default function GutterInstallationPage() {
   return (
@@ -119,6 +125,8 @@ export default function GutterInstallationPage() {
           </div>
         </div>
       </section>
+
+      <RelatedFAQs items={gutterFaqLinks} />
 
       <section className="py-12 bg-accent-subtle">
         <div className="max-w-5xl mx-auto px-4 text-center">
