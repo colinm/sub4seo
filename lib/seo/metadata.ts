@@ -12,14 +12,20 @@ const SITE_NAME = 'Suburban Construction'
 const BASE_URL = 'https://www.suburbanconstruction.com'
 const DEFAULT_OG_IMAGE = '/main.jpg'
 
+// Local shorthand terms Quad Cities residents use to refer to the area
+const REGIONAL_KEYWORDS = ['QC', 'QCA', 'quadcities']
+
 export function generatePageMetadata(config: PageSeoConfig): Metadata {
   const fullTitle = `${config.title} | ${SITE_NAME}`
   const ogImage = config.ogImage ?? DEFAULT_OG_IMAGE
+  const allKeywords = config.keywords
+    ? [...config.keywords, ...REGIONAL_KEYWORDS]
+    : REGIONAL_KEYWORDS
 
   return {
     title: fullTitle,
     description: config.description,
-    keywords: config.keywords?.join(', '),
+    keywords: allKeywords.join(', '),
     alternates: {
       canonical: `${BASE_URL}${config.canonicalPath}`,
     },
