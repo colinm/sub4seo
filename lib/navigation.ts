@@ -74,7 +74,7 @@ export const navDropdowns: NavDropdown[] = [
     ],
   },
   {
-    label: "About Us",
+    label: "About",
     items: [
       { label: "Our Company Story", href: "/about/our-story" },
       { label: "Meet the Owners", href: "/about/meet-the-owners" },
