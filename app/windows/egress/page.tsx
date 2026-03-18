@@ -162,14 +162,14 @@ export default function EgressWindowsPage() {
       {/* Secondary: image left, list right */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <Image
+          <div className="grid grid-cols-1 gap-10 items-center">
+            {/* <Image
               src="/basement.png"
               alt="Basement window installation detail"
               width={600}
               height={420}
               className="rounded-xl shadow-lg w-full h-auto object-cover"
-            />
+            /> */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 Benefits Beyond Code Compliance
