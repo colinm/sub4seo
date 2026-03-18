@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/faq'])
@@ -83,6 +84,7 @@ const generalFaqs = [
 export default function FAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about our products, services, and process"

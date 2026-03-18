@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/stain-formula-faq'])
@@ -9,6 +10,7 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/s
 export default function StainFormulaFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Stain Formulas"
         subtitle="Color matching and touch-up information for your siding and window products"

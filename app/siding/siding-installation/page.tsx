@@ -2,11 +2,22 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import HowToSchema from '@/components/seo/HowToSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/siding-installation'])
+
+const sidingInstallSteps = [
+  { name: 'Free Estimate & Measurement', text: 'We measure your home, evaluate existing conditions, and bring sample boards so you can see actual colors and textures.' },
+  { name: 'Removal of Old Siding', text: 'Our crew removes and disposes of existing siding, exposing the sheathing for inspection. No problems get sealed in.' },
+  { name: 'Sheathing Inspection & Repair', text: 'We inspect all exposed sheathing for rot, moisture damage, and structural integrity. Damaged areas are replaced before proceeding.' },
+  { name: 'Moisture Barrier Installation', text: 'A quality weather-resistant barrier is installed with proper overlaps, taped seams, and integration at every window, door, and penetration.' },
+  { name: 'Siding Installation', text: 'Panels are installed from the bottom up with proper starter strips, level lines for each course, and correct nailing patterns for thermal expansion.' },
+  { name: 'Trim, Soffit & Fascia', text: 'We complete all window and door surrounds, corner posts, soffit panels, and fascia covers for clean, professional lines at every transition.' },
+  { name: 'Cleanup & Final Walkthrough', text: 'We pick up and dispose of all debris, clean up the work area, and walk you through the completed installation before we leave.' },
+]
 
 const sidingFaqLinks = [
   { href: '/siding/vinyl-siding-faq', title: 'Siding FAQ', description: 'Vinyl and steel siding questions: durability, maintenance, cost, and color choices.', icon: '🏠' },
@@ -16,6 +27,12 @@ const sidingFaqLinks = [
 export default function SidingInstallationPage() {
   return (
     <>
+      <HowToSchema
+        name="How to Get New Siding Installed by Suburban Construction"
+        description="The complete siding replacement process from free estimate through installation, trim work, and final walkthrough. Suburban Construction serves the Quad Cities area."
+        steps={sidingInstallSteps}
+        image="/siding-installation.png"
+      />
       <PageHero
         title="Siding Installation Process"
         subtitle="Professional installation, detailed preparation, and a lifetime workmanship guarantee"

@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion, { type FAQItem } from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/vinyl-siding-faq'])
@@ -73,6 +74,7 @@ const faqs: FAQItem[] = [
 export default function VinylSidingFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Vinyl Siding FAQ"
         subtitle="Answers to the most common questions about vinyl siding"

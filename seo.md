@@ -6,7 +6,7 @@ A complete reference of every SEO enhancement implemented in the new Next.js sit
 
 ## Table of Contents
 
-1. [Per-Page Metadata — All 60+ Pages](#1-per-page-metadata)
+1. [Per-Page Metadata — All 68+ Pages](#1-per-page-metadata)
 2. [Metadata Generation System](#2-metadata-generation-system)
 3. [Canonical URLs](#3-canonical-urls)
 4. [Open Graph (Social Sharing)](#4-open-graph)
@@ -20,6 +20,7 @@ A complete reference of every SEO enhancement implemented in the new Next.js sit
 12. [Performance & Core Web Vitals](#12-performance--core-web-vitals)
 13. [Global Site Settings](#13-global-site-settings)
 14. [Analytics](#14-analytics)
+15. [Answer Engine Optimization (AEO)](#15-answer-engine-optimization-aeo)
 
 ---
 
@@ -38,7 +39,7 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 
 ---
 
-### Windows — 14 Pages
+### Windows — 16 Pages
 
 #### /windows/window-styles
 | Field | Value |
@@ -138,9 +139,23 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Description | Frequently asked questions about replacement windows: costs, installation time, energy savings, warranties, and more. Serving the Quad Cities since 1985. |
 | Keywords | replacement windows FAQ, window replacement questions Quad Cities, how long does window installation take |
 
+#### /windows/window-replacement-cost
+| Field | Value |
+|-------|-------|
+| Title | Window Replacement Cost Guide \| Quad Cities Pricing |
+| Description | How much does window replacement cost in the Quad Cities? Honest price ranges by window style, plus the key factors that affect your quote. Free estimates from Suburban Construction. |
+| Keywords | window replacement cost Quad Cities, how much do replacement windows cost Iowa, window installation price Davenport, replacement window cost estimate |
+
+#### /windows/double-hung-vs-casement
+| Field | Value |
+|-------|-------|
+| Title | Double Hung vs. Casement Windows \| Which Is Right for You? |
+| Description | Compare double hung and casement replacement windows side-by-side. Ventilation, energy efficiency, cleaning, price, and more. Expert guidance from Suburban Construction. |
+| Keywords | double hung vs casement windows, double hung or casement windows Quad Cities, casement vs double hung window comparison |
+
 ---
 
-### Siding — 8 Pages
+### Siding — 11 Pages
 
 #### /siding/vinyl-siding
 | Field | Value |
@@ -198,9 +213,30 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Description | Frequently asked questions about insulated siding's energy savings, installation, and cost. Learn how insulated siding can lower your heating and cooling bills. |
 | Keywords | insulated siding FAQ, insulated siding questions Iowa |
 
+#### /siding/siding-replacement-cost
+| Field | Value |
+|-------|-------|
+| Title | Siding Replacement Cost Guide \| Quad Cities Pricing |
+| Description | How much does new siding cost in the Quad Cities? Transparent price ranges for vinyl, steel, and composite siding. Free estimates from Suburban Construction. |
+| Keywords | siding replacement cost Quad Cities, how much does siding cost Iowa, vinyl siding price Davenport, siding installation cost estimate |
+
+#### /siding/steel-vs-vinyl-siding
+| Field | Value |
+|-------|-------|
+| Title | Steel vs. Vinyl Siding \| Which Is Right for Your Home? |
+| Description | Compare steel and vinyl siding side-by-side: durability, cost, maintenance, appearance, and more. Honest guidance from Suburban Construction in the Quad Cities. |
+| Keywords | steel vs vinyl siding, steel or vinyl siding Quad Cities, siding comparison Iowa, best siding material Davenport |
+
+#### /siding/vinyl-vs-composite-siding
+| Field | Value |
+|-------|-------|
+| Title | Vinyl vs. Composite Siding \| Side-by-Side Comparison |
+| Description | Vinyl or composite siding — which is right for your Quad Cities home? Compare appearance, cost, maintenance, and durability. Expert advice from Suburban Construction. |
+| Keywords | vinyl vs composite siding, composite siding vs vinyl Quad Cities, best siding Iowa |
+
 ---
 
-### Doors — 5 Pages
+### Doors — 6 Pages
 
 #### /doors/door-styles
 | Field | Value |
@@ -244,9 +280,16 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Description | Explore our full door catalog. Find the perfect entry door, storm door, or patio door for your Quad Cities home. |
 | Keywords | door catalog Quad Cities, door options Iowa |
 
+#### /doors/door-installation-cost
+| Field | Value |
+|-------|-------|
+| Title | Door Installation Cost Guide \| Quad Cities Pricing |
+| Description | How much does entry door or storm door installation cost in the Quad Cities? Honest price ranges by door type. Free estimates from Suburban Construction. |
+| Keywords | door installation cost Quad Cities, entry door price Iowa, storm door installation cost Davenport, new door cost estimate |
+
 ---
 
-### Gutters — 5 Pages
+### Gutters — 6 Pages
 
 #### /gutters/seamless-gutters
 | Field | Value |
@@ -282,6 +325,13 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Title | Gutter Cap FAQ \| Suburban Construction |
 | Description | Frequently asked questions about the Gutter Cap system. Learn how it works, how it compares to other gutter guards, and what installation involves. |
 | Keywords | gutter cap FAQ, gutter guard questions Iowa, gutter protection FAQ |
+
+#### /gutters/gutter-installation-cost
+| Field | Value |
+|-------|-------|
+| Title | Gutter Installation Cost Guide \| Quad Cities Pricing |
+| Description | How much does gutter installation cost in the Quad Cities? Price ranges for seamless gutters, Gutter Cap, and Shur Flow systems. Free estimates from Suburban Construction. |
+| Keywords | gutter installation cost Quad Cities, how much do gutters cost Iowa, seamless gutter price Davenport, gutter replacement cost estimate |
 
 ---
 
@@ -358,7 +408,7 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Field | Value |
 |-------|-------|
 | Title | Customer Testimonials \| Suburban Construction Reviews |
-| Description | Read what Quad Cities homeowners say about Suburban Construction. Over 53 testimonials from satisfied customers in Davenport, Bettendorf, Moline, Rock Island, and beyond. |
+| Description | Read what Quad Cities homeowners say about Suburban Construction. 4.7 stars across 111 Google reviews, plus dozens of written testimonials from customers in Davenport, Bettendorf, Moline, Rock Island, and beyond. |
 | Keywords | Suburban Construction reviews, customer testimonials Davenport IA, home improvement reviews Quad Cities |
 
 #### /about/in-the-news
@@ -476,10 +526,12 @@ All per-page metadata is centralized in `lib/seo/pageSeoData.ts` and generated t
 **`generatePageMetadata()` produces:**
 - Full `<title>` tag with site name appended: `"[Page Title] | Suburban Construction"`
 - `<meta name="description">`
-- `<meta name="keywords">` (comma-joined from keywords array)
+- `<meta name="keywords">` (comma-joined from keywords array, with regional shorthand terms automatically appended)
 - Canonical `<link rel="canonical">`
 - Complete Open Graph block (title, description, URL, image 1200×630, locale, type)
 - Complete Twitter card block (summary_large_image, title, description, image)
+
+**Automatic regional keyword augmentation:** Every page automatically receives three additional keyword terms appended to its keyword list: `QC`, `QCA`, and `quadcities` — shorthand terms Quad Cities residents commonly use when searching. These are defined once in `lib/seo/metadata.ts` and applied globally so they never need to be repeated per-page.
 
 **Applied on every page:**
 ```typescript
@@ -599,20 +651,22 @@ Example structure:
 **URL:** `https://www.suburbanconstruction.com/sitemap.xml`
 **Auto-generated** by Next.js from `app/sitemap.ts`
 
-**Total URLs: 81**
-- 71 static pages
+**Total URLs: 68**
+- 58 static pages
 - 10 dynamic city pages
+
+> **Note:** The `/doors/storm` page exists and has metadata defined but is currently not included in the sitemap. The site owner may want to add it, or confirm the page should remain unindexed.
 
 **Priority assignments:**
 | Priority | Pages |
 |----------|-------|
 | 1.0 | Homepage |
 | 0.9 | /contact, /service-areas |
-| 0.8 | Core product pages (window styles, vinyl siding, steel siding, etc.), all city pages |
-| 0.7 | Secondary product pages, about pages |
-| 0.6 | Option/installation/FAQ pages |
-| 0.5 | Door pages |
-| 0.4 | Patio pages, general resources |
+| 0.8 | Core product pages (window styles, vinyl siding, steel siding, krypton, cost guides), all city pages |
+| 0.7 | Secondary product pages, comparison pages, installation pages, FAQ pages, about/showroom/testimonials |
+| 0.6 | Option pages, lesser FAQ pages, resources/faq, glossary, warranty |
+| 0.5 | Door sub-pages, downloads, recommended maintenance |
+| 0.4 | Patio pages, in-the-news, stain formula |
 
 **Change frequencies:**
 - Homepage: weekly
@@ -826,19 +880,115 @@ Configured in root `app/layout.tsx`:
 
 ---
 
+## 15. Answer Engine Optimization (AEO)
+
+AEO targets AI-powered search interfaces — ChatGPT, Perplexity, Google AI Overviews, voice assistants — in addition to traditional search. The following implementations are in place.
+
+### A. `llms.txt`
+
+**URL:** `https://www.suburbanconstruction.com/llms.txt`
+**File:** `public/llms.txt`
+
+An emerging convention (parallel to `robots.txt` for LLMs) that provides a plain-text summary of the site for AI crawlers and language model agents. Includes:
+- Company description, founding year, service area
+- Full list of products and services
+- Key page URLs
+- Cities served
+- Trust signals (40+ years, 35,000+ installations, 4.7/111 reviews)
+- Content policy explicitly welcoming AI indexing
+- Sitemap URL
+
+### B. HowTo Schema — Installation Process Pages
+
+**Type:** `HowTo` with numbered `HowToStep` entries
+**Component:** `components/seo/HowToSchema.tsx`
+**Applied on:** 3 installation pages
+
+| Page | Steps | Image |
+|------|-------|-------|
+| `/windows/window-installation` | 7 steps | /install1.jpg |
+| `/siding/siding-installation` | 7 steps | /siding-installation.png |
+| `/gutters/gutter-installation` | 6 steps | /shurflow1.jpg |
+
+When someone asks an AI "how does window/siding/gutter installation work?" the HowTo schema gives the AI a structured, citable answer drawn directly from this site. Each step has a `position`, `name`, and `text` field.
+
+### C. DefinedTermSet Schema — Glossary
+
+**Type:** `DefinedTermSet` containing `DefinedTerm` entries
+**Component:** `components/seo/DefinedTermSchema.tsx`
+**Applied on:** `/resources/glossary`
+
+The 200+ term glossary is now machine-readable. Each entry emits:
+- `@type: DefinedTerm`
+- `name` (the term)
+- `description` (the definition)
+- `inDefinedTermSet` (linking back to the glossary)
+
+When an AI is asked "what is a casement window?" or "what does NFRC mean?" — a `DefinedTerm` schema is the strongest signal that this site is an authoritative source. The glossary is a significant competitive advantage for AI citation.
+
+### D. Speakable Schema — All FAQ Pages
+
+**Type:** `WebPage` with `SpeakableSpecification`
+**Component:** `components/seo/SpeakableSchema.tsx`
+**Applied on:** All 9 FAQ pages
+
+| Page |
+|------|
+| `/windows/replacement-windows-faq` |
+| `/resources/faq` |
+| `/resources/condensation-faq` |
+| `/resources/convection-faq` |
+| `/resources/heater-cap-faq` |
+| `/resources/stain-formula-faq` |
+| `/gutters/gutter-cap-faq` |
+| `/siding/vinyl-siding-faq` |
+| `/siding/insulated-siding-faq` |
+
+The speakable spec uses CSS selectors `["h1", "h2"]` to mark headings as voice-assistant and AI-summary friendly. This signals that the page's headline content is suitable for reading aloud or quoting directly.
+
+### E. AI Crawler Permissions — robots.txt
+
+**File:** `app/robots.ts`
+
+In addition to the global `*` allow rule, the following AI crawlers are explicitly listed and permitted:
+
+| Bot | Purpose |
+|-----|---------|
+| `GPTBot` | OpenAI / ChatGPT |
+| `ChatGPT-User` | ChatGPT browsing |
+| `ClaudeBot` | Anthropic / Claude |
+| `anthropic-ai` | Anthropic crawlers |
+| `PerplexityBot` | Perplexity AI |
+| `Googlebot-Extended` | Google AI features |
+| `CCBot` | Common Crawl |
+| `cohere-ai` | Cohere |
+
+Explicit listing (in addition to the wildcard) clarifies intent and future-proofs the configuration — allowing individual bots to be blocked or rate-limited without touching the global rule.
+
+---
+
 ## Summary
 
 | Category | Count / Detail |
 |----------|---------------|
-| Pages with unique metadata | 60+ static pages + 10 city pages |
-| Total keywords targeted | 150+ unique keyword phrases |
-| Structured data schema types | 5 (LocalBusiness, Product, FAQPage, BreadcrumbList, Service Area) |
+| Pages with unique metadata | 68+ static pages + 10 city pages |
+| Total keywords targeted | 200+ unique keyword phrases |
+| Regional keyword augmentation | QC, QCA, quadcities — auto-appended to every page |
+| Structured data schema types | 8 (LocalBusiness, Product, FAQPage, BreadcrumbList, HowTo, DefinedTermSet, Speakable, Service Area) |
 | Pages with FAQ rich result eligibility | 9 |
+| Pages with HowTo schema | 3 (window, siding, gutter installation) |
+| Pages with Speakable schema | 9 (all FAQ pages) |
+| Glossary terms with DefinedTerm schema | 200+ |
 | Pages with star rating eligibility | All product/service pages + every page (via global LocalBusiness schema) |
-| Sitemap entries | 81 |
+| Google reviews (testimonials page) | 4.7 stars / 111 reviews |
+| Sitemap entries | 68 (58 static + 10 city) |
 | 301 redirects preserving old URLs | 46 |
 | City-targeted landing pages | 10 |
+| Cost guide pages | 4 (windows, siding, gutters, doors) |
+| Comparison pages | 3 (double-hung vs casement, steel vs vinyl, vinyl vs composite) |
 | Image format optimization | AVIF + WebP auto-conversion |
-| Canonical URLs | All 60+ pages |
+| Canonical URLs | All pages |
 | Open Graph coverage | 100% of pages |
 | Twitter card coverage | 100% of pages |
+| llms.txt | Present at /llms.txt — explicit AI crawler welcome |
+| AI bots in robots.txt | 8 explicitly named (GPTBot, ClaudeBot, PerplexityBot, etc.) |

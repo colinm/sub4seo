@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import DefinedTermSchema from '@/components/seo/DefinedTermSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/glossary'])
@@ -2420,6 +2421,11 @@ const letters = Object.keys(grouped).sort()
 export default function GlossaryPage() {
   return (
     <>
+      <DefinedTermSchema
+        terms={glossaryTerms}
+        setName="Home Improvement Glossary"
+        setDescription="Plain-English definitions for home improvement terms covering windows, siding, doors, gutters, and construction — compiled by Suburban Construction, Quad Cities contractor since 1985."
+      />
       <PageHero
         title="Home Improvement Glossary"
         subtitle="Plain-English definitions for common home improvement terms — windows, siding, doors, and more"

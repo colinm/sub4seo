@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/condensation-faq'])
@@ -68,6 +69,7 @@ const condensationFaqs = [
 export default function CondensationFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Window Condensation FAQ"
         subtitle="Understanding condensation on windows — what it means and what to do about it"

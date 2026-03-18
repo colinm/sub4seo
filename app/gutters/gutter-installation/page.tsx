@@ -2,11 +2,21 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import HowToSchema from '@/components/seo/HowToSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/gutters/gutter-installation'])
+
+const gutterInstallSteps = [
+  { name: 'Free Assessment & Estimate', text: 'We measure gutter runs, evaluate fascia condition, assess drainage areas, and determine optimal downspout locations and sizing.' },
+  { name: 'Old Gutter Removal', text: 'Existing gutters are removed and the fascia board is inspected for rot or damage before any new material is installed.' },
+  { name: 'On-Site Fabrication', text: 'Using our portable roll-forming machine, we fabricate each run to the exact length needed — right in your driveway.' },
+  { name: 'Correct Slope Installation', text: 'Gutters are installed with a 1/4-inch drop per 10 feet of run to ensure complete drainage with no standing water.' },
+  { name: 'Downspout Placement', text: 'Downspouts are installed at assessed locations. Outlet extensions direct water away from the foundation.' },
+  { name: 'Final Test & Cleanup', text: 'We test the system and clean up all debris before leaving — ready to perform from the first rain after installation.' },
+]
 
 const gutterFaqLinks = [
   { href: '/gutters/gutter-cap-faq', title: 'Gutter Cap FAQ', description: 'How the Gutter Cap system works, how it compares, and what installation involves.', icon: '🌧️' },
@@ -16,6 +26,12 @@ const gutterFaqLinks = [
 export default function GutterInstallationPage() {
   return (
     <>
+      <HowToSchema
+        name="How to Get Seamless Gutters Installed by Suburban Construction"
+        description="The complete gutter installation process from free assessment through on-site fabrication, correct slope installation, and final test. Suburban Construction serves the Quad Cities area."
+        steps={gutterInstallSteps}
+        image="/shurflow1.jpg"
+      />
       <PageHero
         title="Gutter Installation Process"
         subtitle="Assessment, custom fabrication, precise placement, and proper drainage engineering"

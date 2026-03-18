@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion, { type FAQItem } from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -134,6 +135,7 @@ const faqs: FAQItem[] = [
 export default function ReplacementWindowsFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Replacement Windows FAQ"
         subtitle="Honest answers to the questions homeowners ask most often"

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import ReactDOM from "react-dom";
 import Script from "next/script";
 import { Montserrat, Dancing_Script } from "next/font/google";
 import "./globals.css";
@@ -61,14 +62,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  ReactDOM.preload("/main.jpg", { as: "image", fetchPriority: "high" });
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} ${dancingScript.variable}`}
-    >
-      <head>
-        <link rel="preload" as="image" href="/main.jpg" fetchPriority="high" />
-      </head>
+    <html lang="en" className={`${montserrat.variable} ${dancingScript.variable}`}>
       <body className="antialiased">
         {/* Google Analytics */}
         <Script

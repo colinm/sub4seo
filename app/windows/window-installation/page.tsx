@@ -2,11 +2,22 @@ import type { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
+import HowToSchema from '@/components/seo/HowToSchema'
 import Image from 'next/image'
 import Link from 'next/link'
 import RelatedFAQs from '@/components/shared/RelatedFAQs'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/windows/window-installation'])
+
+const windowInstallSteps = [
+  { name: 'Free In-Home Estimate & Measurement', text: 'We measure each opening, assess existing frames, and discuss your goals. No charge, no obligation.' },
+  { name: 'Custom Order', text: 'We place a custom order based on precise field measurements. Every window is made to order — not pulled from generic inventory.' },
+  { name: 'Scheduling & Preparation', text: 'We schedule installation at your convenience. You clear space around each opening; we bring all tools and materials.' },
+  { name: 'Removal of Old Windows', text: 'We carefully remove existing windows, minimizing disturbance to surrounding trim and siding. Old windows go directly into our disposal trailer.' },
+  { name: 'New Window Installation', text: 'Each window is shimmed level and plumb, fastened securely, flashed, and insulated. Tested for proper operation before moving on.' },
+  { name: 'Trim, Caulk & Final Seal', text: 'We reinstall or replace interior and exterior trim, apply exterior caulk at all perimeter joints, and perform a final inspection.' },
+  { name: 'Cleanup & Walkthrough', text: 'We vacuum sills, wipe glass, and clean up all debris. We walk you through each new window before we leave.' },
+]
 
 const windowFaqLinks = [
   { href: '/windows/replacement-windows-faq', title: 'Window FAQ', description: 'Replacement windows, installation timelines, energy savings, warranties, and more.', icon: '🪟' },
@@ -18,6 +29,12 @@ const windowFaqLinks = [
 export default function WindowInstallationPage() {
   return (
     <>
+      <HowToSchema
+        name="How to Get Replacement Windows Installed by Suburban Construction"
+        description="The complete window replacement process from free in-home estimate through installation and final walkthrough. Suburban Construction serves the Quad Cities area."
+        steps={windowInstallSteps}
+        image="/install1.jpg"
+      />
       <PageHero
         title="Window Installation Process"
         subtitle="Precision measurement, expert installation, and a lifetime workmanship guarantee"

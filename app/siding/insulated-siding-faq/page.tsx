@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion, { type FAQItem } from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/insulated-siding-faq'])
@@ -53,6 +54,7 @@ const faqs: FAQItem[] = [
 export default function InsulatedSidingFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Insulated Siding FAQ"
         subtitle="Answers to common questions about insulated siding energy savings and installation"

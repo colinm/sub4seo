@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion, { type FAQItem } from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/gutters/gutter-cap-faq'])
@@ -65,6 +66,7 @@ One-piece and two-piece integrated systems: These typically require homeowners t
 export default function GutterCapFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Gutter Cap FAQ"
         subtitle="Common questions about the Gutter Cap system, how it works, and what it costs"

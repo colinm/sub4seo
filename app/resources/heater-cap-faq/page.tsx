@@ -4,6 +4,7 @@ import { pageSeoData } from "@/lib/seo/pageSeoData";
 import PageHero from "@/components/shared/PageHero";
 import FAQAccordion from "@/components/shared/FAQAccordion";
 import FAQSchema from "@/components/seo/FAQSchema";
+import SpeakableSchema from "@/components/seo/SpeakableSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = generatePageMetadata(
@@ -78,6 +79,7 @@ export default function HeaterCapFAQPage() {
   return (
     <>
       <FAQSchema faqs={heaterCapFaqs} />
+      <SpeakableSchema />
       <PageHero
         title="Heater Cap FAQ"
         subtitle="Prevent ice dams and protect your gutters and roof through winter"

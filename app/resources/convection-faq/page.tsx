@@ -3,6 +3,7 @@ import { generatePageMetadata } from '@/lib/seo/metadata'
 import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import FAQAccordion from '@/components/shared/FAQAccordion'
+import SpeakableSchema from '@/components/seo/SpeakableSchema'
 import Link from 'next/link'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/resources/convection-faq'])
@@ -58,6 +59,7 @@ const convectionFaqs = [
 export default function ConvectionFAQPage() {
   return (
     <>
+      <SpeakableSchema />
       <PageHero
         title="Window Convection FAQ"
         subtitle="Understanding convection heat loss and how gas-filled windows address it"
