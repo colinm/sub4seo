@@ -20,8 +20,10 @@ const trustItems: TrustItem[] = [
 
 function BbbIcon() {
   return (
-    <span className="text-xs font-extrabold border-2 border-accent-muted text-accent-muted rounded px-1.5 py-0.5 leading-none tracking-wide">
-      BBB
+    <span className="h-7 flex items-center">
+      <span className="text-xs font-extrabold border-2 border-accent-muted text-accent-muted rounded px-1.5 py-0.5 leading-none tracking-wide">
+        BBB
+      </span>
     </span>
   )
 }
