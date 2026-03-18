@@ -19,8 +19,8 @@ export default function ProductSchema({
   serviceAreas,
   image = "/main.jpg",
   url,
-  ratingValue = 5,
-  reviewCount = 53,
+  ratingValue = 4.7,
+  reviewCount = 111,
 }: ProductSchemaProps) {
   const schema = {
     "@context": "https://schema.org",

@@ -44,8 +44,8 @@ export default function LocalBusinessSchema() {
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: '53',
+      ratingValue: '4.7',
+      reviewCount: '111',
       bestRating: '5',
       worstRating: '1',
     },
@@ -53,6 +53,7 @@ export default function LocalBusinessSchema() {
       'https://www.facebook.com/SuburbanConstructionInc/',
       'https://www.instagram.com/suburbanconstructioninc/',
       'https://www.youtube.com/channel/UC-DSC5JfQoiXHf-nLXz0GWQ',
+      'https://share.google/ip6i7EtVr91x3aR2O',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

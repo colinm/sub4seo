@@ -619,7 +619,7 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
   "/about/testimonials": {
     title: "Customer Testimonials | Suburban Construction Reviews",
     description:
-      "Read what Quad Cities homeowners say about Suburban Construction. Over 53 testimonials from satisfied customers in Davenport, Bettendorf, Moline, Rock Island, and beyond.",
+      "Read what Quad Cities homeowners say about Suburban Construction. 4.7 stars across 111 Google reviews, plus dozens of written testimonials from customers in Davenport, Bettendorf, Moline, Rock Island, and beyond.",
     keywords: [
       "Suburban Construction reviews",
       "customer testimonials Davenport IA",
