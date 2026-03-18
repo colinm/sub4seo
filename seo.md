@@ -216,6 +216,13 @@ Every page has a unique title, meta description, and keyword set defined in `lib
 | Description | Beautiful, energy-efficient entry doors custom-ordered and professionally installed by Suburban Construction. Serving the Quad Cities area since 1985. |
 | Keywords | entry doors Quad Cities, entry door installation Davenport, front doors Iowa |
 
+#### /doors/storm
+| Field | Value |
+|-------|-------|
+| Title | Storm Doors \| Larson Quality & Protection \| Suburban Construction |
+| Description | Larson storm doors from Suburban Construction open the full potential of your entry. Platinum Collection features security, convenience, and style for Quad Cities homes. |
+| Keywords | storm doors Quad Cities, storm door installation Davenport, Larson storm doors Iowa |
+
 #### /doors/easy-vent
 | Field | Value |
 |-------|-------|
@@ -673,11 +680,12 @@ The old site used flat URLs (e.g., `/double_hung`). The new site uses a nested c
 | /vinyl_siding_faq | /siding/vinyl-siding-faq |
 | /insulated_siding_faq | /siding/insulated-siding-faq |
 
-### Doors (5 redirects)
+### Doors (6 redirects)
 | Old URL | New URL |
-|---------|---------|
+|---------|----------|
 | /door-styles | /doors/door-styles |
 | /entry | /doors/entry |
+| /storm | /doors/storm |
 | /easy-vent | /doors/easy-vent |
 | /mini-blinds | /doors/mini-blinds |
 | /door-app | /doors/door-app |

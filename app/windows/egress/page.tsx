@@ -100,13 +100,6 @@ export default function EgressWindowsPage() {
               className="rounded-xl shadow-lg w-full h-auto object-cover"
             />
           </div>
-
-          {/* Photo strip */}
-          {/* <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <Image src="/basement.png" alt="Basement window with proper moisture sealing" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/window2.jpg" alt="Replacement window installed in home" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/install1.jpg" alt="Professional window installation in progress" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-          </div> */}
         </div>
       </section>
 

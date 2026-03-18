@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(do magick:*)",
+      "Bash(echo \"Fixed: $f\")",
+      "Bash(pdfinfo public/stormdoor.pdf)",
+      "Bash(mkdir -p /tmp/stormdoor-preview)",
+      "Bash(pdftoppm -r 72 -jpeg public/stormdoor.pdf /tmp/stormdoor-preview/page)",
+      "Read(//tmp/**)"
+    ]
+  }
+}
