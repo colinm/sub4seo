@@ -159,11 +159,11 @@ export default function VinylVsCompositeSidingPage() {
                     className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}
                   >
                     <td className="px-4 py-3 font-semibold text-gray-900 align-top">{row.feature}</td>
-                    <td className={`px-4 py-3 text-gray-700 align-top ${row.winner === "vinyl" ? "font-semibold text-accent" : ""}`}>
+                    <td className={`px-4 py-3 align-top ${row.winner === "vinyl" ? "font-semibold text-accent" : "text-gray-700"}`}>
                       {row.winner === "vinyl" && <span className="mr-1">✓</span>}
                       {row.vinyl}
                     </td>
-                    <td className={`px-4 py-3 text-gray-700 align-top ${row.winner === "composite" ? "font-semibold text-green-700" : ""}`}>
+                    <td className={`px-4 py-3 align-top ${row.winner === "composite" ? "font-semibold text-green-700" : "text-gray-700"}`}>
                       {row.winner === "composite" && <span className="mr-1">✓</span>}
                       {row.composite}
                     </td>
