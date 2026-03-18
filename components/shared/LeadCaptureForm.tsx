@@ -103,7 +103,9 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
         </div>
 
         <div className="flex-1">
+          <label htmlFor="lead-service" className="sr-only">Service Needed</label>
           <select
+            id="lead-service"
             {...register('service')}
             className="w-full px-4 py-3 rounded bg-white text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
           >

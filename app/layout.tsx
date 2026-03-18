@@ -66,6 +66,9 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${dancingScript.variable}`}
     >
+      <head>
+        <link rel="preload" as="image" href="/main.jpg" fetchPriority="high" />
+      </head>
       <body className="antialiased">
         {/* Google Analytics */}
         <Script
