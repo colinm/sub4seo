@@ -13,7 +13,7 @@ export default function ShowroomTourPage() {
       <PageHero
         title="Visit Our Showroom"
         subtitle="See windows, doors, and siding at full size — touch and operate products before you decide"
-        bgImage="/davoffice2.png"
+        bgImage="/showroom/image19.jpg"
         breadcrumbs={[
           { label: 'About Us', href: '/about/our-story' },
           { label: 'Visit the Showroom' },
