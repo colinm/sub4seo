@@ -188,10 +188,7 @@ export default function ShowroomGallery() {
             </svg>
           </button>
 
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 pointer-events-none">
-            <p className="text-white/70 text-sm text-center max-w-sm px-4 leading-snug">
-              {images[active].alt}
-            </p>
+          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 pointer-events-none">
             <span className="text-white/40 text-xs tracking-widest">
               {active + 1} / {images.length}
             </span>
