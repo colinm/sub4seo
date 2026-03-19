@@ -18,7 +18,7 @@ export default function HeroSection() {
           <span className="text-accent-light">in the Quad Cities</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-          Family owned &amp; operated since 1985. Over 35,000 installations
+          Family owned &amp; operated since 1985. Over 40,000 installations
           completed. Lifetime workmanship guarantee on every project.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
