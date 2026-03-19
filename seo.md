@@ -894,7 +894,7 @@ An emerging convention (parallel to `robots.txt` for LLMs) that provides a plain
 - Full list of products and services
 - Key page URLs
 - Cities served
-- Trust signals (40+ years, 35,000+ installations, 4.7/111 reviews)
+- Trust signals (40+ years, 40,000+ installations, 4.7/111 reviews)
 - Content policy explicitly welcoming AI indexing
 - Sitemap URL
 
