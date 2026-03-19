@@ -13,28 +13,33 @@ import Image from 'next/image'
 //
 // Every cell is covered — no dense-pack guesswork needed.
 
-const images: { src: string; alt: string; col: string; row: string }[] = [
-  { src: '/showroom/image1.jpg',  alt: 'Suburban Construction showroom — full-scale home exterior display', col: '1 / span 2', row: '1'          },
-  { src: '/showroom/image3.jpg',  alt: 'Entry door displays with glass and hardware options',               col: '3',          row: '1'          },
-  { src: '/showroom/image4.jpg',  alt: 'Showroom window display corridor',                                 col: '4',          row: '1'          },
-  { src: '/showroom/image5.jpg',  alt: 'Energy-efficient window comparison display',                       col: '5 / span 2', row: '1'          },
-  { src: '/showroom/image6.jpg',  alt: 'Patio door selection and glass options',                           col: '1',          row: '2 / span 2' },
-  { src: '/showroom/image7.jpg',  alt: 'Siding color and texture wall displays',                           col: '2',          row: '2'          },
-  { src: '/showroom/image8.jpg',  alt: 'Showroom interior overview',                                       col: '3',          row: '2'          },
-  { src: '/showroom/image9.jpg',  alt: 'Window grid patterns and frame styles',                            col: '4 / span 2', row: '2'          },
-  { src: '/showroom/image11.jpg', alt: 'Door hardware, finish, and wood tone options',                     col: '6',          row: '2 / span 2' },
-  { src: '/showroom/image13.jpg', alt: 'Stone accent and siding color combinations',                       col: '2',          row: '3'          },
-  { src: '/showroom/image14.jpg', alt: 'Bay and bow window display',                                       col: '3',          row: '3'          },
-  { src: '/showroom/image15.jpg', alt: 'Full wall siding section with coordinated trim',                   col: '4',          row: '3'          },
-  { src: '/showroom/image16.jpg', alt: 'Exterior vignette display',                                        col: '5',          row: '3'          },
-  { src: '/showroom/image18.jpg', alt: 'Patio and lifestyle-inspired display space',                       col: '1 / span 2', row: '4'          },
-  { src: '/showroom/image19.jpg', alt: 'Casement and awning window comparison',                            col: '3',          row: '4'          },
-  { src: '/showroom/image20.jpg', alt: 'Decorative door glass and grid patterns',                          col: '4',          row: '4'          },
-  { src: '/showroom/image24.jpg', alt: 'Showroom display corridor — windows and siding',                   col: '5',          row: '4'          },
-  { src: '/showroom/image29.jpg', alt: 'Suburban Construction showroom — product overview',                col: '6',          row: '4'          },
+// Tiny 1×1 gray GIF — used as an instant blur placeholder while tiles load
+const BLUR_PLACEHOLDER = 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+
+const images: { src: string; alt: string; col: string; row: string; span?: number }[] = [
+  { src: '/showroom/image1.jpg',  alt: 'Suburban Construction showroom — full-scale home exterior display', col: '1 / span 2', row: '1',          span: 2 },
+  { src: '/showroom/image3.jpg',  alt: 'Entry door displays with glass and hardware options',               col: '3',          row: '1'                   },
+  { src: '/showroom/image4.jpg',  alt: 'Showroom window display corridor',                                 col: '4',          row: '1'                   },
+  { src: '/showroom/image5.jpg',  alt: 'Energy-efficient window comparison display',                       col: '5 / span 2', row: '1',          span: 2 },
+  { src: '/showroom/image6.jpg',  alt: 'Patio door selection and glass options',                           col: '1',          row: '2 / span 2'           },
+  { src: '/showroom/image7.jpg',  alt: 'Siding color and texture wall displays',                           col: '2',          row: '2'                   },
+  { src: '/showroom/image8.jpg',  alt: 'Showroom interior overview',                                       col: '3',          row: '2'                   },
+  { src: '/showroom/image9.jpg',  alt: 'Window grid patterns and frame styles',                            col: '4 / span 2', row: '2',          span: 2 },
+  { src: '/showroom/image11.jpg', alt: 'Door hardware, finish, and wood tone options',                     col: '6',          row: '2 / span 2'           },
+  { src: '/showroom/image13.jpg', alt: 'Stone accent and siding color combinations',                       col: '2',          row: '3'                   },
+  { src: '/showroom/image14.jpg', alt: 'Bay and bow window display',                                       col: '3',          row: '3'                   },
+  { src: '/showroom/image15.jpg', alt: 'Full wall siding section with coordinated trim',                   col: '4',          row: '3'                   },
+  { src: '/showroom/image16.jpg', alt: 'Exterior vignette display',                                        col: '5',          row: '3'                   },
+  { src: '/showroom/image18.jpg', alt: 'Patio and lifestyle-inspired display space',                       col: '1 / span 2', row: '4',          span: 2 },
+  { src: '/showroom/image19.jpg', alt: 'Casement and awning window comparison',                            col: '3',          row: '4'                   },
+  { src: '/showroom/image20.jpg', alt: 'Decorative door glass and grid patterns',                          col: '4',          row: '4'                   },
+  { src: '/showroom/image24.jpg', alt: 'Showroom display corridor — windows and siding',                   col: '5',          row: '4'                   },
+  { src: '/showroom/image29.jpg', alt: 'Suburban Construction showroom — product overview',                col: '6',          row: '4'                   },
 ]
 
 function Tile({ img, index, onClick }: { img: typeof images[0]; index: number; onClick: () => void }) {
+  // Wide (2-col) tiles are ~33vw on desktop; single tiles are ~17vw (container max-w-5xl / 6 cols)
+  const desktopSize = img.span === 2 ? '33vw' : '17vw'
   return (
     <button
       onClick={onClick}
@@ -45,9 +50,12 @@ function Tile({ img, index, onClick }: { img: typeof images[0]; index: number; o
         src={img.src}
         alt={img.alt}
         fill
-        sizes="(max-width: 768px) 33vw, 20vw"
+        sizes={`(max-width: 768px) 33vw, ${desktopSize}`}
         quality={65}
-        loading={index < 6 ? 'eager' : 'lazy'}
+        priority={index < 4}
+        loading={index < 4 ? undefined : 'lazy'}
+        placeholder="blur"
+        blurDataURL={BLUR_PLACEHOLDER}
         className="object-cover transition-opacity duration-200 group-hover:opacity-85"
       />
     </button>
@@ -75,6 +83,22 @@ export default function ShowroomGallery() {
   useEffect(() => {
     document.body.style.overflow = active !== null ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
+  }, [active])
+
+  // Prefetch adjacent full-res images so the next/prev click feels instant
+  useEffect(() => {
+    if (active === null) return
+    const adjacentSrcs = [
+      images[(active + 1) % images.length].src,
+      images[(active - 1 + images.length) % images.length].src,
+    ]
+    adjacentSrcs.forEach(src => {
+      const link = document.createElement('link')
+      link.rel = 'prefetch'
+      link.as = 'image'
+      link.href = src
+      document.head.appendChild(link)
+    })
   }, [active])
 
   return (
@@ -108,6 +132,8 @@ export default function ShowroomGallery() {
               sizes="33vw"
               quality={60}
               loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_PLACEHOLDER}
               className="object-cover transition-opacity duration-200 group-hover:opacity-85"
             />
           </button>
