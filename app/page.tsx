@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generatePageMetadata } from "@/lib/seo/metadata";
 import { pageSeoData } from "@/lib/seo/pageSeoData";
+import { getGoogleReviewCount } from "@/lib/google-reviews";
 import HeroSection from "@/components/home/HeroSection";
 import TrustBar from "@/components/home/TrustBar";
 import ServicesGrid from "@/components/home/ServicesGrid";
@@ -27,7 +28,9 @@ const galleryImages = [
   { src: "/bettoffice.jpg", alt: "Suburban Construction Bettendorf office" },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  const reviewCount = await getGoogleReviewCount();
+
   return (
     <>
       {/* 1. Hero */}
@@ -43,7 +46,7 @@ export default function HomePage() {
       <WhyChooseUs />
 
       {/* 5. Stats Counter */}
-      <StatsCounter />
+      <StatsCounter reviewCount={reviewCount} />
 
       {/* 6. Testimonials Carousel */}
       <TestimonialsCarousel />
@@ -71,7 +74,7 @@ export default function HomePage() {
                 </h3>
                 <ul className="space-y-2 text-gray-600 text-sm mb-4">
                   <li className="flex items-center gap-2">
-                    ✓ Triple pane krypton glass standard
+                    ✓ Triple pane krypton glass optional
                   </li>
                   <li className="flex items-center gap-2">
                     ✓ Double hung, casement, bay & bow, slider, and more
@@ -285,29 +288,37 @@ export default function HomePage() {
         videos={[
           {
             name: "Customer Testimonial — Window Replacement | Suburban Construction",
-            description: "A satisfied Quad Cities homeowner shares their experience with Suburban Construction's replacement window installation.",
-            thumbnailUrl: "https://img.youtube.com/vi/LJs-AMZb_QQ/maxresdefault.jpg",
+            description:
+              "A satisfied Quad Cities homeowner shares their experience with Suburban Construction's replacement window installation.",
+            thumbnailUrl:
+              "https://img.youtube.com/vi/LJs-AMZb_QQ/maxresdefault.jpg",
             uploadDate: "2023-01-01",
             embedUrl: "https://www.youtube.com/embed/LJs-AMZb_QQ",
           },
           {
             name: "Customer Testimonial — Home Improvement | Suburban Construction",
-            description: "A Quad Cities homeowner reviews their experience with Suburban Construction's home improvement services.",
-            thumbnailUrl: "https://img.youtube.com/vi/G8vZj5-6rKY/maxresdefault.jpg",
+            description:
+              "A Quad Cities homeowner reviews their experience with Suburban Construction's home improvement services.",
+            thumbnailUrl:
+              "https://img.youtube.com/vi/G8vZj5-6rKY/maxresdefault.jpg",
             uploadDate: "2023-01-01",
             embedUrl: "https://www.youtube.com/embed/G8vZj5-6rKY",
           },
           {
             name: "Customer Testimonial — Siding & Windows | Suburban Construction",
-            description: "Hear from a happy customer about their siding and window project completed by Suburban Construction in the Quad Cities.",
-            thumbnailUrl: "https://img.youtube.com/vi/o0ruKXXcrzo/maxresdefault.jpg",
+            description:
+              "Hear from a happy customer about their siding and window project completed by Suburban Construction in the Quad Cities.",
+            thumbnailUrl:
+              "https://img.youtube.com/vi/o0ruKXXcrzo/maxresdefault.jpg",
             uploadDate: "2023-01-01",
             embedUrl: "https://www.youtube.com/embed/o0ruKXXcrzo",
           },
           {
             name: "Customer Testimonial — Gutters & Doors | Suburban Construction",
-            description: "A satisfied customer shares their experience with gutter and door installation by Suburban Construction.",
-            thumbnailUrl: "https://img.youtube.com/vi/NTSy-mbr2Cg/maxresdefault.jpg",
+            description:
+              "A satisfied customer shares their experience with gutter and door installation by Suburban Construction.",
+            thumbnailUrl:
+              "https://img.youtube.com/vi/NTSy-mbr2Cg/maxresdefault.jpg",
             uploadDate: "2023-01-01",
             embedUrl: "https://www.youtube.com/embed/NTSy-mbr2Cg",
           },

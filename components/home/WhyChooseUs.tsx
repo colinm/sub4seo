@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Check } from 'lucide-react'
+import Image from "next/image";
+import Link from "next/link";
+import { Check } from "lucide-react";
 
 const features = [
-  'Triple pane krypton glass windows — standard offering',
-  'Energy Star certified products for maximum savings',
-  'Lifetime workmanship guarantee on every installation',
-  'Family owned & operated since 1985',
-  'Over 35,000 completed installations in the Quad Cities',
-  'No high-pressure sales tactics — ever',
-  'Professional, courteous installation crews',
-  'Excellent after-sale service and support',
-]
+  "Triple pane krypton glass windows",
+  "Energy Star certified products for maximum savings",
+  "Lifetime workmanship guarantee on every installation",
+  "Family owned & operated since 1985",
+  "Over 40,000 completed installations in the Quad Cities",
+  "No high-pressure sales tactics — ever",
+  "Professional, courteous installation crews",
+  "Excellent after-sale service and support",
+];
 
 export default function WhyChooseUs() {
   return (
@@ -29,10 +29,14 @@ export default function WhyChooseUs() {
             />
             <div
               className="absolute -bottom-4 -right-4 text-white rounded-lg p-4 shadow-lg"
-              style={{ backgroundColor: '#2a2e40' }}
+              style={{ backgroundColor: "#2a2e40" }}
             >
-              <div className="text-3xl font-bold text-accent-muted">38+</div>
-              <div className="text-sm">Years Serving<br/>the Quad Cities</div>
+              <div className="text-3xl font-bold text-accent-muted">40+</div>
+              <div className="text-sm">
+                Years in
+                <br />
+                Business
+              </div>
             </div>
           </div>
 
@@ -42,10 +46,12 @@ export default function WhyChooseUs() {
               Why Quad Cities Homeowners Choose Suburban Construction
             </h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              Since 1985, Suburban Construction has been the Quad Cities&apos; trusted name in home improvement.
-              We&apos;re not a national franchise — we&apos;re your neighbors. Our reputation was built one
-              satisfied customer at a time, and we&apos;re proud to say many of our customers have called
-              us back for 3, 4, even 5 projects over the years.
+              Since 1985, Suburban Construction has been the Quad Cities&apos;
+              trusted name in home improvement. We&apos;re not a national
+              franchise — we&apos;re your neighbors. Our reputation was built
+              one satisfied customer at a time, and we&apos;re proud to say many
+              of our customers have called us back for 3, 4, even 5 projects
+              over the years.
             </p>
 
             <ul className="space-y-3 mb-8">
@@ -77,5 +83,5 @@ export default function WhyChooseUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -4,23 +4,26 @@ import { pageSeoData } from '@/lib/seo/pageSeoData'
 import PageHero from '@/components/shared/PageHero'
 import { testimonials } from '@/lib/testimonials'
 import Link from 'next/link'
+import { getGoogleReviewCount } from '@/lib/google-reviews'
 
 const BBB_URL =
   'https://www.bbb.org/us/ia/davenport/profile/siding-contractors/suburban-construction-inc-0664-102852'
 
 export const metadata: Metadata = generatePageMetadata(pageSeoData['/about/testimonials'])
 
-const aggregateRatingSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Suburban Construction',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.7',
-    bestRating: '5',
-    worstRating: '1',
-    reviewCount: '111',
-  },
+function buildAggregateRatingSchema(reviewCount: number) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Suburban Construction',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.7',
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: String(reviewCount),
+    },
+  }
 }
 
 const youtubeVideos = [
@@ -40,12 +43,13 @@ function StarRating() {
   )
 }
 
-export default function TestimonialsPage() {
+export default async function TestimonialsPage() {
+  const reviewCount = await getGoogleReviewCount()
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildAggregateRatingSchema(reviewCount)) }}
       />
 
       <PageHero
@@ -77,7 +81,7 @@ export default function TestimonialsPage() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
                 </svg>
-                <span><strong>4.7</strong> stars · <strong>111</strong> Google reviews</span>
+                <span><strong>4.7</strong> stars · <strong>{reviewCount}</strong> Google reviews</span>
               </a>
               <a
                 href={BBB_URL}
@@ -91,7 +95,7 @@ export default function TestimonialsPage() {
             </div>
           </div>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Over four decades and 35,000+ installations, Suburban Construction has earned the trust
+            Over four decades and 40,000+ installations, Suburban Construction has earned the trust
             of homeowners throughout the Quad Cities and surrounding communities. Here is what some
             of them have to say — in their own words.
           </p>

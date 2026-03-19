@@ -58,7 +58,7 @@ export default function OurStoryPage() {
           <div className="clear-both" />
 
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            35,000+ Installations and Growing
+            40,000+ Installations and Growing
           </h2>
 
           <div className="md:float-right md:ml-6 md:mb-4 mb-6">
@@ -79,7 +79,7 @@ export default function OurStoryPage() {
             products before making a decision.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Over the decades, Suburban Construction has completed more than 35,000 installations
+            Over the decades, Suburban Construction has completed more than 40,000 installations
             across the Quad Cities and a 90-mile radius. Windows, siding, doors, gutters, patio
             enclosures — the company has steadily grown its offerings while never losing sight of
             what made it successful from the beginning: quality products, skilled installation, and
@@ -153,7 +153,7 @@ export default function OurStoryPage() {
             </li>
             <li className="flex items-start gap-2 text-gray-700">
               <span className="text-accent-mid mt-1">✓</span>
-              35,000+ installations completed across the Quad Cities and surrounding region
+              40,000+ installations completed across the Quad Cities and surrounding region
             </li>
             <li className="flex items-start gap-2 text-gray-700">
               <span className="text-accent-mid mt-1">✓</span>
@@ -172,6 +172,25 @@ export default function OurStoryPage() {
               Lifetime workmanship guarantee on every installation
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+            See Suburban Construction in Action
+          </h2>
+          <div className="relative w-full rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              src="https://www.youtube.com/embed/CEGaK7EzTfU"
+              title="Suburban Construction — Company Overview"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 

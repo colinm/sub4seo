@@ -5,13 +5,15 @@ import { useEffect, useRef, useState } from 'react'
 const BBB_URL =
   'https://www.bbb.org/us/ia/davenport/profile/siding-contractors/suburban-construction-inc-0664-102852'
 
-const stats = [
-  { end: 35000, suffix: '+', label: 'Installations Completed', display: '35,000+', href: undefined },
-  { end: 38,    suffix: '+', label: 'Years in Business',       display: '38+',     href: undefined },
-  { end: 111,   suffix: '+', label: 'Google Reviews',          display: '111+',    href: undefined },
-  { end: 90,    suffix: '',  label: 'Mile Service Radius',     display: '90',      href: undefined },
-  { end: 0,     suffix: '',  label: 'BBB Rating',              display: 'A+',      href: BBB_URL   },
-]
+function buildStats(reviewCount: number) {
+  return [
+    { end: 40000,       suffix: '+', label: 'Installations Completed', display: '40,000+',              href: undefined },
+    { end: 40,          suffix: '+', label: 'Years in Business',       display: '40+',                  href: undefined },
+    { end: reviewCount, suffix: '+', label: 'Google Reviews',          display: `${reviewCount}+`,      href: undefined },
+    { end: 90,          suffix: '',  label: 'Mile Service Radius',     display: '90',                   href: undefined },
+    { end: 0,           suffix: '',  label: 'BBB Rating',              display: 'A+',                   href: BBB_URL   },
+  ]
+}
 
 function useCountUp(end: number, duration: number, active: boolean) {
   const [count, setCount] = useState(0)
@@ -35,6 +37,14 @@ function useCountUp(end: number, duration: number, active: boolean) {
   return count
 }
 
+type StatEntry = {
+  end: number
+  suffix: string
+  label: string
+  display: string
+  href: string | undefined
+}
+
 function StatItem({
   end,
   suffix,
@@ -42,7 +52,7 @@ function StatItem({
   display,
   href,
   active,
-}: (typeof stats)[0] & { active: boolean }) {
+}: StatEntry & { active: boolean }) {
   const count = useCountUp(end, 1500, active)
   const formatted = end === 0 ? display : active ? count.toLocaleString() + suffix : display
 
@@ -67,9 +77,10 @@ function StatItem({
   )
 }
 
-export default function StatsCounter() {
+export default function StatsCounter({ reviewCount = 111 }: { reviewCount?: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(false)
+  const stats = buildStats(reviewCount)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
