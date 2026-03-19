@@ -22,6 +22,8 @@
    Use these instead of Tailwind sky-* classes so one edit above
    recolors the whole site.
 ──────────────────────────────────────────────────────────────────────── */
+@utility bg-brand-navy     { background-color: var(--brand-navy); }
+@utility text-brand-navy   { color: var(--brand-navy); }
 @utility bg-accent         { background-color: var(--accent); }
 @utility bg-accent-hover   { background-color: var(--accent-hover); }
 @utility bg-accent-subtle  { background-color: var(--accent-subtle); }

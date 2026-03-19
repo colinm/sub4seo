@@ -8,6 +8,7 @@ import {
   X,
   ChevronDown,
   Phone,
+  MapPin,
   Facebook,
   Instagram,
   Youtube,
@@ -95,7 +96,18 @@ export default function Navbar() {
                   >
                     {dropdown.items.map((item) => (
                       <li key={item.href}>
-                        {item.external ? (
+                        {item.featured ? (
+                          <Link
+                            href={item.href}
+                            className="flex items-center gap-2 px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors"
+                            style={{ color: '#93c5fd', backgroundColor: 'rgba(29,78,216,0.18)' }}
+                            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(29,78,216,0.30)'; (e.currentTarget as HTMLElement).style.color = '#fff'; }}
+                            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(29,78,216,0.18)'; (e.currentTarget as HTMLElement).style.color = '#93c5fd'; }}
+                          >
+                            <MapPin className="w-3.5 h-3.5 shrink-0" />
+                            {item.label}
+                          </Link>
+                        ) : item.external ? (
                           <a
                             href={item.href}
                             target="_blank"
@@ -221,7 +233,17 @@ export default function Navbar() {
                   <ul className={`pb-2 ${dropdown.items.length > 6 ? 'grid grid-cols-2' : ''}`}>
                     {dropdown.items.map((item) => (
                       <li key={item.href}>
-                        {item.external ? (
+                        {item.featured ? (
+                          <Link
+                            href={item.href}
+                            className="flex items-center gap-2 mx-2 my-1 px-3 py-2 text-sm font-medium rounded transition-colors"
+                            style={{ color: '#93c5fd', backgroundColor: 'rgba(29,78,216,0.18)' }}
+                            onClick={() => setMobileOpen(false)}
+                          >
+                            <MapPin className="w-3.5 h-3.5 shrink-0" />
+                            {item.label}
+                          </Link>
+                        ) : item.external ? (
                           <a
                             href={item.href}
                             target="_blank"

@@ -2,6 +2,7 @@ export interface NavItem {
   label: string;
   href: string;
   external?: boolean;
+  featured?: boolean;
 }
 
 export interface NavDropdown {
@@ -78,7 +79,7 @@ export const navDropdowns: NavDropdown[] = [
     items: [
       { label: "Our Company Story", href: "/about/our-story" },
       { label: "Meet the Owners", href: "/about/meet-the-owners" },
-      { label: "Visit the Showroom", href: "/about/showroom-tour" },
+      { label: "Visit the Showroom", href: "/about/showroom-tour", featured: true },
       { label: "Testimonials", href: "/about/testimonials" },
       { label: "In the News", href: "/about/in-the-news" },
       { label: "Referral Program", href: "/about/referral-program" },

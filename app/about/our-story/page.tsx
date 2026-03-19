@@ -132,6 +132,17 @@ export default function OurStoryPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             A Family Business With a Family Culture
           </h2>
+
+          <div className="md:float-right md:ml-6 md:mb-4 mb-6">
+            <Image
+              src="/aboutarticle.jpg"
+              alt="Suburban Construction family business culture"
+              width={340}
+              height={240}
+              className="rounded-lg shadow-md"
+            />
+          </div>
+
           <p className="text-gray-600 leading-relaxed mb-4">
             Today, Suburban Construction is led by JR Girskis, who continues the commitment to
             excellence and integrity that his father Brian established nearly four decades ago.
@@ -172,6 +183,7 @@ export default function OurStoryPage() {
               Lifetime workmanship guarantee on every installation
             </li>
           </ul>
+          <div className="clear-both" />
         </div>
       </section>
 
