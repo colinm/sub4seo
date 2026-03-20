@@ -7,10 +7,16 @@ import { z } from 'zod'
 
 const schema = z.object({
   referrerName: z.string().min(2, 'Your name is required'),
-  referrerPhone: z.string().min(7, 'Your phone number is required'),
+  referrerPhone: z
+    .string()
+    .min(1, 'Your phone number is required')
+    .regex(/^\d{3}-\d{3}-\d{4}$/, 'Enter a valid 10-digit phone number'),
   referrerEmail: z.string().email('Valid email required'),
   refereeName: z.string().min(2, "Friend's name is required"),
-  refereePhone: z.string().min(7, "Friend's phone number is required"),
+  refereePhone: z
+    .string()
+    .min(1, "Friend's phone number is required")
+    .regex(/^\d{3}-\d{3}-\d{4}$/, 'Enter a valid 10-digit phone number'),
   refereeEmail: z.string().email('Valid email required'),
   message: z.string().min(5, 'Please describe what they may need'),
   // Honeypot
@@ -31,6 +37,16 @@ export default function ReferralForm() {
     resolver: zodResolver(schema),
     defaultValues: { reasonss: '' },
   })
+
+  function formatPhone(value: string) {
+    const digits = value.replace(/\D/g, '').slice(0, 10)
+    if (digits.length <= 3) return digits
+    if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`
+  }
+
+  const referrerPhoneField = register('referrerPhone')
+  const refereePhoneField = register('refereePhone')
 
   const onSubmit = async (data: FormData) => {
     setError(null)
@@ -90,7 +106,17 @@ export default function ReferralForm() {
           </div>
           <div>
             <label htmlFor="referrerPhone" className={labelClass}>Your Phone *</label>
-            <input id="referrerPhone" type="tel" {...register('referrerPhone')} className={inputClass} />
+            <input
+              id="referrerPhone"
+              type="tel"
+              {...referrerPhoneField}
+              onChange={(e) => {
+                e.target.value = formatPhone(e.target.value)
+                referrerPhoneField.onChange(e)
+              }}
+              placeholder="000-000-0000"
+              className={inputClass}
+            />
             {errors.referrerPhone && <p className={errorClass}>{errors.referrerPhone.message}</p>}
           </div>
           <div className="md:col-span-2">
@@ -114,7 +140,17 @@ export default function ReferralForm() {
           </div>
           <div>
             <label htmlFor="refereePhone" className={labelClass}>Their Phone *</label>
-            <input id="refereePhone" type="tel" {...register('refereePhone')} className={inputClass} />
+            <input
+              id="refereePhone"
+              type="tel"
+              {...refereePhoneField}
+              onChange={(e) => {
+                e.target.value = formatPhone(e.target.value)
+                refereePhoneField.onChange(e)
+              }}
+              placeholder="000-000-0000"
+              className={inputClass}
+            />
             {errors.refereePhone && <p className={errorClass}>{errors.refereePhone.message}</p>}
           </div>
           <div className="md:col-span-2">

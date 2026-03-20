@@ -7,7 +7,10 @@ import { z } from 'zod'
 
 const schema = z.object({
   name: z.string().min(2, 'Name required'),
-  phone: z.string().min(7, 'Phone required'),
+  phone: z
+    .string()
+    .min(1, 'Phone required')
+    .regex(/^\d{3}-\d{3}-\d{4}$/, 'Enter a valid 10-digit phone number'),
   email: z.string().email('Valid email required'),
   service: z.string().min(1, 'Please select a service'),
   besttimetocall: z.string().min(1, 'Please select a time'),
