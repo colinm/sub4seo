@@ -44,8 +44,8 @@ export default function CompositeSidingPage() {
       {/* Intro: text left, image right */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
-            <div>
+          <div className="mb-10">
+            <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 Real Wood Look, Zero Wood Headaches
               </h2>
@@ -86,13 +86,6 @@ export default function CompositeSidingPage() {
                 workmanship guarantee.
               </p>
             </div>
-            <Image
-              src="/ascend-product-line.png"
-              alt="Ascend composite cladding product line overview"
-              width={600}
-              height={420}
-              className="rounded-xl shadow-lg w-full h-auto"
-            />
           </div>
 
           {/* Photo strip */}
