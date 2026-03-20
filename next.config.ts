@@ -56,7 +56,8 @@ const nextConfig: NextConfig = {
         destination: "/windows/window-installation",
         permanent: true,
       },
-      { source: "/storm", destination: "/windows/storm", permanent: true },
+      { source: "/storm", destination: "/windows/window-styles", permanent: true },
+      { source: "/windows/storm", destination: "/windows/window-styles", permanent: true },
       {
         source: "/replacement_windows_faq",
         destination: "/windows/replacement-windows-faq",

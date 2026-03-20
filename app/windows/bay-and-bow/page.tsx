@@ -62,8 +62,8 @@ export default function BayAndBowWindowsPage() {
 
           {/* Photo strip */}
           <div className="grid grid-cols-2 gap-4">
-            <Image src="/bayandbow.jpg" alt="Bay and bow window exterior view" width={600} height={380} className="rounded-lg shadow-sm w-full h-48 sm:h-56 object-cover" />
-            <Image src="/window2.jpg" alt="Replacement window installation detail" width={600} height={380} className="rounded-lg shadow-sm w-full h-48 sm:h-56 object-cover" />
+            <Image src="/bayandbow.jpg" alt="Bay and bow window exterior view" width={600} height={380} className="rounded-lg shadow-sm w-full h-auto" />
+            <Image src="/window2.jpg" alt="Replacement window installation detail" width={600} height={380} className="rounded-lg shadow-sm w-full h-auto" />
           </div>
         </div>
       </section>

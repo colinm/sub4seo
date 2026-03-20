@@ -58,12 +58,6 @@ export default function KryptonWindowsPage() {
             <Image src="/triple-pane-glass.jpg" alt="Triple pane krypton glass system cross-section showing insulating layers" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
           </div>
 
-          {/* Photo strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <Image src="/freedommaxxlowehp.jpg" alt="FreedomMaxxx Low-E HP glass system" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/mult-chambered-sash.jpg" alt="Multi-chambered sash detail showing insulation performance" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/window2.jpg" alt="Replacement window with triple pane glass installed" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-          </div>
         </div>
       </section>
 

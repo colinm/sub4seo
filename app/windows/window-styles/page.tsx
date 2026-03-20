@@ -207,7 +207,7 @@ export default function WindowStylesPage() {
                   { href: '/windows/krypton', label: 'Triple Pane Krypton Glass', desc: 'the most energy-efficient glass system available' },
                   { href: '/windows/window-options', label: 'Window Options & Upgrades', desc: 'grids, hardware, glass coatings, and more' },
                   { href: '/windows/window-installation', label: 'Our Installation Process', desc: 'lifetime workmanship guarantee' },
-                  { href: '/windows/storm', label: 'Storm Windows', desc: 'an affordable secondary protection option' },
+
                   { href: '/windows/replacement-windows-faq', label: 'Replacement Windows FAQ', desc: 'answers to the most common questions' },
                 ].map((item) => (
                   <li key={item.href} className="flex items-start gap-3">

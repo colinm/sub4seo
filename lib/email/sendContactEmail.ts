@@ -4,6 +4,7 @@ export interface ContactFormData {
   name: string;
   email: string;
   phone: string;
+  address?: string;
   city: string;
   state: string;
   zip: string;
@@ -48,6 +49,7 @@ export async function sendContactEmail(data: ContactFormData): Promise<void> {
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Name</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Email</strong></td><td style="padding: 8px; border: 1px solid #ddd;"><a href="mailto:${data.email}">${data.email}</a></td></tr>
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Phone</strong></td><td style="padding: 8px; border: 1px solid #ddd;"><a href="tel:${data.phone}">${data.phone}</a></td></tr>
+      ${data.address ? `<tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Property Address</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.address}</td></tr>` : ""}
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>City</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.city}</td></tr>
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>State</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.state}</td></tr>
       <tr><td style="padding: 8px; border: 1px solid #ddd;"><strong>Zip</strong></td><td style="padding: 8px; border: 1px solid #ddd;">${data.zip}</td></tr>
@@ -74,6 +76,7 @@ New Contact Form Submission
 Name: ${data.name}
 Email: ${data.email}
 Phone: ${data.phone}
+${data.address ? `Property Address: ${data.address}` : ""}
 City: ${data.city}
 State: ${data.state}
 Zip: ${data.zip}

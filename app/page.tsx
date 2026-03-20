@@ -248,7 +248,7 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
             <a
               href="https://www.instagram.com/suburbanconstructioninc/"
               target="_blank"
@@ -256,6 +256,14 @@ export default async function HomePage() {
               className="inline-block border-2 border-gray-300 hover:border-accent text-gray-700 hover:text-accent font-bold px-6 py-3 rounded transition-colors"
             >
               View More on Instagram →
+            </a>
+            <a
+              href="https://www.facebook.com/SuburbanConstructionInc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border-2 border-gray-300 hover:border-accent text-gray-700 hover:text-accent font-bold px-6 py-3 rounded transition-colors"
+            >
+              Follow Us on Facebook →
             </a>
           </div>
         </div>

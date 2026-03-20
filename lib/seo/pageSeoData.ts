@@ -170,18 +170,7 @@ export const pageSeoData: Record<string, PageSeoConfig> = {
     canonicalPath: "/windows/window-installation",
     ogImage: "/main.jpg",
   },
-  "/windows/storm": {
-    title: "Storm Windows | Extra Protection & Energy Savings",
-    description:
-      "Storm windows add an extra layer of insulation and weather protection to existing windows. Affordable energy upgrade for Quad Cities homeowners.",
-    keywords: [
-      "storm windows Quad Cities",
-      "storm windows Iowa",
-      "storm window installation Davenport",
-    ],
-    canonicalPath: "/windows/storm",
-    ogImage: "/main.jpg",
-  },
+
   "/windows/replacement-windows-faq": {
     title: "Replacement Windows FAQ | Common Questions Answered",
     description:

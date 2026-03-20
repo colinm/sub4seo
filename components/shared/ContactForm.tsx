@@ -9,6 +9,7 @@ const schema = z.object({
   name: z.string().min(2, 'Name is required'),
   email: z.string().email('Valid email required'),
   phone: z.string().min(7, 'Phone number required'),
+  address: z.string().optional(),
   city: z.string().min(2, 'City is required'),
   state: z.string().min(2, 'State is required'),
   zip: z.string().min(5, 'ZIP code required'),
@@ -33,6 +34,15 @@ export default function ContactForm({ prefilledCity }: { prefilledCity?: string 
     resolver: zodResolver(schema),
     defaultValues: { city: prefilledCity || '', reasonss: '' },
   })
+
+  function formatPhone(value: string) {
+    const digits = value.replace(/\D/g, '').slice(0, 10)
+    if (digits.length <= 3) return digits
+    if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`
+  }
+
+  const phoneField = register('phone')
 
   const onSubmit = async (data: FormData) => {
     setError(null)
@@ -87,7 +97,17 @@ export default function ContactForm({ prefilledCity }: { prefilledCity?: string 
 
         <div>
           <label htmlFor="phone" className={labelClass}>Phone *</label>
-          <input id="phone" type="tel" {...register('phone')} className={inputClass} />
+          <input
+            id="phone"
+            type="tel"
+            {...phoneField}
+            onChange={(e) => {
+              e.target.value = formatPhone(e.target.value)
+              phoneField.onChange(e)
+            }}
+            placeholder="000-000-0000"
+            className={inputClass}
+          />
           {errors.phone && <p className={errorClass}>{errors.phone.message}</p>}
         </div>
 
@@ -125,6 +145,11 @@ export default function ContactForm({ prefilledCity }: { prefilledCity?: string 
           <label htmlFor="zip" className={labelClass}>ZIP Code *</label>
           <input id="zip" type="text" {...register('zip')} className={inputClass} />
           {errors.zip && <p className={errorClass}>{errors.zip.message}</p>}
+        </div>
+
+        <div className="md:col-span-2">
+          <label htmlFor="address" className={labelClass}>Property Address</label>
+          <input id="address" type="text" {...register('address')} placeholder="Street address of the property" className={inputClass} />
         </div>
 
         <div>

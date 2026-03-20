@@ -10,7 +10,6 @@ export const metadata: Metadata = generatePageMetadata(pageSeoData['/siding/stee
 
 const sidingFaqLinks = [
   { href: '/siding/vinyl-siding-faq', title: 'Siding FAQ', description: 'Vinyl and steel siding questions: durability, maintenance, cost, and color choices.', icon: '🏠' },
-  { href: '/resources/stain-formula-faq', title: 'Stain Formulas', description: 'How to get color match information for touch-ups on siding and windows.', icon: '🎨' },
 ]
 
 export default function SteelSidingPage() {
@@ -19,7 +18,7 @@ export default function SteelSidingPage() {
       <PageHero
         title="Steel Siding"
         subtitle="The most durable siding option available — fire resistant, dent resistant, and built to last"
-        bgImage="/steel-siding.jpg"
+        bgImage="/grayhouse.png"
         breadcrumbs={[
           { label: 'Siding', href: '/siding/siding-options' },
           { label: 'Steel Siding' },
@@ -60,12 +59,6 @@ export default function SteelSidingPage() {
             <Image src="/steel-siding.jpg" alt="Steel siding installed on home showing durable impact-resistant finish" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
           </div>
 
-          {/* Photo strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <Image src="/steel-reinforcement.jpg" alt="Steel siding reinforcement detail showing structural strength" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/sidinghouse.jpg" alt="Home with new siding installed" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/siding-installation.png" alt="Professional siding installation in progress" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-          </div>
         </div>
       </section>
 
@@ -100,53 +93,49 @@ export default function SteelSidingPage() {
         </div>
       </section>
 
-      {/* Secondary: image left, list right */}
+      {/* Steel vs. Vinyl: full-width photo, two-column comparison below */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <Image src="/steel-reinforcement.jpg" alt="Steel siding reinforcement detail showing structural strength and quality" width={600} height={420} className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Steel vs. Vinyl Siding</h2>
+          <Image src="/grayhouse.png" alt="Home with steel siding installed showing clean exterior finish" width={1200} height={600} className="rounded-xl shadow-lg w-full h-auto mb-8" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Steel vs. Vinyl Siding</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Steel Siding Advantages</h3>
-                  <ul className="space-y-2">
-                    {[
-                      'Far more impact resistant — won\'t dent from hail',
-                      'Fire resistant (Class A rating)',
-                      'Color baked in — superior fade resistance',
-                      'Termite and pest proof',
-                      'Can be repainted if desired',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
-                          <span className="text-accent text-xs font-bold">✓</span>
-                        </span>
-                        <span className="text-gray-700 text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Vinyl Siding Advantages</h3>
-                  <ul className="space-y-2">
-                    {[
-                      'Lower initial cost',
-                      'Lighter weight',
-                      'Wide color and profile selection',
-                      'Never needs painting',
-                      'Good long-term durability in mild climates',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
-                          <span className="text-accent text-xs font-bold">✓</span>
-                        </span>
-                        <span className="text-gray-700 text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <h3 className="font-bold text-gray-900 mb-3 text-lg">Steel Siding Advantages</h3>
+              <ul className="space-y-2">
+                {[
+                  'Far more impact resistant — won\'t dent from hail',
+                  'Fire resistant (Class A rating)',
+                  'Color baked in — superior fade resistance',
+                  'Termite and pest proof',
+                  'Can be repainted if desired',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                      <span className="text-accent text-xs font-bold">✓</span>
+                    </span>
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-3 text-lg">Vinyl Siding Advantages</h3>
+              <ul className="space-y-2">
+                {[
+                  'Lower initial cost',
+                  'Lighter weight',
+                  'Wide color and profile selection',
+                  'Never needs painting',
+                  'Good long-term durability in mild climates',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1 w-5 h-5 rounded-full bg-accent-subtle border border-accent-faint flex items-center justify-center shrink-0">
+                      <span className="text-accent text-xs font-bold">✓</span>
+                    </span>
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

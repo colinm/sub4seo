@@ -26,7 +26,7 @@ export const navDropdowns: NavDropdown[] = [
       { label: "Triple Pane Krypton", href: "/windows/krypton" },
       { label: "Window Options", href: "/windows/window-options" },
       { label: "Installation", href: "/windows/window-installation" },
-      { label: "Storm Windows", href: "/windows/storm" },
+
       { label: "Windows FAQ", href: "/windows/replacement-windows-faq" },
       { label: "Download PDF", href: "/windows.pdf", external: true },
     ],

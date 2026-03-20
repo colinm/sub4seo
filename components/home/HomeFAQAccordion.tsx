@@ -14,12 +14,12 @@ const faqs: FAQItem[] = [
   {
     question: "How long does window installation take?",
     answer:
-      "Most residential window replacement projects are completed in one day. A typical whole-house job of 10–15 windows takes 4–6 hours. Our crews work efficiently and leave your home clean when the job is done.",
+      "Most residential window replacement projects are completed in one day. A typical whole-house job of 10–15 windows takes a couple days depending on the type of installation needed, some projects could be less, some more.",
   },
   {
     question: "What kind of warranty do you offer?",
     answer:
-      "Suburban Construction offers a lifetime workmanship guarantee on all installations. Our window and siding products also come with manufacturer warranties. We handle any warranty claims on your behalf — if there's ever a problem, just call us.",
+      "Suburban Construction offers a lifetime workmanship guarantee on all installations. Our window, siding, and door products come with separate manufacturer warranty covering the actual product. We handle any warranty claims on your behalf when possible, if there's ever a problem, just call us.",
   },
   {
     question: "What makes triple pane krypton glass special?",
@@ -29,7 +29,7 @@ const faqs: FAQItem[] = [
   {
     question: "What types of siding do you install?",
     answer:
-      "We install vinyl siding (including the Freedom Series), steel siding, composite siding, and insulated siding. Each has different strengths — steel is the most durable, vinyl is the most popular, composite offers a wood look, and insulated siding provides extra energy efficiency. We'll help you choose the best option for your home.",
+      "We install vinyl siding (including the Freedom Series), steel siding, insulated composite siding, and vinyl siding with an additional insulation board added during installation. Each has different strengths — steel is the most durable, vinyl is the most popular, composite offers a wood look, and insulated composite provides extra energy efficiency. We'll help you choose the best option for your home.",
   },
   {
     question: "Can I visit a showroom?",
@@ -39,7 +39,7 @@ const faqs: FAQItem[] = [
   {
     question: "How do I prevent clogged gutters?",
     answer:
-      "Suburban Construction installs the Gutter Cap system — a patented gutter protection system that uses surface tension to guide water into gutters while leaves, seeds, and debris fall to the ground. Once installed, your gutters are virtually maintenance-free. We also install the Shur Flow system as a second option.",
+      "Suburban Construction installs the Gutter Cap system — a patented gutter protection system that uses surface tension to guide water into gutters while leaves, seeds, and debris fall to the ground with a clog free guarantee. If your gutters get clogged with gutter cap just call, we will take care of it. Once installed, your gutters are virtually maintenance-free. We also install the Shur Flow system as a more cost effective option.",
   },
   {
     question: "Do you do financing?",

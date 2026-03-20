@@ -20,7 +20,7 @@ const staticPages = [
   { path: '/windows/krypton', priority: 0.8, changeFreq: 'monthly' },
   { path: '/windows/window-options', priority: 0.6, changeFreq: 'monthly' },
   { path: '/windows/window-installation', priority: 0.7, changeFreq: 'monthly' },
-  { path: '/windows/storm', priority: 0.6, changeFreq: 'monthly' },
+
   { path: '/windows/replacement-windows-faq', priority: 0.7, changeFreq: 'monthly' },
   { path: '/windows/window-replacement-cost', priority: 0.8, changeFreq: 'monthly' },
   { path: '/windows/double-hung-vs-casement', priority: 0.7, changeFreq: 'monthly' },

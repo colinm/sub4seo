@@ -59,8 +59,8 @@ export default function GardenSpecialtyWindowsPage() {
 
           {/* Photo strip */}
           <div className="grid grid-cols-2 gap-3">
-            <Image src="/garden1.jpg" alt="Garden window projecting from kitchen wall with plants on shelf" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/garden2.jpg" alt="Specialty shaped window installed in a custom home" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/garden1.jpg" alt="Garden window projecting from kitchen wall with plants on shelf" width={300} height={220} className="rounded-lg shadow-sm w-full h-auto" />
+            <Image src="/garden2.jpg" alt="Specialty shaped window installed in a custom home" width={300} height={220} className="rounded-lg shadow-sm w-full h-auto" />
           </div>
         </div>
       </section>

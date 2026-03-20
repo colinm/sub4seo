@@ -66,7 +66,7 @@ const faqs: FAQItem[] = [
   {
     question: "Do Suburban Construction windows require a lot of maintenance?",
     answer:
-      "No. Because our frames and sashes are made of vinyl, you can say goodbye to painting and caulking. Suburban Construction windows won't stick, and you don't need to remove storm windows to clean them — you can do it all from inside your home using the tilt-in feature. An occasional wipe with a damp cloth will keep your windows looking like new for years to come.",
+      "No. Because our frames and sashes are made of vinyl, you can say goodbye to painting and caulking. Suburban Construction windows won't stick, and you can clean them entirely from inside your home using the tilt-in feature. An occasional wipe with a damp cloth will keep your windows looking like new for years to come.",
   },
   {
     question:

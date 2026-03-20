@@ -63,9 +63,9 @@ export default function CasementWindowsPage() {
 
           {/* Photo strip */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <Image src="/casement2.jpg" alt="Awning window installed in bathroom allowing ventilation during rain" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/casement1.jpg" alt="Casement window installed in home" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
-            <Image src="/window2.jpg" alt="Interior view of replacement window" width={300} height={220} className="rounded-lg shadow-sm w-full h-40 object-cover" />
+            <Image src="/casement2.jpg" alt="Awning window installed in bathroom allowing ventilation during rain" width={300} height={220} className="rounded-lg shadow-sm w-full h-auto" />
+            <Image src="/casement1.jpg" alt="Casement window installed in home" width={300} height={220} className="rounded-lg shadow-sm w-full h-auto" />
+            <Image src="/window2.jpg" alt="Interior view of replacement window" width={300} height={220} className="rounded-lg shadow-sm w-full h-auto" />
           </div>
         </div>
       </section>

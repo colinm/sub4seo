@@ -8,8 +8,13 @@ import { z } from 'zod'
 const schema = z.object({
   name: z.string().min(2, 'Name required'),
   phone: z.string().min(7, 'Phone required'),
+  email: z.string().email('Valid email required'),
   service: z.string().min(1, 'Please select a service'),
+  besttimetocall: z.string().min(1, 'Please select a time'),
   city: z.string().optional(),
+  state: z.string().optional(),
+  zip: z.string().optional(),
+  message: z.string().optional(),
   reasonss: z.string().max(0, 'Bot detected'),
 })
 
@@ -33,19 +38,28 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
     defaultValues: { city: prefilledCity || '', reasonss: '' },
   })
 
+  function formatPhone(value: string) {
+    const digits = value.replace(/\D/g, '').slice(0, 10)
+    if (digits.length <= 3) return digits
+    if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`
+  }
+
+  const phoneField = register('phone')
+
   const onSubmit = async (data: FormData) => {
     setError(null)
     try {
       const payload = {
         name: data.name,
         phone: data.phone,
+        email: data.email,
         service: data.service,
+        besttimetocall: data.besttimetocall,
         city: data.city || '',
-        email: '',
-        state: '',
-        zip: '',
-        besttimetocall: 'Anytime',
-        message: `Quick lead form submission. Service: ${data.service}`,
+        state: data.state || '',
+        zip: data.zip || '',
+        message: data.message || '',
         reasonss: data.reasonss,
       }
       const res = await fetch('/api/contact', {
@@ -69,6 +83,9 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
     )
   }
 
+  const inputClass = 'w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent'
+  const errorClass = 'text-red-400 text-xs mt-1'
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={className} noValidate>
       {/* Honeypot */}
@@ -81,33 +98,61 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
         aria-hidden="true"
       />
 
-      <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
           <input
             type="text"
             {...register('name')}
             placeholder="Your Name *"
-            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            className={inputClass}
           />
-          {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>}
+          {errors.name && <p className={errorClass}>{errors.name.message}</p>}
         </div>
 
-        <div className="flex-1">
+        <div>
           <input
             type="tel"
-            {...register('phone')}
-            placeholder="Phone Number *"
-            className="w-full px-4 py-3 rounded bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            {...phoneField}
+            onChange={(e) => {
+              e.target.value = formatPhone(e.target.value)
+              phoneField.onChange(e)
+            }}
+            placeholder="000-000-0000 *"
+            className={inputClass}
           />
-          {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone.message}</p>}
+          {errors.phone && <p className={errorClass}>{errors.phone.message}</p>}
         </div>
 
-        <div className="flex-1">
+        <div>
+          <input
+            type="email"
+            {...register('email')}
+            placeholder="Email Address *"
+            className={inputClass}
+          />
+          {errors.email && <p className={errorClass}>{errors.email.message}</p>}
+        </div>
+
+        <div>
+          <select
+            {...register('besttimetocall')}
+            className={`${inputClass} text-gray-700`}
+          >
+            <option value="">Best Time to Call *</option>
+            <option value="Morning (8AM-12PM)">Morning (8AM–12PM)</option>
+            <option value="Afternoon (12PM-5PM)">Afternoon (12PM–5PM)</option>
+            <option value="Evening (5PM-8PM)">Evening (5PM–8PM)</option>
+            <option value="Anytime">Anytime</option>
+          </select>
+          {errors.besttimetocall && <p className={errorClass}>{errors.besttimetocall.message}</p>}
+        </div>
+
+        <div>
           <label htmlFor="lead-service" className="sr-only">Service Needed</label>
           <select
             id="lead-service"
             {...register('service')}
-            className="w-full px-4 py-3 rounded bg-white text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            className={`${inputClass} text-gray-700`}
           >
             <option value="">Service Needed *</option>
             <option value="Windows">Replacement Windows</option>
@@ -116,16 +161,54 @@ export default function LeadCaptureForm({ prefilledCity, className = '' }: LeadC
             <option value="Gutters">Gutters</option>
             <option value="Multiple">Multiple Services</option>
           </select>
-          {errors.service && <p className="text-red-400 text-xs mt-1">{errors.service.message}</p>}
+          {errors.service && <p className={errorClass}>{errors.service.message}</p>}
         </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="bg-accent hover:bg-accent-hover disabled:bg-accent-muted text-white font-bold px-6 py-3 rounded whitespace-nowrap transition-colors text-sm"
-        >
-          {isSubmitting ? 'Sending...' : 'Get Free Estimate'}
-        </button>
+        <div>
+          <input
+            type="text"
+            {...register('city')}
+            placeholder="City"
+            className={inputClass}
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            {...register('state')}
+            placeholder="State (IA or IL)"
+            className={inputClass}
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            {...register('zip')}
+            placeholder="ZIP Code"
+            className={inputClass}
+          />
+        </div>
+
+        <div className="sm:col-span-2">
+          <textarea
+            {...register('message')}
+            rows={3}
+            placeholder="Tell us about your project..."
+            className={inputClass}
+          />
+        </div>
+
+        <div className="sm:col-span-2">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-accent hover:bg-accent-hover disabled:bg-accent-muted text-white font-bold px-6 py-3 rounded transition-colors text-sm"
+          >
+            {isSubmitting ? 'Sending...' : 'Get Free Estimate'}
+          </button>
+        </div>
       </div>
 
       {error && <p className="text-red-400 text-sm mt-2 text-center">{error}</p>}
